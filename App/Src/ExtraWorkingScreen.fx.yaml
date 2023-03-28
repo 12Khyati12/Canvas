@@ -549,7 +549,7 @@ ExtraWorkingScreen As screen:
                             Y: =65
                             ZIndex: =8
 
-                        EWDM_icon_Next_1 As icon.ChevronRight:
+                        EWD_icon_Next As icon.ChevronRight:
                             Color: =AppColor.PrimaryColor
                             Height: =40
                             Icon: =Icon.ChevronRight

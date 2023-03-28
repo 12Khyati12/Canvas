@@ -634,6 +634,10 @@
                                     contact,
                                     'Full Name' = CNE_text_Reporting.Text
                                 ),
+                                'Expense Delegate Approver':LookUp(
+                                    contact,
+                                    'Full Name' = CNE_text_Delegate.Text
+                                ),
                                 'Expense Request Status': 'Expense Request Status'.Draft
                             }
                         );

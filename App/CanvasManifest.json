@@ -121,7 +121,6 @@
     "CreateLeaveRequestScreen",
     "LeaveRequestScreen",
     "LeaveRequestDetailsScreen",
-    "LeaveRequestTransactionScreen",
     "ExpenseManagementScreen",
     "CreateNewExpense",
     "ExpenseLineScreen",
@@ -147,6 +146,8 @@
     "HolidayListScreen",
     "EmployeeDetailScreen",
     "UserGuideScreen",
-    "LeaveRequestHRScreen"
+    "HRBulkRequestScreen",
+    "HRSingleRequestScreen",
+    "LeaveRequestTransactionScreen"
   ]
 }

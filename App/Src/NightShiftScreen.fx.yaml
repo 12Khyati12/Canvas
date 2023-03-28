@@ -551,7 +551,7 @@ NightShiftScreen As screen:
                             Y: =65
                             ZIndex: =8
 
-                        NSAM_icon_Next_1 As icon.ChevronRight:
+                        NSA_icon_Next As icon.ChevronRight:
                             Color: =AppColor.PrimaryColor
                             Height: =40
                             Icon: =Icon.ChevronRight
