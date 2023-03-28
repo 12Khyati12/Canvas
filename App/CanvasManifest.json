@@ -147,6 +147,7 @@
     "EmployeeDetailScreen",
     "UserGuideScreen",
     "HRBulkRequestScreen",
-    "HRSingleRequestScreen"
+    "HRSingleRequestScreen",
+    "LeaveRequestTransactionScreen"
   ]
 }
