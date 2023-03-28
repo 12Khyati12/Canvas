@@ -1,2 +1,241 @@
-LeaveRequestTransactionScreen As screen:
+"LeaveRequestTransactionScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            LRDS_icon_back_1 As icon.ChevronLeft:
+                Color: =AppColor.PrimaryColor
+                Height: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Height/1.1,
+                       Parent.Height
+                    )
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Navigate(LeaveRequestScreen)
+                PaddingLeft: =10
+                PaddingRight: =10
+                Width: |
+                    =
+                    Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+                ZIndex: =1
+
+            LRDS_lbl_AppTitle_1 As label:
+                Align: =Align.Center
+                Color: =AppColor.PrimaryColor
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                PaddingRight: =100
+                Size: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        12,
+                        ScreenSize.Medium,
+                       16,
+                       18
+                    )
+                Text: ="Leave Request"
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Width,
+                        Parent.Width/1.2
+                    )
+                ZIndex: =2
+
+        HRS_rect_Divider_1 As rectangle:
+            Height: =1
+            Width: =Parent.Width
+            Y: =88
+            ZIndex: =2
+
+        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            "LRT_gallery_FilterRequest As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =Parent.Height
+                Items: |-
+                    =Filter(
+                        'Application Transactions',
+                        LRS_gallery_FilterRequest.Selected.'Application Request Number' = 'Application Request'.'Application Request Number'
+                    )
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =260
+                LayoutMinWidth: =Parent.LayoutMinWidth
+                TemplatePadding: =0
+                TemplateSize: =Min(100, Self.Height - 60)
+                Width: =Parent.Width
+                ZIndex: =1
+
+                HRS_lbl_ReqNum_5 As label:
+                    Color: =AppColor.PrimaryColor
+                    FontWeight: =FontWeight.Bold
+                    Height: =22
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            10,
+                           13
+                        )
+                    Text: |-
+                        =
+                            If(
+                            Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
+                        
+                        Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
+                        Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))
+                        
+                        /*If(
+                            Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
+                        
+                        Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
+                        Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))*/
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/2
+                        )
+                    X: =15
+                    Y: =10
+                    ZIndex: =2
+
+                HRS_rect_Separator_4 As rectangle:
+                    Fill: =AppColor.PrimaryColor
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =92.84615384615384
+                    ZIndex: =5
+
+                HRS_lbl_Description_4 As label:
+                    Color: =AppColor.PrimaryColor
+                    FontWeight: =FontWeight.Semibold
+                    Height: =22
+                    OnSelect: =Select(Parent)
+                    PaddingLeft: =0
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            10,
+                           13
+                        )
+                    Text: |-
+                        ="Description : " & ThisItem.dt_description
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/2
+                        )
+                    X: =15
+                    Y: =35
+                    ZIndex: =7
+
+                HRS_lbl_Date_4 As label:
+                    Color: =AppColor.PrimaryColor
+                    FontWeight: =FontWeight.Semibold
+                    Height: =22
+                    OnSelect: =Select(Parent)
+                    PaddingLeft: =0
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            10,
+                           13
+                        )
+                    Text: |-
+                        ="Date : "&Text(DateValue(ThisItem.dt_date),"dd/mmm/yyyy")
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/2
+                        )
+                    X: =15
+                    Y: =65
+                    ZIndex: =8
+
+                HRS_btn_cancelled_4 As button:
+                    DisplayMode: =
+                    Fill: =AppColor.PrimaryColor
+                    Height: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            30,
+                            ScreenSize.Medium,
+                            40,
+                            45
+                            
+                        )
+                    OnSelect: |-
+                        =Patch(
+                            'Application Transactions',
+                            First(
+                                Filter(
+                                    'Application Transactions',
+                                    'Application Transaction Number' = LRT_gallery_FilterRequest.Selected.dt_application_transaction_number
+                                )
+                            ),
+                            {'Application Transaction Status': [@'Application Transaction Status'].Cancelled}
+                        );
+                        Notify("Request Cancelled",NotificationType.Success);
+                        Refresh('Application Transactions');
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            9,
+                           12
+                        )
+                    Text: ="Cancel Request"
+                    Visible: |-
+                        =//If(RequestSelect = "Cancelled",false,true)
+                        true
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                           Parent.Width/4,
+                           Parent.Width/5
+                        )
+                    X: =Parent.Width - HRS_btn_cancelled_4.Width - 30
+                    Y: =25
+                    ZIndex: =10
 

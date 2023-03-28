@@ -723,7 +723,7 @@
                         OnSelect: |-
                             =If(_requestTypeFilter="Pending",
                             Navigate(LeaveRequestDetailsScreen,BorderStyle.None),
-                            _requestTypeFilter="Approve",
+                            _requestTypeFilter="Approved",
                             Navigate(LeaveRequestTransactionScreen,BorderStyle.None)
                             )
                         Visible: =If(_requestTypeFilter="Pending" || _requestTypeFilter="Approved",true,false)
