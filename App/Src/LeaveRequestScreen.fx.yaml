@@ -720,8 +720,13 @@
                         Color: =AppColor.PrimaryColor
                         Height: =40
                         Icon: =Icon.ChevronRight
-                        OnSelect: =Navigate(LeaveRequestDetailsScreen,BorderStyle.None)
-                        Visible: =If(_requestTypeFilter="Pending",true,false)
+                        OnSelect: |-
+                            =If(_requestTypeFilter="Pending",
+                            Navigate(LeaveRequestDetailsScreen,BorderStyle.None),
+                            _requestTypeFilter="Approve",
+                            Navigate(LeaveRequestTransactionScreen,BorderStyle.None)
+                            )
+                        Visible: =If(_requestTypeFilter="Pending" || _requestTypeFilter="Approved",true,false)
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

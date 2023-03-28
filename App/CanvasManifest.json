@@ -121,6 +121,7 @@
     "CreateLeaveRequestScreen",
     "LeaveRequestScreen",
     "LeaveRequestDetailsScreen",
+    "LeaveRequestTransactionScreen",
     "ExpenseManagementScreen",
     "CreateNewExpense",
     "ExpenseLineScreen",
