@@ -265,7 +265,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FooterContainer.ID%",
       "Name": "LRS_ApproveContainer",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2250,7 +2250,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%MainSectionContainer.ID%",
       "Name": "LRS_DataContainer",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7233,7 +7233,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LRS_rect_Divider",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

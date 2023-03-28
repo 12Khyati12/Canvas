@@ -26,7 +26,9 @@
                        Parent.Height
                     )
                 Icon: =Icon.ChevronLeft
-                OnSelect: =Navigate(LeaveRequestScreen)
+                OnSelect: |-
+                    =//Navigate(LeaveRequestScreen)
+                    Back()
                 PaddingLeft: =10
                 PaddingRight: =10
                 Width: |
@@ -80,7 +82,9 @@
                 Items: |-
                     =Filter(
                         'Application Transactions',
-                        LRS_gallery_FilterRequest.Selected.'Application Request Number' = 'Application Request'.'Application Request Number'
+                         'Application Request'.'Application Request Number'= LRS_gallery_FilterRequest.Selected.'Application Request Number'
+                        ,
+                        'Application Transaction Status'=[@'Application Transaction Status'].Approved
                     )
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =260
@@ -217,6 +221,7 @@
                         );
                         Notify("Request Cancelled",NotificationType.Success);
                         Refresh('Application Transactions');
+                        Set(_requestTypeFilter,"Approved");
                     Size: |-
                         =Switch(
                             App.ActiveScreen.Size,
