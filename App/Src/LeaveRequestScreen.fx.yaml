@@ -178,7 +178,7 @@
                         ),
                         LRS_dd_Login.Selected.Value = "HR",
                         Navigate(
-                            HRScreen,
+                            HRBulkRequestScreen,
                             ScreenTransition.Fade
                         )
                     )
