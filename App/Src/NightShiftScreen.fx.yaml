@@ -114,7 +114,7 @@ NightShiftScreen As screen:
                         ),
                         NSA_dd_Login.Selected.Value = "HR",
                         Navigate(
-                            HRScreen,
+                            HRBulkRequestScreen,
                             ScreenTransition.Fade
                         )
                     )

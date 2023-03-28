@@ -78,7 +78,11 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
-                Items: =Filter('Application Transactions', HRS_gallery_FilterRequest_Bulk_1.Selected.'Application Request Number' = 'Application Request'.'Application Request Number')
+                Items: |-
+                    =Filter(
+                        'Application Transactions',
+                        'Application Transaction Status' = [@'Application Transaction Status'].Approved,
+                        'Application Request'.'Application Request Number' = HRBS_gallery_FilterRequest_Bulk.Selected.'Application Request Number')
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =260
                 LayoutMinWidth: =Parent.LayoutMinWidth
@@ -201,7 +205,55 @@
                             45
                             
                         )
-                    OnSelect: =
+                    OnSelect: |-
+                        =Patch(
+                            'Application Transactions',
+                            First(
+                                Filter(
+                                    'Application Transactions',
+                                    'Application Transaction Number' = HRS_gallery_FilterRequest_1.Selected.dt_application_transaction_number
+                                )
+                            ),
+                            {'Application Transaction Status': [@'Application Transaction Status'].Cancelled}
+                        );
+                        Notify("Request Cancelled",NotificationType.Success);
+                        Refresh('Application Requests');
+                        Refresh('Application Transactions');
+                        Clear(ColRequestBulk);
+                        
+                        ClearCollect(
+                            ColRequestBulk,
+                            Sort(
+                                If(
+                                    TypeFilter = "Leave Request",
+                                    Filter(
+                                        'Application Requests',
+                                        'Application Request Status'=[@'Application Request Status'].Approved,
+                                        'Application Request Type'.'Application Request Type Name' = "Leave Request"
+                                    ),
+                                    TypeFilter = "Extra Working Request",
+                                    Filter(
+                                        'Application Requests',
+                                        'Application Request Status'=[@'Application Request Status'].Approved,
+                                        'Application Request Type'.'Application Request Type Name' = "Extra Working Request"
+                                    ),
+                                    TypeFilter = "Night Shift Request",
+                                    Filter(
+                                        'Application Requests',
+                                        'Application Request Status'=[@'Application Request Status'].Approved,
+                                         'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request"
+                                    ),
+                                    TypeFilter = "Work From Home Request",
+                                     Filter(
+                                        'Application Requests',
+                                        'Application Request Status'=[@'Application Request Status'].Approved,
+                                         'Application Request Type'.'Application Request Type Name' = "Work From Home Request"
+                                    )
+                                ),
+                                'Created On',
+                                SortOrder.Descending
+                            )
+                        );
                     Size: |-
                         =Switch(
                             App.ActiveScreen.Size,

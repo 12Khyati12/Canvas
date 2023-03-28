@@ -105,7 +105,7 @@ NightShiftManagerScreen As screen:
                         },
                          {
                             Text: "HR",
-                            screen: HRScreen
+                            screen: HRBulkRequestScreen
                          }
                         
                     )

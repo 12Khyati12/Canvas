@@ -4,7 +4,7 @@
             TypeFilter,
             "Leave Request"
         );
-        
+        Reset(HRBS_dp_FromDate);Reset(HRBS_dp_ToDate);Reset(HRBS_txt_RequestNum);
         ClearCollect(
             ColRequestBulk,
             Sort(
@@ -58,7 +58,7 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            HRBS__icon_back As icon.ChevronLeft:
+            HRBS_icon_back As icon.ChevronLeft:
                 Color: =AppColor.PrimaryColor
                 Height: |-
                     =Switch(
@@ -76,7 +76,7 @@
                     Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
                 ZIndex: =1
 
-            HRBS__lbl_AppTitle As label:
+            HRBS_lbl_AppTitle As label:
                 Align: =Align.Center
                 Color: =AppColor.PrimaryColor
                 FillPortions: =11
@@ -103,7 +103,7 @@
                 Wrap: =false
                 ZIndex: =2
 
-            HRBS__dd_Login As dropdown:
+            HRBS_dd_Login As dropdown:
                 AlignInContainer: =AlignInContainer.Center
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(39, 113, 194, 1)
@@ -141,12 +141,12 @@
                     )
                 OnChange: |-
                     =If(
-                        HRBS__dd_Login.Selected.Value = "Employee",
+                        HRBS_dd_Login.Selected.Value = "Employee",
                         Navigate(
                             LeaveApplicationScreen,
                             ScreenTransition.Fade
                         ),
-                        HRBS__dd_Login.Selected.Value = "Manager",
+                        HRBS_dd_Login.Selected.Value = "Manager",
                         If(
                              IsManager > 0,
                             Navigate(
@@ -155,9 +155,9 @@
                             ),
                             Notify("Not Manager")
                         ),
-                        HRBS__dd_Login.Selected.Value = "HR",
+                        HRBS_dd_Login.Selected.Value = "HR",
                         Navigate(
-                            HRScreen,
+                            HRBulkRequestScreen,
                             ScreenTransition.Fade
                         )
                     )
@@ -201,7 +201,7 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            HRS_FilterContainer_1 As groupContainer.horizontalAutoLayoutContainer:
+            HRBS_FilterContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =AppColor.PrimaryColor
                 BorderThickness: =2
@@ -234,7 +234,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                HRS_gallery_RequestFilter_1 As gallery.galleryHorizontal:
+                HRBS_gallery_RequestFilter As gallery.galleryHorizontal:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     Height: =Parent.Height
                     Items: |-
@@ -291,19 +291,19 @@
                     Y: =
                     ZIndex: =13
 
-                    HRS_FilterButton_1 As button:
+                    HRBS_FilterButton As button:
                         BorderColor: =RGBA(10, 106, 204, 1)
                         BorderThickness: =If(TypeFilter=ThisItem.Filter,0,1)
                         Color: =If(TypeFilter=ThisItem.Filter,RGBA(255, 255, 255, 1),RGBA(10, 106, 204, 1))
-                        DisabledBorderColor: =ColorFade(HRS_FilterButton_1.BorderColor, 70%)
+                        DisabledBorderColor: =ColorFade(HRBS_FilterButton.BorderColor, 70%)
                         DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                         DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
                         Fill: =If(TypeFilter = ThisItem.Filter,RGBA(0, 134, 208, 1),RGBA(255, 255, 255, 1))
-                        FocusedBorderColor: =HRS_FilterButton_1.BorderColor
+                        FocusedBorderColor: =HRBS_FilterButton.BorderColor
                         FontWeight: =FontWeight.Normal
-                        HoverBorderColor: =ColorFade(HRS_FilterButton_1.BorderColor, 20%)
-                        HoverColor: =HRS_FilterButton_1.Color
-                        HoverFill: =ColorFade(HRS_FilterButton_1.Fill, 20%)
+                        HoverBorderColor: =ColorFade(HRBS_FilterButton.BorderColor, 20%)
+                        HoverColor: =HRBS_FilterButton.Color
+                        HoverFill: =ColorFade(HRBS_FilterButton.Fill, 20%)
                         OnSelect: |-
                             =Set(
                                 TypeFilter,
@@ -342,9 +342,9 @@
                                     SortOrder.Descending
                                 )
                             );
-                        PressedBorderColor: =HRS_FilterButton_1.Fill
-                        PressedColor: =HRS_FilterButton_1.Fill
-                        PressedFill: =HRS_FilterButton_1.Color
+                        PressedBorderColor: =HRBS_FilterButton.Fill
+                        PressedColor: =HRBS_FilterButton.Fill
+                        PressedFill: =HRBS_FilterButton.Color
                         Size: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -363,7 +363,7 @@
                         Y: =5.272727272727273
                         ZIndex: =1
 
-            HRS_SearchContainer_1 As groupContainer.horizontalAutoLayoutContainer:
+            HRBS_SearchContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =AppColor.PrimaryColor
                 BorderThickness: =2
@@ -381,14 +381,55 @@
                     )
                     )
                 LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutGap: =10
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =10
                 Width: =Parent.Width
                 ZIndex: =2
 
-                HRS_lbl_RequestNum_1 As label:
+                HRBS_dd_View As dropdown:
+                    BorderColor: =RGBA(39, 113, 194, 1)
+                    ChevronBackground: =RGBA(39, 113, 194, 1)
+                    Color: =RGBA(39, 113, 194, 1)
+                    Height: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Height/2.5,
+                            Parent.Height/2
+                        )
+                    HoverColor: =RGBA(39, 113, 194, 1)
+                    Items: =["Filter by Date Range","Filter by Request Number"]
+                    OnSelect: =
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    PressedFill: =RGBA(39, 113, 194, 1)
+                    SelectionFill: =RGBA(39, 113, 194, 1)
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            6,
+                           12
+                        )
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/2.5,
+                            ScreenSize.Medium,
+                            Parent.Width/4,
+                            Parent.Width/4.5
+                            
+                        )
+                    ZIndex: =1
+
+                HRBS_lbl_RequestNum As label:
+                    Align: =Align.Right
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Bold
                     Height: =Parent.Height/2
@@ -406,6 +447,7 @@
                         )
                     Text: |-
                         ="Request Number :"
+                    Visible: =If(HRBS_dd_View.Selected.Value = "Filter by Request Number",true,false)
                     Width: |-
                         =Switch(
                             App.ActiveScreen.Size,
@@ -415,9 +457,9 @@
                         )
                     X: =1
                     Y: =10
-                    ZIndex: =1
+                    ZIndex: =2
 
-                HRS_txt_RequestNum_1 As text:
+                HRBS_txt_RequestNum As text:
                     BorderColor: =AppColor.PrimaryColor
                     Clear: =true
                     Color: =AppColor.PrimaryColor
@@ -431,6 +473,7 @@
                             10,
                            13
                         )
+                    Visible: =If(HRBS_dd_View.Selected.Value = "Filter by Request Number",true,false)
                     Width: |-
                         =Switch(
                             App.ActiveScreen.Size,
@@ -438,9 +481,183 @@
                             Parent.Width/3,
                             Parent.Width/6
                         )
-                    ZIndex: =2
+                    ZIndex: =3
 
-            HRS_RequestContainer_1 As groupContainer.horizontalAutoLayoutContainer:
+                HRBS_lbl_FromDate As label:
+                    Align: =Align.Right
+                    Color: =AppColor.PrimaryColor
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height/2
+                    OnSelect: =
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            10,
+                           13
+                        )
+                    Text: |-
+                        ="From : "
+                    Visible: =If(HRBS_dd_View.Selected.Value = "Filter by Date Range",true,false)
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/5.8,
+                            Parent.Width/9.5
+                        )
+                    X: =1
+                    Y: =10
+                    ZIndex: =4
+
+                HRBS_dp_FromDate As datepicker:
+                    BorderColor: =AppColor.PrimaryColor
+                    Color: =AppColor.PrimaryColor
+                    DefaultDate: =Date(Year(Today()), Month(Today()), 1)
+                    Format: ="dd/mmm/yyyy"
+                    Height: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            28,
+                            ScreenSize.Medium,
+                            30,
+                            40
+                            
+                            
+                        )
+                    IconBackground: =AppColor.PrimaryColor
+                    OnChange: =
+                    OnSelect: |-
+                        =If(
+                            HRBS_dd_View.Selected.Value = "Filter by Date Range",
+                            Filter(
+                                ColRequestBulk,
+                                (Startdate >= (
+                                    HRBS_dp_FromDate.SelectedDate)
+                                ) && Enddate <= (
+                                    HRBS_dp_ToDate.SelectedDate)           
+                            ),
+                            Filter(
+                                ColRequestBulk,
+                                HRBS_txt_RequestNum.Text in 'Application Request Number'
+                            )
+                        )
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            9,
+                            ScreenSize.Medium,
+                            10,
+                            13
+                            
+                        )
+                    Visible: =If(HRBS_dd_View.Selected.Value = "Filter by Date Range",true,false)
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/2.5,
+                            ScreenSize.Medium,
+                            Parent.Width/4,
+                            Parent.Width/4.5
+                            
+                        )
+                    ZIndex: =5
+
+                HRBS_lbl_ToDate As label:
+                    Align: =Align.Right
+                    Color: =AppColor.PrimaryColor
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height/2
+                    OnSelect: =
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            10,
+                           13
+                        )
+                    Text: |-
+                        ="To : "
+                    Visible: =If(HRBS_dd_View.Selected.Value = "Filter by Date Range",true,false)
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/5.8,
+                            Parent.Width/9.5
+                        )
+                    X: =1
+                    Y: =10
+                    ZIndex: =6
+
+                HRBS_dp_ToDate As datepicker:
+                    BorderColor: =AppColor.PrimaryColor
+                    Color: =AppColor.PrimaryColor
+                    DefaultDate: =Date(Year(Today()), Month(Today()) + 1, 0)
+                    Format: ="dd/mmm/yyyy"
+                    Height: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            28,
+                            ScreenSize.Medium,
+                            30,
+                            40
+                            
+                            
+                        )
+                    IconBackground: =AppColor.PrimaryColor
+                    OnChange: =
+                    OnSelect: |-
+                        =If(
+                            HRBS_dd_View.Selected.Value = "Filter by Date Range",
+                            Filter(
+                                ColRequestBulk,
+                                (Startdate >= (
+                                    HRBS_dp_FromDate.SelectedDate)
+                                ) && Enddate <= (
+                                    HRBS_dp_ToDate.SelectedDate)           
+                            ),
+                            Filter(
+                                ColRequestBulk,
+                                HRBS_txt_RequestNum.Text in 'Application Request Number'
+                            )
+                        )
+                    Size: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            9,
+                            ScreenSize.Medium,
+                            10,
+                            13
+                            
+                        )
+                    Visible: =If(HRBS_dd_View.Selected.Value = "Filter by Date Range",true,false)
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/2.5,
+                            ScreenSize.Medium,
+                            Parent.Width/4,
+                            Parent.Width/4.5
+                            
+                        )
+                    ZIndex: =7
+
+            HRBS_RequestContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: |
                     =Parent.Height/1.3
@@ -452,22 +669,34 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-                "HRS_gallery_FilterRequest_Bulk_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                "HRBS_gallery_FilterRequest_Bulk As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height
                     Items: |-
-                        =//Search(ColHRRequestBulk,HRS_txt_RequestNum_1.Text,"dt_application_request_number")
-                        Filter(ColRequestBulk, HRS_txt_RequestNum_1.Text in 'Application Request Number')
+                        =If(
+                            HRBS_dd_View.Selected.Value = "Filter by Date Range",
+                            Filter(
+                                ColRequestBulk,
+                                (Startdate >= (
+                                    HRBS_dp_FromDate.SelectedDate)
+                                ) && Enddate <= (
+                                    HRBS_dp_ToDate.SelectedDate)           
+                            ),
+                            Filter(
+                                ColRequestBulk,
+                                HRBS_txt_RequestNum.Text in 'Application Request Number'
+                            )
+                        )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =260
                     LayoutMinWidth: =Parent.LayoutMinWidth
                     TemplatePadding: =0
-                    TemplateSize: =Min(100, Self.Height - 60)
+                    TemplateSize: =Min(115, Self.Height - 60)
                     Width: =Parent.Width
                     ZIndex: =2
 
-                    HRS_lbl_ReqNum_3 As label:
+                    HRBS_lbl_ReqNum As label:
                         Color: =AppColor.PrimaryColor
                         FontWeight: =FontWeight.Bold
                         Height: =22
@@ -499,15 +728,15 @@
                         Y: =10
                         ZIndex: =2
 
-                    HRS_rect_Separator_3 As rectangle:
+                    HRBS_rect_Separator As rectangle:
                         Fill: =AppColor.PrimaryColor
                         Height: =1
                         OnSelect: =Select(Parent)
                         Width: =Parent.TemplateWidth
-                        Y: =92.84615384615384
+                        Y: =107
                         ZIndex: =5
 
-                    HRS_lbl_Description_3 As label:
+                    HRBS_lbl_Description As label:
                         Color: =AppColor.PrimaryColor
                         FontWeight: =FontWeight.Semibold
                         Height: =22
@@ -530,10 +759,10 @@
                                 Parent.Width/2
                             )
                         X: =15
-                        Y: =35
+                        Y: =60
                         ZIndex: =7
 
-                    HRS_lbl_Date_3 As label:
+                    HRBS_lbl_Date As label:
                         Color: =AppColor.PrimaryColor
                         FontWeight: =FontWeight.Semibold
                         Height: =22
@@ -556,10 +785,10 @@
                                 Parent.Width/2
                             )
                         X: =15
-                        Y: =65
+                        Y: =85
                         ZIndex: =8
 
-                    HRS_btn_cancelled_3 As button:
+                    HRBS_btn_cancelled As button:
                         DisplayMode: =
                         Fill: =AppColor.PrimaryColor
                         Height: |-
@@ -572,7 +801,56 @@
                                 45
                                 
                             )
-                        OnSelect: =
+                        OnSelect: |-
+                            =Patch('Application Requests',
+                                First(
+                                    Filter(
+                                        'Application Requests',
+                                        'Application Request Number' = HRBS_gallery_FilterRequest_Bulk.Selected.dt_application_request_number
+                                    )
+                                ),
+                                {
+                                    'Application Request Status': [@'Application Request Status'].Cancelled
+                                }
+                            );
+                            Notify("Request Cancelled",NotificationType.Success);
+                            Refresh('Application Requests');
+                            Clear(ColRequestBulk);
+                            Reset(HRBS_txt_RequestNum);
+                            
+                            ClearCollect(
+                                ColRequestBulk,
+                                Sort(
+                                    If(
+                                        TypeFilter = "Leave Request",
+                                        Filter(
+                                            'Application Requests',
+                                            'Application Request Status'=[@'Application Request Status'].Approved,
+                                            'Application Request Type'.'Application Request Type Name' = "Leave Request"
+                                        ),
+                                        TypeFilter = "Extra Working Request",
+                                        Filter(
+                                            'Application Requests',
+                                            'Application Request Status'=[@'Application Request Status'].Approved,
+                                            'Application Request Type'.'Application Request Type Name' = "Extra Working Request"
+                                        ),
+                                        TypeFilter = "Night Shift Request",
+                                        Filter(
+                                            'Application Requests',
+                                            'Application Request Status'=[@'Application Request Status'].Approved,
+                                             'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request"
+                                        ),
+                                        TypeFilter = "Work From Home Request",
+                                         Filter(
+                                            'Application Requests',
+                                            'Application Request Status'=[@'Application Request Status'].Approved,
+                                             'Application Request Type'.'Application Request Type Name' = "Work From Home Request"
+                                        )
+                                    ),
+                                    'Created On',
+                                    SortOrder.Descending
+                                )
+                            );
                         Size: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -589,7 +867,7 @@
                                Parent.Width/4,
                                Parent.Width/5
                             )
-                        X: =Parent.Width - HRS_btn_cancelled_3.Width - NSAM_icon_Next_1.Width - 25
+                        X: =Parent.Width - HRBS_btn_cancelled.Width - HRBS_icon_Next.Width - 25
                         Y: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -599,7 +877,7 @@
                             )
                         ZIndex: =10
 
-                    NSAM_icon_Next_1 As icon.ChevronRight:
+                    HRBS_icon_Next As icon.ChevronRight:
                         Color: =AppColor.PrimaryColor
                         Height: |-
                             =Switch(
@@ -613,9 +891,7 @@
                             )
                         Icon: =Icon.ChevronRight
                         OnSelect: =Navigate(HRSingleRequestScreen);
-                        Visible: |-
-                            =//If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Cancelled",false,true)
-                            true
+                        Visible: =If(TypeFilter = "Leave Request" || TypeFilter = "Extra Working Request" ,true,false)
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -636,9 +912,8 @@
                             )
                         ZIndex: =11
 
-                    HRS_lbl_ReqNum_4 As label:
+                    HRBS_lbl_LeaveType As label:
                         Color: =AppColor.PrimaryColor
-                        FontWeight: =FontWeight.Normal
                         Height: =22
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
@@ -653,7 +928,7 @@
                                13
                             )
                         Text: |-
-                            ="Leave Type : " & ThisItem.dt_leave_type
+                            ="Leave Type : " & ThisItem.dt_leave_type.'Leave Type Name'
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =Switch(
