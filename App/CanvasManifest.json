@@ -146,6 +146,7 @@
     "HolidayListScreen",
     "EmployeeDetailScreen",
     "UserGuideScreen",
-    "LeaveRequestHRScreen"
+    "HRBulkRequestScreen",
+    "HRSingleRequestScreen"
   ]
 }

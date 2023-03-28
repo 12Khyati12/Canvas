@@ -662,7 +662,7 @@
                     )
                 ZIndex: =2
 
-                LAS_PaidContainer_1 As groupContainer.verticalAutoLayoutContainer:
+                LAS_TitleContainer As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =AppColor.PrimaryColor
                     BorderThickness: =1

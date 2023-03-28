@@ -856,7 +856,7 @@
                                Parent.Width/4,
                                Parent.Width/5
                             )
-                        X: =Parent.Width - LRS_btn_cancelled.Width - 30
+                        X: =Parent.Width - LRS_btn_cancelled.Width - LRS_icon_Next.Width - 30
                         Y: =40
                         ZIndex: =11
 
