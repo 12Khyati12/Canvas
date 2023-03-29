@@ -369,6 +369,7 @@ ExtraWorkingManagerScreen As screen:
                     BorderColor: =RGBA(39, 113, 194, 1)
                     ChevronBackground: =RGBA(39, 113, 194, 1)
                     Color: =RGBA(39, 113, 194, 1)
+                    Default: ='Application Requests (Views)'.'This Month Application'
                     Height: |-
                         =Switch(
                             App.ActiveScreen.Size,
