@@ -1385,7 +1385,7 @@
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && 
+                                    !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && 
                                     AvailableDayForSL > 0 && 
                                     Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && 
                                     HL_Date <= 0 && HL_Date1 <= 0 && 
@@ -1399,7 +1399,7 @@
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && 
+                                    !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && 
                                     AvailableDayForHL > 0 && 
                                     Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave') && 
                                     HL_Date <= 0 && HL_Date1 <= 0 && 
@@ -1413,7 +1413,7 @@
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && 
+                                    !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && 
                                     HL_Date <= 0 && HL_Date1 <= 0 && 
                                     pendingListCount <= 0 && 
                                     approveListCount <= 0 && 
@@ -1425,7 +1425,7 @@
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Leave without Pay",
                                 If(
-                                    HL_Date <= 0 && HL_Date1 <= 0 && 
+                                    !IsLeaveEdit && HL_Date <= 0 && HL_Date1 <= 0 && 
                                     pendingListCount <= 0 && 
                                     approveListCount <= 0 && 
                                     AllListCount<=0 &&
