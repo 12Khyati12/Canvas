@@ -1,6 +1,6 @@
-"LeaveRequestTransactionScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"ExtraWorkingTransactionScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
 
-    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+    ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -8,7 +8,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        HeaderContainer3 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
             LayoutMinHeight: =100
@@ -16,7 +16,7 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =1
 
-            LRDS_icon_back_1 As icon.ChevronLeft:
+            LRDS_icon_back_2 As icon.ChevronLeft:
                 Color: =AppColor.PrimaryColor
                 Height: |-
                     =Switch(
@@ -34,7 +34,7 @@
                     Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
                 ZIndex: =1
 
-            LRDS_lbl_AppTitle_1 As label:
+            LRDS_lbl_AppTitle_2 As label:
                 Align: =Align.Center
                 Color: =AppColor.PrimaryColor
                 Font: =Font.Georgia
@@ -50,7 +50,7 @@
                        16,
                        18
                     )
-                Text: ="Leave Request"
+                Text: ="Extra Working Request"
                 Width: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -60,27 +60,27 @@
                     )
                 ZIndex: =2
 
-        HRS_rect_Divider_1 As rectangle:
+        HRS_rect_Divider_3 As rectangle:
             Height: =1
             Width: =Parent.Width
             Y: =88
             ZIndex: =2
 
-        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+        MainSectionContainer3 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            "LRT_gallery_FilterRequest As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            "LRT_gallery_FilterRequest_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
                 Items: |-
                     =Filter(
                         'Application Transactions',
-                         'Application Request'.'Application Request Number'= LRS_gallery_FilterRequest.Selected.'Application Request Number'
+                         'Application Request'.'Application Request Number'= EWDM_gallery_FilterRequest.Selected.'Application Request Number'
                         ,
                         'Application Transaction Status'=[@'Application Transaction Status'].Approved
                     )
@@ -92,7 +92,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                HRS_lbl_ReqNum_5 As label:
+                HRS_lbl_ReqNum_6 As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Bold
                     Height: =22
@@ -133,7 +133,7 @@
                     Y: =10
                     ZIndex: =2
 
-                HRS_rect_Separator_4 As rectangle:
+                HRS_rect_Separator_5 As rectangle:
                     Fill: =AppColor.PrimaryColor
                     Height: =1
                     OnSelect: =Select(Parent)
@@ -141,7 +141,7 @@
                     Y: =92.84615384615384
                     ZIndex: =5
 
-                HRS_lbl_Description_4 As label:
+                HRS_lbl_Description_5 As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =22
@@ -167,7 +167,7 @@
                     Y: =35
                     ZIndex: =7
 
-                HRS_lbl_Date_4 As label:
+                HRS_lbl_Date_5 As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =22
@@ -193,7 +193,7 @@
                     Y: =65
                     ZIndex: =8
 
-                HRS_btn_cancelled_4 As button:
+                HRS_btn_cancelled_5 As button:
                     DisplayMode: =
                     Fill: =AppColor.PrimaryColor
                     Height: |-
@@ -212,7 +212,7 @@
                             First(
                                 Filter(
                                     'Application Transactions',
-                                    'Application Transaction Number' = LRT_gallery_FilterRequest.Selected.dt_application_transaction_number
+                                    'Application Transaction Number' = LRT_gallery_FilterRequest_1.Selected.dt_application_transaction_number
                                 )
                             ),
                             {'Application Transaction Status': [@'Application Transaction Status'].Cancelled}
@@ -238,7 +238,7 @@
                            Parent.Width/4,
                            Parent.Width/5
                         )
-                    X: =Parent.Width - HRS_btn_cancelled_4.Width - 30
+                    X: =Parent.Width - HRS_btn_cancelled_5.Width - 30
                     Y: =25
                     ZIndex: =10
 

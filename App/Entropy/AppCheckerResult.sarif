@@ -1626,36 +1626,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingManagerScreen",
-                "type": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next.TabIndex"
                 }
               ],
@@ -1680,6 +1650,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingManagerScreen",
+                "type": "ExtraWorkingManagerScreen.EWDM_MainContainer.EWDM_DataContainer.EWDM_RequestContainer.EWDM_gallery_FilterRequest.EWDM_icon_Next"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9876,6 +9876,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],
@@ -11508,6 +11628,36 @@
                 "member": "Width",
                 "module": "LeaveRequestScreen",
                 "type": "LeaveRequestScreen.LRS_MainContainer.LRS_HeaderContainer.LRS_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LeaveRequestTransactionScreen.ScreenContainer1.HeaderContainer1.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LeaveRequestTransactionScreen.ScreenContainer1.HeaderContainer1.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "LeaveRequestTransactionScreen",
+                "type": "LeaveRequestTransactionScreen.ScreenContainer1.HeaderContainer1"
               }
             }
           ],
@@ -15768,6 +15918,96 @@
                 "member": "Text",
                 "module": "ExpenseLineScreen",
                 "type": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseContainer.ELS_ExpenseContainer4.ELS_StatusContainer.ELS_lbl_Status"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.HeaderContainer3.LRDS_icon_back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "ExtraWorkingTransactionScreen",
+                "type": "ExtraWorkingTransactionScreen.ScreenContainer3.MainSectionContainer3.LRT_gallery_FilterRequest_1"
               }
             }
           ],

@@ -142,6 +142,7 @@
     "ExtraWorkingRequestScreen",
     "ExtraWorkingManagerScreen",
     "EWDRequestDetailScreen",
+    "ExtraWorkingTransactionScreen",
     "HRScreen",
     "TransactionReport",
     "HolidayListScreen",

@@ -117,7 +117,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FooterContainer.ID%",
       "Name": "EWDM_ApproveContainer",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -670,7 +670,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_btn_cancelled",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1348,7 +1348,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_cb_Select",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1790,7 +1790,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_cb_SelectAll",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2116,7 +2116,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%MainSectionContainer.ID%",
       "Name": "EWDM_DataContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2854,7 +2854,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_dd_View",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5012,7 +5012,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_icon_Next",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5967,7 +5967,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_lbl_Decription",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6586,7 +6586,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "EWDM_lbl_RequestNumber",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7025,7 +7025,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_rect_Divider",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7589,7 +7589,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EWDM_SearchContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
