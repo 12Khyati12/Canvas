@@ -1152,7 +1152,9 @@
                     WFHR_dd_DelegateValue As dropdown:
                         BorderColor: =AppColor.PrimaryColor
                         Color: =AppColor.PrimaryColor
-                        Default: =Office365Users.Manager(User().Email).DisplayName
+                        Default: |-
+                            =If(IsWFHEdit = true,WFH_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name',
+                            Office365Users.Manager(User().Email).DisplayName)
                         DisplayMode: =If(IsWFHEdit,DisplayMode.View,DisplayMode.Edit)
                         Height: |-
                             =Switch(

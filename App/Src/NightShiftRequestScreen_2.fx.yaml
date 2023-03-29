@@ -1137,7 +1137,10 @@ NightShiftRequestScreen_2 As screen:
                     NSAR_dd_DelegateValue_2 As dropdown:
                         BorderColor: =AppColor.PrimaryColor
                         Color: =AppColor.PrimaryColor
-                        Default: =Office365Users.Manager(User().Email).DisplayName
+                        Default: |-
+                            =If(IsNSAEdit = true,
+                            NSA_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name',
+                            Office365Users.Manager(User().Email).DisplayName)
                         DisplayMode: =If(IsNSAEdit,DisplayMode.View,DisplayMode.Edit)
                         Height: |-
                             =Switch(

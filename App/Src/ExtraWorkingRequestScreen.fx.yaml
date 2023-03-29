@@ -1400,7 +1400,9 @@ ExtraWorkingRequestScreen As screen:
                     EWDR_dd_DelegateValue As dropdown:
                         BorderColor: =AppColor.PrimaryColor
                         Color: =AppColor.PrimaryColor
-                        Default: =Office365Users.Manager(User().Email).DisplayName
+                        Default: |-
+                            =If(IsEWDEdit = true,EWD_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name',
+                            Office365Users.Manager(User().Email).DisplayName)
                         DisplayMode: |-
                             =If(
                                    IsEWDEdit,DisplayMode.View,DisplayMode.Edit)

@@ -546,7 +546,7 @@ NSARequestDetailScreen As screen:
                                 10,
                                13
                             )
-                        Text: =NSAM_gallery_FilterRequest.Selected.'Request Approver'.'Full Name'
+                        Text: =NSAM_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name'
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

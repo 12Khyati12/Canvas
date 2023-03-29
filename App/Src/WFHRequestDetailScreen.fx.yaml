@@ -546,7 +546,7 @@
                                 10,
                                13
                             )
-                        Text: =WFHM_gallery_FilterRequest.Selected.'Request Approver'.'Full Name'
+                        Text: =WFHM_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name'
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

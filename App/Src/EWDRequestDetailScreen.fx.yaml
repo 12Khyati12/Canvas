@@ -607,7 +607,7 @@ EWDRequestDetailScreen As screen:
                                 10,
                                13
                             )
-                        Text: =EWDM_gallery_FilterRequest.Selected.'Request Approver'.'Full Name'
+                        Text: =EWDM_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name'
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

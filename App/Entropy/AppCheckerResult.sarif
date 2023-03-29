@@ -10565,6 +10565,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue.Text"
                 }
               ],
@@ -12485,6 +12515,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2.Text"
                 }
               ],
@@ -14195,6 +14255,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "WorkFromHomeRequestScreen",
+                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue.Text"
                 }
               ],
@@ -14658,6 +14748,36 @@
                 "member": "Text",
                 "module": "CreateLeaveRequestScreen",
                 "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "CreateLeaveRequestScreen",
+                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue"
               }
             }
           ],
