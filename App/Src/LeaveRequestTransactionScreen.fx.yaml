@@ -1,6 +1,6 @@
 "LeaveRequestTransactionScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
 
-    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+    LRTS_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -8,7 +8,8 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        LRTS_HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
             LayoutMinHeight: =100
@@ -16,7 +17,7 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =1
 
-            LRDS_icon_back_1 As icon.ChevronLeft:
+            LRTS_icon_back As icon.ChevronLeft:
                 Color: =AppColor.PrimaryColor
                 Height: |-
                     =Switch(
@@ -34,7 +35,7 @@
                     Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
                 ZIndex: =1
 
-            LRDS_lbl_AppTitle_1 As label:
+            LRTS_lbl_AppTitle As label:
                 Align: =Align.Center
                 Color: =AppColor.PrimaryColor
                 Font: =Font.Georgia
@@ -60,13 +61,14 @@
                     )
                 ZIndex: =2
 
-        HRS_rect_Divider_1 As rectangle:
+        LRTS_rect_Divider As rectangle:
             Height: =1
             Width: =Parent.Width
             Y: =88
             ZIndex: =2
 
-        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+        LRTS_DataContainer As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -92,7 +94,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                HRS_lbl_ReqNum_5 As label:
+                LRTS_lbl_ReqNum As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Bold
                     Height: =22
@@ -133,7 +135,7 @@
                     Y: =10
                     ZIndex: =2
 
-                HRS_rect_Separator_4 As rectangle:
+                LRTS_rect_Separator As rectangle:
                     Fill: =AppColor.PrimaryColor
                     Height: =1
                     OnSelect: =Select(Parent)
@@ -141,7 +143,7 @@
                     Y: =92.84615384615384
                     ZIndex: =5
 
-                HRS_lbl_Description_4 As label:
+                LRTS_lbl_Description As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =22
@@ -167,7 +169,7 @@
                     Y: =35
                     ZIndex: =7
 
-                HRS_lbl_Date_4 As label:
+                LRTS_lbl_Date As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =22
@@ -193,7 +195,7 @@
                     Y: =65
                     ZIndex: =8
 
-                HRS_btn_cancelled_4 As button:
+                LRTS_btn_cancelled As button:
                     DisplayMode: =
                     Fill: =AppColor.PrimaryColor
                     Height: |-
@@ -238,7 +240,7 @@
                            Parent.Width/4,
                            Parent.Width/5
                         )
-                    X: =Parent.Width - HRS_btn_cancelled_4.Width - 30
+                    X: =Parent.Width - LRTS_btn_cancelled.Width - 30
                     Y: =25
                     ZIndex: =10
 

@@ -1,6 +1,6 @@
 "ExtraWorkingTransactionScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
 
-    ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
+    EWTS_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -8,7 +8,8 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer3 As groupContainer.horizontalAutoLayoutContainer:
+        EWTS_HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
             LayoutMinHeight: =100
@@ -16,7 +17,7 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =1
 
-            LRDS_icon_back_2 As icon.ChevronLeft:
+            EWTS_icon_back As icon.ChevronLeft:
                 Color: =AppColor.PrimaryColor
                 Height: |-
                     =Switch(
@@ -34,7 +35,7 @@
                     Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
                 ZIndex: =1
 
-            LRDS_lbl_AppTitle_2 As label:
+            EWTS_lbl_AppTitle As label:
                 Align: =Align.Center
                 Color: =AppColor.PrimaryColor
                 Font: =Font.Georgia
@@ -60,20 +61,21 @@
                     )
                 ZIndex: =2
 
-        HRS_rect_Divider_3 As rectangle:
+        EWTS_rect_Divider As rectangle:
             Height: =1
             Width: =Parent.Width
             Y: =88
             ZIndex: =2
 
-        MainSectionContainer3 As groupContainer.verticalAutoLayoutContainer:
+        EWTS_DataContainer As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            "LRT_gallery_FilterRequest_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            "EWTS_gallery_FilterRequest As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =Parent.Height
@@ -92,7 +94,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                HRS_lbl_ReqNum_6 As label:
+                EWTS_lbl_ReqNum As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Bold
                     Height: =22
@@ -133,7 +135,7 @@
                     Y: =10
                     ZIndex: =2
 
-                HRS_rect_Separator_5 As rectangle:
+                EWTS_rect_Separator As rectangle:
                     Fill: =AppColor.PrimaryColor
                     Height: =1
                     OnSelect: =Select(Parent)
@@ -141,7 +143,7 @@
                     Y: =92.84615384615384
                     ZIndex: =5
 
-                HRS_lbl_Description_5 As label:
+                EWTS_lbl_Description As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =22
@@ -167,7 +169,7 @@
                     Y: =35
                     ZIndex: =7
 
-                HRS_lbl_Date_5 As label:
+                EWTS_lbl_Date As label:
                     Color: =AppColor.PrimaryColor
                     FontWeight: =FontWeight.Semibold
                     Height: =22
@@ -193,7 +195,7 @@
                     Y: =65
                     ZIndex: =8
 
-                HRS_btn_cancelled_5 As button:
+                EWTS_btn_cancelled As button:
                     DisplayMode: =
                     Fill: =AppColor.PrimaryColor
                     Height: |-
@@ -212,14 +214,14 @@
                             First(
                                 Filter(
                                     'Application Transactions',
-                                    'Application Transaction Number' = LRT_gallery_FilterRequest_1.Selected.dt_application_transaction_number
+                                    'Application Transaction Number' = EWTS_gallery_FilterRequest.Selected.dt_application_transaction_number
                                 )
                             ),
                             {'Application Transaction Status': [@'Application Transaction Status'].Cancelled}
                         );
                         Notify("Request Cancelled",NotificationType.Success);
                         Refresh('Application Transactions');
-                        Set(_requestTypeFilter,"Approved");
+                        Set(RequestSelect,"Approved");
                     Size: |-
                         =Switch(
                             App.ActiveScreen.Size,
@@ -238,7 +240,7 @@
                            Parent.Width/4,
                            Parent.Width/5
                         )
-                    X: =Parent.Width - HRS_btn_cancelled_5.Width - 30
+                    X: =Parent.Width - EWTS_btn_cancelled.Width - 30
                     Y: =25
                     ZIndex: =10
 
