@@ -581,8 +581,8 @@
                                 =Navigate(CreateLeaveRequestScreen,BorderStyle.None);
                                 Set(IsLeaveEdit,true);
                             Visible: |-
-                                =//If(_requestTypeFilter="Pending",true,false)
-                                true
+                                =true
+                                //If(_requestTypeFilter="Pending",true,false)
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
@@ -939,7 +939,7 @@
                         PaddingLeft: =15
                         Text: |-
                             =//Value(_requesterBalanceRecord.'Available Birthday Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Holiday Leave'))
+                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Birthday Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
