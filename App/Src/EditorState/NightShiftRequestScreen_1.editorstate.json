@@ -2354,7 +2354,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_DelegateContainer_1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8890,7 +8890,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Status_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9956,7 +9956,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lblStatusValue_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12210,7 +12210,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_StatusContainer_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
