@@ -682,6 +682,58 @@
                         )
                     ZIndex: =1
 
+                    LAS_lbl_Title As label:
+                        Align: =Align.Center
+                        AutoHeight: =true
+                        BorderColor: =AppColor.PrimaryColor
+                        Color: =AppColor.PrimaryColor
+                        FillPortions: =1
+                        FontWeight: =FontWeight.Bold
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/9,
+                               Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Medium,
+                                Parent.Height/10,
+                                Parent.Height/11
+                            )
+                            )
+                        LayoutMinHeight: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/9,
+                               Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Medium,
+                                Parent.Height/10,
+                                Parent.Height/11
+                            )
+                            )
+                        PaddingLeft: =35
+                        Text: ="Leave Balance"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width,
+                                Parent.Width
+                            )
+                        ZIndex: =1
+
+                    Icon1 As icon.Reload:
+                        Color: =AppColor.PrimaryColor
+                        Icon: =Icon.Reload
+                        OnSelect: =Refresh([@'Leave Balances'])
+                        PaddingBottom: =20
+                        PaddingLeft: =20
+                        PaddingRight: =20
+                        PaddingTop: =20
+                        ZIndex: =2
+
                 LAS_PaidContainer As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =AppColor.PrimaryColor
