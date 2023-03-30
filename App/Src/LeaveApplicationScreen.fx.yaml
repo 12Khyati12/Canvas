@@ -17,6 +17,16 @@
                 )
             )
         );
+        Set(
+            IsHR,
+            CountRows(
+                Filter(
+                    [@contact],
+                    Email = _myProfile.UserPrincipalName,
+                   'Is HR' = [@'Is HR (contact)'].Yes
+                )
+            )
+        );
         
         
 
@@ -128,17 +138,21 @@
                         ),
                         LAS_dd_Login.Selected.Value = "Manager",
                         If(
-                             IsManager > 0,
+                            IsManager > 0,
                             Navigate(
                                 LeaveRequestScreen,
                                 ScreenTransition.Fade
                             ),
-                            Notify("Not Manager")
+                            Notify("You are Not Manager")
                         ),
                         LAS_dd_Login.Selected.Value = "HR",
-                        Navigate(
-                            HRBulkRequestScreen,
-                            ScreenTransition.Fade
+                        If(
+                            IsHR > 0,
+                            Navigate(
+                                HRBulkRequestScreen,
+                                ScreenTransition.Fade
+                            ),
+                            Notify("You dont have access to this feature")
                         )
                     )
                 OnSelect: =

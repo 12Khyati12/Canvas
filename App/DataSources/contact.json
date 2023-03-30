@@ -455,7 +455,9 @@
       "dt_esi_no": "ESI No",
       "dt_fathers_name": "Father's Name",
       "dt_ifsc_code": "IFSC Code",
+      "dt_is_accountant": "Is Accountant",
       "dt_is_admin": "Is Admin",
+      "dt_is_hr": "Is HR",
       "dt_is_manager": "Is Manager",
       "dt_manager": "Manager (dt_manager)",
       "dt_pan": "PAN",
@@ -1509,6 +1511,26 @@
     "Type": "OptionSetInfo"
   },
   {
+    "DisplayName": "Is Accountant (contact)",
+    "Name": "dt_contact_dt_is_accountant",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "dt_is_accountant",
+        "OptionSetReferenceEntityName": "contact"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "dt_is_accountant",
+    "RelatedEntityName": "contact",
+    "Type": "OptionSetInfo"
+  },
+  {
     "DisplayName": "Is Admin (contact)",
     "Name": "dt_contact_dt_is_admin",
     "OptionSetInfoNameMapping": {
@@ -1525,6 +1547,26 @@
     },
     "OptionSetTypeKey": "BooleanType",
     "RelatedColumnInvariantName": "dt_is_admin",
+    "RelatedEntityName": "contact",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is HR (contact)",
+    "Name": "dt_contact_dt_is_hr",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "dt_is_hr",
+        "OptionSetReferenceEntityName": "contact"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "dt_is_hr",
     "RelatedEntityName": "contact",
     "Type": "OptionSetInfo"
   },
