@@ -41,7 +41,7 @@
           "value": "03752ddb-ecbc-ed11-83ff-000d3a34ed12"
         },
         "workflowName": {
-          "value": "a710a007-befb-4ce7-89db-9021c48875a5"
+          "value": "e5405e4d-0a3c-ec26-b46c-5556bb10a7ec"
         }
       },
       "parameterHintsV2": {
@@ -52,13 +52,15 @@
           "value": "03752ddb-ecbc-ed11-83ff-000d3a34ed12"
         },
         "workflowName": {
-          "value": "a710a007-befb-4ce7-89db-9021c48875a5"
+          "value": "e5405e4d-0a3c-ec26-b46c-5556bb10a7ec"
         }
       }
     },
     "datasets": {},
     "dataSources": [
-      "Export"
+      "Export",
+      "Export_1",
+      "Export_2"
     ],
     "dependencies": {
       "shared_onedriveforbusiness": "53c485f5-7a23-499b-b760-491a105033a2"
