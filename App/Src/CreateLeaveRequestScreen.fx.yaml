@@ -1754,9 +1754,8 @@
                                 10,
                                13
                             )
-                        Text: |-
-                            =//Office365Users.Manager(User().Email).DisplayName
-                            _myProfile.DisplayName
+                        Text: |
+                            =Office365Users.Manager(User().Email).DisplayName
                         Width: =Parent.Width/2.2
                         ZIndex: =4
 
