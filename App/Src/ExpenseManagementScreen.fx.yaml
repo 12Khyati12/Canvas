@@ -148,15 +148,7 @@
                         If(
                             IsManager > 0,
                             If(
-                                "priyesh.shah@dynatechconsultancy.com" = _myProfile.UserPrincipalName,
-                                Navigate(
-                                    ExpenseReviewerScreen,
-                                    ScreenTransition.Fade
-                                ) || "khushi.shah@dynatechconsultancy.com" = _myProfile.UserPrincipalName,
-                                Navigate(
-                                    ExpenseReviewerScreen,
-                                    ScreenTransition.Fade
-                                ) || "shail.prajapati@dynatechconsultancy.com" = _myProfile.UserPrincipalName,
+                                IsAccountant > 0,
                                 Navigate(
                                     ExpenseReviewerScreen,
                                     ScreenTransition.Fade
@@ -170,14 +162,6 @@
                             IsManager > 0,
                             If(
                                 "jinesh@dynatechconsultancy.com" = _myProfile.UserPrincipalName,
-                                Navigate(
-                                    ExpenseApproverScreen,
-                                    ScreenTransition.Fade
-                                ) || "khushi.shah@dynatechconsultancy.com" = _myProfile.UserPrincipalName,
-                                Navigate(
-                                    ExpenseApproverScreen,
-                                    ScreenTransition.Fade
-                                ) || "shail.prajapati@dynatechconsultancy.com" = _myProfile.UserPrincipalName,
                                 Navigate(
                                     ExpenseApproverScreen,
                                     ScreenTransition.Fade
