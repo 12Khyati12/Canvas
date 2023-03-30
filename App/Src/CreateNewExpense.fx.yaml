@@ -472,7 +472,7 @@
                 CNE_text_Reporting As text:
                     BorderColor: =AppColor.PrimaryColor
                     Color: =AppColor.PrimaryColor
-                    Default: =_myProfile.DisplayName//Office365Users.Manager(User().Email).DisplayName
+                    Default: =Office365Users.Manager(User().Email).DisplayName
                     DisplayMode: =DisplayMode.View
                     Height: |-
                         =Switch(
@@ -553,7 +553,7 @@
                 CNE_text_Delegate As text:
                     BorderColor: =AppColor.PrimaryColor
                     Color: =AppColor.PrimaryColor
-                    Default: =_myProfile.DisplayName//Office365Users.Manager(User().Email).DisplayName
+                    Default: =Office365Users.Manager(User().Email).DisplayName
                     DisplayMode: =DisplayMode.View
                     Height: |-
                         =Switch(
