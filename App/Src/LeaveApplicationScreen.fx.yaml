@@ -535,7 +535,7 @@
                                    13
                                 )
                             Text: |-
-                                ="Description :" & ThisItem.Description
+                                ="Description : " & ThisItem.Description &" | " & "Day : "&ThisItem.Day&" | " & ThisItem.'Half Day'
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
