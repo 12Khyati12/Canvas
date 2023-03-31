@@ -292,25 +292,6 @@ TransactionReport As screen:
                                   RequestType : TR_RequestList_Gallery.AllItems.'Application Request Type',
                                    Approver : TR_RequestList_Gallery.AllItems.'Request Approver'}
                     );
-                    //dt_application_requestid
-                    /*ForAll(Manager_reqList_Gallery_2.AllItems,
-                    Collect(
-                        colGalleryItem,
-                        {
-                            //CheckOrderLineId: Manager_reqList_Gallery_2.AllItems,
-                            RequestNum : Manager_reqList_Gallery_2.AllItems.'Application Request Number',
-                             Description : Manager_reqList_Gallery_2.AllItems.Description,
-                              StartDate : Manager_reqList_Gallery_2.AllItems.Startdate,
-                               EndDate : Manager_reqList_Gallery_2.AllItems.Enddate,
-                                DaysTotal : Manager_reqList_Gallery_2.AllItems.Day,
-                                 LeaveType : Manager_reqList_Gallery_2.AllItems.'Leave Type',
-                                  RequestType : Manager_reqList_Gallery_2.AllItems.'Application Request Type',
-                                   Approver : Manager_reqList_Gallery_2.AllItems.'Request Approver'
-                                    
-                        }
-                    )
-                    );*/
-                    
                     Concurrent(
                         Notify(
                             "Downloading Transaction Report.... ",
