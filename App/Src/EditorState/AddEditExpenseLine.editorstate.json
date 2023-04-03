@@ -3344,7 +3344,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardKey20_1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5414,7 +5414,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardValue18_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

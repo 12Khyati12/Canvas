@@ -252,7 +252,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FooterContainer.ID%",
       "Name": "NSAM_ApproveContainer",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2251,7 +2251,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%MainSectionContainer.ID%",
       "Name": "NSAM_DataContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3003,7 +3003,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAM_dd_View",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5166,7 +5166,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAM_icon_Next",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6740,7 +6740,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "NSAM_lbl_RequestNumber",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7179,7 +7179,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAM_rect_Divider",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7743,7 +7743,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAM_SearchContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

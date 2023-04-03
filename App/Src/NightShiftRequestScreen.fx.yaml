@@ -1295,7 +1295,7 @@ NightShiftRequestScreen As screen:
                                 9,
                                13
                             )
-                        Text: =_myProfile.DisplayName //Office365Users.Manager(User().Email).DisplayName
+                        Text: =Office365Users.Manager(User().Email).DisplayName
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -1378,7 +1378,7 @@ NightShiftRequestScreen As screen:
                                 9,
                                13
                             )
-                        Text: =_myProfile.DisplayName//Office365Users.Manager(User().Email).DisplayName
+                        Text: =Office365Users.Manager(User().Email).DisplayName
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
