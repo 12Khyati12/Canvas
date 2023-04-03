@@ -696,6 +696,646 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 349,
+                  "snippet": {
+                    "text": "DateValue(Text(Startdate))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 376,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 410,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 481,
+                  "snippet": {
+                    "text": "||"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 772,
+                  "snippet": {
+                    "text": "DateValue(Text(Startdate))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 799,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 1361,
+                  "snippet": {
+                    "text": "DateValue(Text(Startdate))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1388,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 239,
+                  "snippet": {
+                    "text": "DateValue(Text(Startdate))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 266,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 300,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 371,
+                  "snippet": {
+                    "text": "||"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 662,
+                  "snippet": {
+                    "text": "DateValue(Text(Startdate))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 689,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 1251,
+                  "snippet": {
+                    "text": "DateValue(Text(Startdate))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 1278,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "TransactionReport.TR_MainContainer.TR_DownloadContainer.TR_btn_Download.OnSelect"
                 }
               ],

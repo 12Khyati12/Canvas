@@ -417,50 +417,7 @@ NightShiftRequestScreen_1 As screen:
                                 
                             )
                         IconBackground: =AppColor.PrimaryColor
-                        OnChange: |-
-                            =/*Set(NSAAlreadyDateInDataBase,
-                            Filter(
-                               'Application Requests',
-                               'Requested Employee'.Email = _myProfile.UserPrincipalName,
-                               'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                                  (Startdate >= NSAR_dp_FromDate_1.SelectedDate && Startdate <= NSAR_dp_ToDate_1.SelectedDate)
-                                   || (Enddate >= NSAR_dp_FromDate_1.SelectedDate && Enddate <= NSAR_dp_ToDate_1.SelectedDate)
-                                )
-                            );
-                            Set(
-                                NSAAllListCount,
-                                CountRows(NSAAlreadyDateInDataBase)
-                            );
-                            Set(
-                                NSAcheckStartDateAlreadyExists1,
-                                Filter(
-                                    'Application Requests',
-                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
-                                    Startdate >= NSAR_dp_FromDate_1.SelectedDate,
-                                    Enddate <= NSAR_dp_ToDate_1.SelectedDate,
-                                    'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                                    'Application Request Status' = [@'Application Request Status'].Submitted
-                                )
-                            );
-                            Set(
-                                NSApendingListCount,
-                                CountRows(NSAcheckStartDateAlreadyExists1)
-                            );
-                            Set(
-                                NSAcheckStartDateAlreadyExists,
-                                Filter(
-                                    'Application Requests',
-                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
-                                    Startdate >= NSAR_dp_FromDate_1.SelectedDate,
-                                    Enddate <= NSAR_dp_ToDate_1.SelectedDate,
-                                    'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                                    'Application Request Status' = [@'Application Request Status'].Approved
-                                )
-                            );
-                            Set(
-                                NSAapproveListCount,
-                                CountRows(NSAcheckStartDateAlreadyExists)
-                            );*/
+                        OnChange: =
                         OnSelect: =
                         Size: |-
                             =Switch(
