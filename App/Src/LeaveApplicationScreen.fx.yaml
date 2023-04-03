@@ -797,7 +797,7 @@
                         PaddingLeft: =15
                         Text: |-
                             =//Value(_requesterBalanceRecord.'Available Paid Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Paid Leave'))
+                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -850,7 +850,7 @@
                         PaddingLeft: =15
                         Text: |-
                             =//Value(_requesterBalanceRecord.' Available Sick Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,' Available Sick Leave'))
+                            //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,' Available Sick Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -902,7 +902,7 @@
                         PaddingLeft: =15
                         Text: |-
                             =///Value(_requesterBalanceRecord.'Available Holiday Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Holiday Leave'))
+                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -954,7 +954,7 @@
                         PaddingLeft: =15
                         Text: |-
                             =//Value(_requesterBalanceRecord.'Available Birthday Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Birthday Leave'))
+                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -1006,7 +1006,7 @@
                         PaddingLeft: =15
                         Text: |-
                             =//Value(_requesterBalanceRecord.'Leave Without Pay')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Leave Without Pay'))
+                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Total Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

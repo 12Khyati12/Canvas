@@ -15,6 +15,7 @@
       "createdonbehalfby": "Created By (Delegate)",
       "dt_dt_application_request_leave_type_dt_leav": "Application Requests",
       "dt_dt_application_transaction_leave_type_dt_": "Application Transactions",
+      "dt_dt_leave_balance_leave_balance_type_dt_le": "Leave Balances",
       "dt_leave_addition_frequency": "Leave addition frequency",
       "dt_leave_days": "Leave Days",
       "dt_leave_type_AsyncOperations": "System Jobs",

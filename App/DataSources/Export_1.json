@@ -1,9 +1,0 @@
-[
-  {
-    "AddinConnectorId": "97cf22e0-5a10-4f3c-88a8-fe3191eac956",
-    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
-    "Name": "Export_1",
-    "ServiceKind": "AddinWadl",
-    "Type": "ServiceInfo"
-  }
-]
