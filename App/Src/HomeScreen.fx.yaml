@@ -1,19 +1,17 @@
 "HomeScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     OnVisible: |-
-        =Set(
+        =/*Set(
             _requestTypeFilter,
             "Pending"
-        );
+        );*/
         
-        Set(RequesterLeaveBalance,Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName));
-        
-        Set(
+        /*Set(
                 _requesterBalanceRecord,
                 LookUp(
                     'Leave Balances',
                     Employee.Email = _myProfile.UserPrincipalName
                 )
-            );
+            );*/
              /*ClearCollect(
                 RequesterLeaveTypeBalance,
                 {

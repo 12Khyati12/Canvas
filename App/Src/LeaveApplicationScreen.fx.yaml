@@ -27,6 +27,9 @@
                 )
             )
         );
+        Set(PL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Paid Leave",'Available Leave')));
+        Set(HL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Holiday Leave",'Available Leave')));
+        Set(BL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Birthday Leave",'Available Leave')));
         
         
 
@@ -742,7 +745,9 @@
                     Icon1 As icon.Reload:
                         Color: =AppColor.PrimaryColor
                         Icon: =Icon.Reload
-                        OnSelect: =Refresh([@'Leave Balances'])
+                        OnSelect: |-
+                            =Refresh([@'Leave Balances']);
+                            ClearCollect(RequesterLeaveBalance,Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName));
                         PaddingBottom: =20
                         PaddingLeft: =20
                         PaddingRight: =20

@@ -17,9 +17,10 @@
         );
         Set(
             AvailableDayForPL,
-            Value(_requesterBalanceRecord.'Available Paid Leave') - SumOfPendingRequestPL
+            PL - SumOfPendingRequestPL
         );
-        Set(
+        
+        /*Set(
             SumOfPendingRequestSL,
             Sum(
                 Filter(
@@ -33,7 +34,7 @@
         Set(
             AvailableDayForSL,
             Value(_requesterBalanceRecord.' Available Sick Leave') - SumOfPendingRequestSL
-        );
+        );*/
         
         Set(
             SumOfPendingRequestHL,
@@ -48,7 +49,7 @@
         );
         Set(
             AvailableDayForHL,
-            Value(_requesterBalanceRecord.'Available Holiday Leave') - SumOfPendingRequestHL
+            HL - SumOfPendingRequestHL
         );
         
         
@@ -956,28 +957,26 @@
                             =If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Paid Leave') > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Paid Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                    PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0&& AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                    HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
-                                    
                                     DisplayMode.Disabled
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 &&AllListCount<=0&&  approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                    BL > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 &&AllListCount<=0&&  approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
-                                   
                                     DisplayMode.Disabled
                                 ),
                                 If(
@@ -1034,26 +1033,26 @@
                             =If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Paid Leave') > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) < Value(_requesterBalanceRecord.'Available Paid Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) < PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                   !IsLeaveEdit &&  Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) < Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date <=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) < Value(_requesterBalanceRecord.'Available Holiday Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) < HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     
                                     DisplayMode.Disabled
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && BL > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                    
                                     DisplayMode.Disabled
@@ -1109,26 +1108,26 @@
                             =If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
-                                    !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Paid Leave') > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Paid Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                    !IsLeaveEdit && PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && AllListCount<=0&&approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && AllListCount<=0&&approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     
                                     DisplayMode.Disabled
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && HL_Date<=0 && HL_Date1<=0 &&AllListCount<=0&& pendingListCount <= 0 && approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && BL > 0 && HL_Date<=0 && HL_Date1<=0 &&AllListCount<=0&& pendingListCount <= 0 && approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                    
                                     DisplayMode.Disabled
@@ -1218,26 +1217,26 @@
                             =If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Paid Leave') > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Paid Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     
                                     DisplayMode.Disabled
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                   !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()),
+                                   !IsLeaveEdit && BL > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                    
                                     DisplayMode.Disabled
@@ -1374,9 +1373,9 @@
                             =If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
-                                    !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Paid Leave') > 0 &&
+                                    !IsLeaveEdit && PL > 0 &&
                                      AvailableDayForPL > 0 && 
-                                     Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Paid Leave') && 
+                                     Value(CLRS_lbl_DayCount.Text) <= PL && 
                                      HL_Date <= 0 && HL_Date1 <= 0 && 
                                      pendingListCount <= 0 && 
                                      approveListCount <= 0 && 
@@ -1386,7 +1385,7 @@
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && 
                                     AvailableDayForSL > 0 && 
@@ -1399,12 +1398,12 @@
                                     Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                    !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && 
+                                    !IsLeaveEdit && HL > 0 && 
                                     AvailableDayForHL > 0 && 
-                                    Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave') && 
+                                    Value(CLRS_lbl_DayCount.Text) <= HL && 
                                     HL_Date <= 0 && HL_Date1 <= 0 && 
                                     pendingListCount <= 0 && 
                                     approveListCount <= 0 && 
@@ -1416,7 +1415,7 @@
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                    !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && 
+                                    !IsLeaveEdit && BL > 0 && 
                                     HL_Date <= 0 && HL_Date1 <= 0 && 
                                     pendingListCount <= 0 && 
                                     approveListCount <= 0 && 
@@ -1532,25 +1531,25 @@
                             If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Paid Leave') > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Paid Leave'),
+                                    PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL,
                                     "",
                                     "You dont have suficient balance to take leave"
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave'),
                                     "",
                                     "You dont have suficient balance to take leave"
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave'),
+                                    HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL,
                                     "",
                                     "You dont have suficient balance to take leave"
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                    Value(_requesterBalanceRecord.'Available Birthday Leave') > 0,
+                                    BL > 0,
                                     "",
                                     "You dont have suficient balance to take leave"
                                 )
@@ -2000,26 +1999,26 @@
                     =If(!IsLeaveEdit,If(
                         CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                         If(
-                            Value(_requesterBalanceRecord.'Available Paid Leave') > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Paid Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                            PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                         ),
-                        CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                        /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                         If(
                             Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
-                        ),
+                        ),*/
                         CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                         If(
-                            Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.'Available Holiday Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                            HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                             DisplayMode.Edit,
                             
                             DisplayMode.Disabled
                         ),
                         CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                         If(
-                            Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && AllListCount<=0 &&approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                            BL > 0 && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && AllListCount<=0 &&approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                             DisplayMode.Edit,
                            
                             DisplayMode.Disabled
@@ -2086,10 +2085,12 @@
                                         contact,
                                         Email = _myProfile.UserPrincipalName
                                     ),
-                                    'Leave Balance': LookUp(
+                                    'Leave Balance': 
+                                    LookUp(
                                         'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName
-                                    )
+                                        Employee.Email = _myProfile.UserPrincipalName && 
+                                        Employee.'Full Name' = _myProfile.DisplayName &&
+                                        'Leave Balance Type'.'Leave Type Name' = "Holiday Leave") //CLRS_dd_LeaveType.SelectedText
                                 }
                             ),
                         //Create a new requets
@@ -2117,10 +2118,12 @@
                                         contact,
                                         Email = _myProfile.UserPrincipalName
                                     ),
-                                    'Leave Balance': LookUp(
+                                    'Leave Balance': 
+                                        LookUp(
                                         'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName
-                                    )
+                                        Employee.Email = _myProfile.UserPrincipalName && 
+                                        Employee.'Full Name' = _myProfile.DisplayName &&
+                                        'Leave Balance Type'.'Leave Type Name' = "Holiday Leave") //CLRS_dd_LeaveType.SelectedText
                                 }
                             )
                         );
