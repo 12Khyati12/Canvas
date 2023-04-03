@@ -1381,7 +1381,7 @@
                                 Startdate: WFHR_dp_FromDate.SelectedDate,
                                 Enddate: WFHR_dp_ToDate.SelectedDate,
                                 Day: Value(WFHR_lbl_DayCount.Text),
-                                'Half Day':WFHR_dd_HalfDaysView.Selected.Value,
+                                'Half Day': If(Value(WFHR_lbl_DayCount.Text) < 1,WFHR_dd_HalfDaysView.Selected.Value),
                                 Description: WFHR_txt_Description.Text,
                                 'Request Delegate Approver ': LookUp(contact,'Full Name' = WFHR_dd_DelegateValue.SelectedText.Value)
                             }
@@ -1397,7 +1397,7 @@
                                 Startdate: WFHR_dp_FromDate.SelectedDate,
                                 Enddate: WFHR_dp_ToDate.SelectedDate,
                                 Day: Value(WFHR_lbl_DayCount.Text),
-                               'Half Day':WFHR_dd_HalfDaysView.Selected.Value,
+                               'Half Day':If(Value(WFHR_lbl_DayCount.Text) < 1,WFHR_dd_HalfDaysView.Selected.Value),
                                 Description: WFHR_txt_Description.Text,
                                 'Requested Employee': LookUp(
                                     contact,

@@ -2081,7 +2081,7 @@
                                         'Application Request Type Name' = "Leave Request"
                                     ),
                                     Day: Value(CLRS_lbl_DayCount.Text),
-                                    'Half Day': CLRS_dd_HalfDaysView.Selected.Value,
+                                    'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
                                     'Requested Employee': LookUp(
                                         contact,
                                         Email = _myProfile.UserPrincipalName
@@ -2112,7 +2112,7 @@
                                         'Application Request Type Name' = "Leave Request"
                                     ),
                                     Day: Value(CLRS_lbl_DayCount.Text),
-                                    'Half Day': CLRS_dd_HalfDaysView.Selected.Value,
+                                    'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
                                     'Requested Employee': LookUp(
                                         contact,
                                         Email = _myProfile.UserPrincipalName
