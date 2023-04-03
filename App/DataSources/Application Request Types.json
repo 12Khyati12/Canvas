@@ -61,8 +61,8 @@
     "DisplayName": "Action to be performed",
     "Name": "dt_action_to_be_performed",
     "OptionSetInfoNameMapping": {
-      "206500000": " Add Leave",
-      "206500001": "Substract Leave",
+      "206500000": "Credit",
+      "206500001": "Debit",
       "206500002": "Do Nothing"
     },
     "OptionSetIsBooleanValued": false,

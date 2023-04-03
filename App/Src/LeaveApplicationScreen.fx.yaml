@@ -795,9 +795,7 @@
                                 Parent.Height/1.1
                             )
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Available Paid Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Leave'))
+                        Text: =Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Paid Leave",'Available Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -900,9 +898,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: |-
-                            =///Value(_requesterBalanceRecord.'Available Holiday Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Leave'))
+                        Text: =Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Holiday Leave",'Available Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -952,9 +948,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Available Birthday Leave')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Leave'))
+                        Text: =Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Birthday Leave",'Available Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -1004,9 +998,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Leave Without Pay')
-                            Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Total Leave'))
+                        Text: =Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Leave without Pay",'Total Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

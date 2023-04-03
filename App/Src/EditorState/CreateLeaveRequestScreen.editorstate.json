@@ -1479,7 +1479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_DaysView",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2301,7 +2301,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_HalfDaysView",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3096,7 +3096,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_DelegateContainer",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5675,7 +5675,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_AvailbleBal",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7801,7 +7801,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_Holiday_msg",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8160,7 +8160,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_LeaveDay",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8874,7 +8874,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_PastMonth_msg",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10296,7 +10296,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_SameDate_msg",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13929,7 +13929,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_StatusContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -5,6 +5,8 @@
             "Pending"
         );
         
+        Set(RequesterLeaveBalance,Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName));
+        
           Set(
                 _requesterBalanceRecord,
                 LookUp(
@@ -12,7 +14,8 @@
                     Employee.Email = _myProfile.UserPrincipalName
                 )
             );
-            ClearCollect(
+        
+        /*ClearCollect(
                 RequesterLeaveTypeBalance,
                 {
                     type: "Paid Leave",
@@ -22,14 +25,14 @@
                         "0"
                     )
                 },
-                 /*{
+                 {
                     type: "Sick Leave",
                     balance: If(
                        Value(_requesterBalanceRecord.' Available Sick Leave') > 0,
                         Value(_requesterBalanceRecord.' Available Sick Leave'),
                         "0"
                     )
-                },*/
+                },
                  {
                     type: "Holiday Leave",
                     balance: If(
@@ -55,7 +58,7 @@
                     )
                 }
             
-        );
+        );*/
 
     HS_ScreenContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

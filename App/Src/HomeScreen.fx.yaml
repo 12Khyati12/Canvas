@@ -14,7 +14,7 @@
                     Employee.Email = _myProfile.UserPrincipalName
                 )
             );
-             ClearCollect(
+             /*ClearCollect(
                 RequesterLeaveTypeBalance,
                 {
                     type: "Paid Leave",
@@ -24,14 +24,14 @@
                         "0"
                     )
                 },
-                 /*{
+                 {
                     type: "Sick Leave",
                     balance: If(
                        Value(_requesterBalanceRecord.' Available Leave') > 0,
                         Value(_requesterBalanceRecord.' Available Leave'),
                         "0"
                     )
-                },*/
+                },
                  {
                     type: "Holiday Leave",
                     balance: If(
@@ -57,7 +57,7 @@
                     )
                 }
             
-        );
+        );*/
 
     SS_MainBg As image:
         Height: =Parent.Height
