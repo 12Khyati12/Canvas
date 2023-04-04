@@ -471,28 +471,27 @@
                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(  
                                     
-                                 !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Paid Leave') > 0 ,
+                                 !IsLeaveEdit && PL > 0 ,
                               DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                 /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                    
                                  !IsLeaveEdit &&  Value(_requesterBalanceRecord.' Available Sick Leave') > 0 ,
                                      DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                   
-                                 !IsLeaveEdit &&   Value(_requesterBalanceRecord.'Available Holiday Leave') > 0 ,
+                                 !IsLeaveEdit &&   HL > 0 ,
                                       DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 If(
-                                    
-                                 !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Birthday Leave') > 0 ,
+                                 !IsLeaveEdit && BL > 0 ,
                                      DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 )
@@ -642,17 +641,17 @@
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                    
-                                 !IsLeaveEdit && Value(_requesterBalanceRecord.'Available Paid Leave') > 0 || Month(CLRS_dp_FromDate.SelectedDate) > Month(Today())  ,
+                                 !IsLeaveEdit && PL > 0 || Month(CLRS_dp_FromDate.SelectedDate) > Month(Today())  ,
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     
                                  !IsLeaveEdit &&  Value(_requesterBalanceRecord.' Available Sick Leave') > 0 || Month(CLRS_dp_FromDate.SelectedDate) > Month(Today()) ,
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),
+                                ),*/
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave"|| CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave"|| Month(CLRS_dp_FromDate.SelectedDate) < Month(Today()) && IsLeaveEdit,
                                 DisplayMode.Disabled,
                                 DisplayMode.Edit

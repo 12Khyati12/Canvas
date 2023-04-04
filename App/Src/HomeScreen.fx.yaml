@@ -3,54 +3,53 @@
         =/*Set(
             _requestTypeFilter,
             "Pending"
-        );*/
-        
-        /*Set(
+        );
+        Set(
                 _requesterBalanceRecord,
                 LookUp(
                     'Leave Balances',
                     Employee.Email = _myProfile.UserPrincipalName
                 )
-            );*/
-             /*ClearCollect(
+            );
+             ClearCollect(
                 RequesterLeaveTypeBalance,
                 {
                     type: "Paid Leave",
                     balance: If(
-                       Value(_requesterBalanceRecord.'Available Leave') > 0,
-                        Value(_requesterBalanceRecord.'Available Leave'),
+                       Value(_requesterBalanceRecord.'Available Paid Leave') > 0,
+                        Value(_requesterBalanceRecord.'Available Paid Leave'),
                         "0"
                     )
                 },
                  {
                     type: "Sick Leave",
                     balance: If(
-                       Value(_requesterBalanceRecord.' Available Leave') > 0,
-                        Value(_requesterBalanceRecord.' Available Leave'),
+                       Value(_requesterBalanceRecord.' Available Sick Leave') > 0,
+                        Value(_requesterBalanceRecord.' Available Sick Leave'),
                         "0"
                     )
                 },
                  {
                     type: "Holiday Leave",
                     balance: If(
-                       Value(_requesterBalanceRecord.'Available Leave') > 0,
-                        Value(_requesterBalanceRecord.'Available Leave'),
+                       Value(_requesterBalanceRecord.'Available Holiday Leave') > 0,
+                        Value(_requesterBalanceRecord.'Available Holiday Leave'),
                         "0"
                     )
                 },
                 {
                     type: "Birthday Leave",
                     balance: If(
-                       Value(_requesterBalanceRecord.'Available Leave') > 0,
-                        Value(_requesterBalanceRecord.'Available Leave'),
+                       Value(_requesterBalanceRecord.'Available Birthday Leave') > 0,
+                        Value(_requesterBalanceRecord.'Available Birthday Leave'),
                         "0"
                     )
                 },
                 {
                     type: "LWP",
                     balance: If(
-                       Value(_requesterBalanceRecord.'Total Leave') > 0,
-                        Value(_requesterBalanceRecord.'Total Leave'),
+                       Value(_requesterBalanceRecord.'Leave Without Pay') > 0,
+                        Value(_requesterBalanceRecord.'Leave Without Pay'),
                         "0"
                     )
                 }

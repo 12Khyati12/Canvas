@@ -1117,7 +1117,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/04/2023 05:22:07",
+  "HeaderLastSavedDateTimeUTC": "04/04/2023 05:52:27",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "180c1ae1-cb82-408a-97ce-92f75cd963e3": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/d3d0083774264dda9969408c63e4c0df\"",
@@ -2518,10 +2518,10 @@
     "CLRS_DataContainer": 67,
     "CLRS_DataRequestContainer": 68,
     "CLRS_dd_DaysView": 84,
-    "CLRS_dd_DelegateValue": 105,
+    "CLRS_dd_DelegateValue": 102,
     "CLRS_dd_HalfDaysView": 85,
     "CLRS_dd_LeaveType": 73,
-    "CLRS_DelegateContainer": 102,
+    "CLRS_DelegateContainer": 99,
     "CLRS_DescriptionContainer": 87,
     "CLRS_dp_FromDate": 76,
     "CLRS_dp_ToDate": 79,
@@ -2531,8 +2531,8 @@
     "CLRS_lbl_AppTitle": 65,
     "CLRS_lbl_AvailbleBal": 92,
     "CLRS_lbl_DayCount": 83,
-    "CLRS_lbl_Delegate": 104,
-    "CLRS_lbl_DelegateValue": 103,
+    "CLRS_lbl_Delegate": 101,
+    "CLRS_lbl_DelegateValue": 100,
     "CLRS_lbl_Description": 89,
     "CLRS_lbl_FromDate": 77,
     "CLRS_lbl_Holiday_msg": 93,
@@ -2543,10 +2543,10 @@
     "CLRS_lbl_RequestNumber": 70,
     "CLRS_lbl_RequestNumberValue": 71,
     "CLRS_lbl_SameDate_msg": 91,
-    "CLRS_lbl_Status": 100,
+    "CLRS_lbl_Status": 104,
     "CLRS_lbl_ToDate": 80,
     "CLRS_lblReportingValue": 98,
-    "CLRS_lblStatusValue": 101,
+    "CLRS_lblStatusValue": 105,
     "CLRS_LeaveDayContainer": 81,
     "CLRS_LeaveTypeContainer": 72,
     "CLRS_MainContainer": 62,
@@ -2555,7 +2555,7 @@
     "CLRS_rect_Divider": 66,
     "CLRS_ReportingContainer": 96,
     "CLRS_RequestNumberContainer": 69,
-    "CLRS_StatusContainer": 99,
+    "CLRS_StatusContainer": 103,
     "CLRS_SubmitContainer": 106,
     "CLRS_ToDateContainer": 78,
     "CLRS_txt_DayCount": 82,
@@ -3661,7 +3661,7 @@
       "typedDataCard": 6
     },
     "DeserializationLoadTime": 11.3205519,
-    "ErrorCount": 51
+    "ErrorCount": 33
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
