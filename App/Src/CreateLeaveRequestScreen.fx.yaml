@@ -19,7 +19,10 @@
             AvailableDayForPL,
             PL - SumOfPendingRequestPL
         );
-        
+        /*Set(
+            AvailableDayForPL,
+            Value(_requesterBalanceRecord.'Available Paid Leave') - SumOfPendingRequestPL
+        );*/
         /*Set(
             SumOfPendingRequestSL,
             Sum(
@@ -51,7 +54,10 @@
             AvailableDayForHL,
             HL - SumOfPendingRequestHL
         );
-        
+        /*Set(
+            AvailableDayForHL,
+            Value(_requesterBalanceRecord.'Available Holiday Leave') - SumOfPendingRequestHL
+        );*/
         
         
 
