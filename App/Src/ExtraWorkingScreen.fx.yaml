@@ -509,7 +509,7 @@ ExtraWorkingScreen As screen:
                                    13
                                 )
                             Text: |-
-                                =Text("Description : ")&Text(ThisItem.Description)
+                                =Text("Description : ")&Text(ThisItem.Description)&" | " & "Day : "&ThisItem.Day
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
