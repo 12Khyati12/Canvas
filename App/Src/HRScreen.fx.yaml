@@ -484,8 +484,7 @@ HRScreen As screen:
                     FillPortions: =0
                     Height: =Parent.Height
                     Items: |-
-                        =//Search(ColLeaveRequest,HRS_txt_RequestNum.Text,"dt_application_request_number")
-                        
+                        =
                         If(HRS_gallery_RequestFilter.Selected.Filter ="Leave Request" || HRS_gallery_RequestFilter.Selected.Filter ="Extra Working Request",   Filter(ColHRRequest, HRS_txt_RequestNum.Text in 'Application Request'.'Application Request Number'))
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =260
@@ -519,12 +518,6 @@ HRScreen As screen:
                             
                             Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
                             Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))
-                            
-                            /*If(
-                                Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
-                            
-                            Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
-                            Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))*/
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =Switch(
@@ -673,8 +666,7 @@ HRScreen As screen:
                     FillPortions: =0
                     Height: =Parent.Height
                     Items: |-
-                        =//Search(ColLeaveRequest,HRS_txt_RequestNum.Text,"dt_application_request_number")
-                        
+                        =
                         If(
                         HRS_gallery_RequestFilter.Selected.Filter ="Night Shift Request" || HRS_gallery_RequestFilter.Selected.Filter ="Work From Home Request",   Filter(ColHRRequestBulk, HRS_txt_RequestNum.Text in 'Application Request Number')
                         )
@@ -712,12 +704,6 @@ HRScreen As screen:
                             
                             Left(Text(ThisItem.'Application Request Number' & " | "  & ThisItem.dt_requested_employee.'Full Name'),30),
                             Text(ThisItem.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))
-                            
-                            /*If(
-                                Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
-                            
-                            Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
-                            Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))*/
                         VerticalAlign: =VerticalAlign.Top
                         Width: |-
                             =Switch(

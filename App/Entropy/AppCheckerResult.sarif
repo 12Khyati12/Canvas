@@ -10636,6 +10636,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "LeaveApplicationScreen.LAS_MainContainer.LAS_DataContainer.LAS_TotalRequestContainer.LAS_gallery_FilterBalance.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LeaveApplicationScreen.LAS_MainContainer.LAS_DataContainer.LAS_TotalRequestContainer.LAS_gallery_FilterBalance.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LeaveApplicationScreen",
+                "type": "LeaveApplicationScreen.LAS_MainContainer.LAS_DataContainer.LAS_TotalRequestContainer.LAS_gallery_FilterBalance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LeaveApplicationScreen.LAS_MainContainer.LAS_DataContainer.LAS_TotalRequestContainer.LAS_gallery_FilterBalance.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LeaveApplicationScreen.LAS_MainContainer.LAS_DataContainer.LAS_TotalRequestContainer.LAS_gallery_FilterBalance.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "LeaveApplicationScreen",
+                "type": "LeaveApplicationScreen.LAS_MainContainer.LAS_DataContainer.LAS_TotalRequestContainer.LAS_gallery_FilterBalance"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],

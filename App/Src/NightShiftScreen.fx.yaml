@@ -481,9 +481,7 @@ NightShiftScreen As screen:
                             OnSelect: |-
                                 =Navigate(NightShiftRequestScreen_2);
                                 Set(IsNSAEdit,true);
-                            Visible: |-
-                                =//If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Cancelled",false,true)
-                                false
+                            Visible: =false
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
@@ -558,9 +556,6 @@ NightShiftScreen As screen:
                             OnSelect: |-
                                 =Navigate(NightShiftRequestScreen_2);
                                 Set(IsNSAEdit,true);
-                            Visible: |-
-                                =//If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Cancelled",false,true)
-                                true
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,

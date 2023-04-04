@@ -9,6 +9,7 @@ App As appinfo:
                 DeclineColor: ColorValue("#ff0000")
             }
         );
+        
         ClearCollect(
             RequestCollection,
             {
@@ -52,13 +53,7 @@ App As appinfo:
             _myManager,
             Office365Users.Manager(_myProfile.Id)
         );
-        ClearCollect(
-            LeaveBalanceGalleryCollection,
-            {type: "Pending"},
-            {type: "Approved"},
-            {type: "Rejected"},
-            {type: "Cancelled"}
-        );
+        
         ClearCollect(
             UserRoles,
             (LookUp(

@@ -371,9 +371,6 @@ NightShiftRequestScreen As screen:
                         HoverFill: =ColorFade(RGBA(190, 202, 226, 1), 30%)
                         Items: |
                             =["22","23","24","1","2","3","4","5","6","7"]
-                        OnSelect: |-
-                            =//If(NSAR_ddStartHours.SelectedText = "10" ,[],[])
-                            false
                         PaddingBottom: =5
                         PaddingLeft: =5
                         PaddingRight: =5
@@ -1539,9 +1536,7 @@ NightShiftRequestScreen As screen:
                        12
                     )
                 Text: ="Cancelled"
-                Visible: |-
-                    =//IsNSAEdit
-                    If(RequestSelect="Pending"&&IsNSAEdit=true,true,false)
+                Visible: =If(RequestSelect="Pending"&&IsNSAEdit=true,true,false)
                 Width: |-
                     =Switch(
                         App.ActiveScreen.Size,

@@ -1088,25 +1088,7 @@
                         40
                     )
                 OnSelect: |-
-                    =/*If(Sum(EMS_gallery_FilterRequest.Selected.'Expense Request Lines','Expense Amount') = 0,
-                    If(EMS_gallery_FilterRequest.Selected.'Expense Request Status' = 'Expense Request Status'.Draft || EMS_gallery_FilterRequest.Selected.'Expense Request Status' = 'Expense Request Status'.Rejected, 
-                    Patch('Expense Requests', First(Filter( 'Expense Requests', 'Expense Request Number' = ELS_lbl_ExpenseNumber.Text )), 
-                    { 
-                        'Expense Date': ELS_dp_FromDate.SelectedDate,
-                        'End Date':ELS_dp_EndDate.SelectedDate,
-                        Description: ELS_text_Title.Text,
-                        Comments:ELS_text_Comment.Text,
-                        'Project Name':ELS_dd_Project.Selected,
-                        'Expense Request Status': 'Expense Request Status'.Draft
-                    }),Patch('Expense Requests', First(Filter( 'Expense Requests', 'Expense Request Number' = ELS_lbl_ExpenseNumber.Text )), 
-                    { 
-                        'Expense Date': ELS_dp_FromDate.SelectedDate,
-                        'End Date':ELS_dp_EndDate.SelectedDate,
-                        Description: ELS_text_Title.Text,
-                        Comments:ELS_text_Comment.Text,
-                        'Project Name':ELS_dd_Project.Selected
-                        })
-                    ),*/
+                    =
                     If(EMS_gallery_FilterRequest.Selected.'Expense Request Status' = 'Expense Request Status'.Draft || EMS_gallery_FilterRequest.Selected.'Expense Request Status' = 'Expense Request Status'.Rejected, 
                     Patch('Expense Requests', First(Filter( 'Expense Requests', 'Expense Request Number' = ELS_lbl_ExpenseNumber.Text )), 
                     { 

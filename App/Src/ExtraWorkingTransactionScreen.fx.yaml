@@ -117,12 +117,6 @@
                         
                         Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
                         Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))
-                        
-                        /*If(
-                            Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
-                        
-                        Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
-                        Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))*/
                     VerticalAlign: =VerticalAlign.Top
                     Width: |-
                         =Switch(
@@ -230,9 +224,6 @@
                            12
                         )
                     Text: ="Cancel Request"
-                    Visible: |-
-                        =//If(RequestSelect = "Cancelled",false,true)
-                        true
                     Width: |-
                         =Switch(
                             App.ActiveScreen.Size,

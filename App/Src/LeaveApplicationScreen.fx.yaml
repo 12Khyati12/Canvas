@@ -27,9 +27,6 @@
                 )
             )
         );
-        //Set(PL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Paid Leave",'Available Leave')));
-        //Set(HL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Holiday Leave",'Available Leave')));
-        //Set(BL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Birthday Leave",'Available Leave')));
         
         
 
@@ -521,9 +518,7 @@
                             OnSelect: |-
                                 =Navigate(CreateLeaveRequestScreen);
                                 Set(IsLeaveEdit,true);
-                            Visible: |-
-                                =//If(_requestTypeFilter="Pending",true,false)
-                                false
+                            Visible: =false
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
@@ -598,9 +593,6 @@
                             OnSelect: |-
                                 =Navigate(CreateLeaveRequestScreen,BorderStyle.None);
                                 Set(IsLeaveEdit,true);
-                            Visible: |-
-                                =true
-                                //If(_requestTypeFilter="Pending",true,false)
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
@@ -745,13 +737,111 @@
                     Icon1 As icon.Reload:
                         Color: =AppColor.PrimaryColor
                         Icon: =Icon.Reload
-                        OnSelect: |-
-                            =Refresh([@'Leave Balances']);
-                            ClearCollect(RequesterLeaveBalance,Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName));
+                        OnSelect: =Refresh([@'Leave Balances']);
                         PaddingBottom: =20
                         PaddingLeft: =20
                         PaddingRight: =20
                         PaddingTop: =20
+                        ZIndex: =2
+
+                LAS_LWPContainer As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =AppColor.PrimaryColor
+                    FillPortions: =0
+                    Height: =Parent.Height/10
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width
+                        )
+                    ZIndex: =2
+
+                    LAS_lbl_LWP As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height/1.1
+                        PaddingLeft: =15
+                        Text: ="Total LWP"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/1.5,
+                                Parent.Width/1.7
+                            )
+                        ZIndex: =1
+
+                    LAS_lbl_LWPValue As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height
+                        PaddingLeft: =15
+                        Text: =
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/1.1,
+                                Parent.Width/2.5
+                            )
+                        ZIndex: =2
+
+                "LAS_gallery_FilterBalance As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    FillPortions: =0
+                    Height: =210
+                    Items: =Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName)
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =287
+                    LayoutMinWidth: =320
+                    TemplatePadding: =0
+                    TemplateSize: =Min(60, Self.Height - 60)
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width
+                        )
+                    ZIndex: =3
+
+                    LAS_lbl_Type As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height/4.5
+                        PaddingLeft: =15
+                        Text: =ThisItem.'Leave Balance Type'.'Leave Type Name'
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/1.5,
+                                Parent.Width/1.7
+                            )
+                        ZIndex: =1
+
+                    LAS_lbl_TypeValue As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height/4.5
+                        PaddingLeft: =15
+                        Text: |-
+                            =
+                            ThisItem.'Available Leave'
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width,
+                                Parent.Width/2.5
+                            )
+                        X: =LAS_lbl_Type.Width
                         ZIndex: =2
 
                 LAS_PaidContainer As groupContainer.verticalAutoLayoutContainer:
@@ -764,6 +854,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Visible: =false
                     Width: |-
                         =Switch(
                             App.ActiveScreen.Size,
@@ -800,10 +891,7 @@
                                 Parent.Height/1.1
                             )
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Available Paid Leave')
-                            //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Paid Leave'))
-                            Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Paid Leave",'Available Leave'))
+                        Text: =
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -854,9 +942,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.' Available Sick Leave')
-                            //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,' Available Sick Leave'))
+                        Text: =
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -876,6 +962,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Visible: =false
                     Width: |-
                         =Switch(
                             App.ActiveScreen.Size,
@@ -906,10 +993,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Available Holiday Leave')
-                            //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Holiday Leave'))
-                            Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Holiday Leave",'Available Leave'))
+                        Text: =
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -929,6 +1013,7 @@
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    Visible: =false
                     Width: |-
                         =Switch(
                             App.ActiveScreen.Size,
@@ -959,63 +1044,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Available Birthday Leave')
-                            //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Available Birthday Leave'))
-                            Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Birthday Leave",'Available Leave'))
-                        Width: |-
-                            =Switch(
-                                App.ActiveScreen.Size,
-                                ScreenSize.Small,
-                                Parent.Width/1.1,
-                                Parent.Width/2.5
-                            )
-                        ZIndex: =2
-
-                LAS_LWPContainer As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    BorderColor: =AppColor.PrimaryColor
-                    FillPortions: =0
-                    Height: =Parent.Height/10
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width
-                        )
-                    ZIndex: =8
-
-                    LAS_lbl_LWP As label:
-                        Color: =AppColor.PrimaryColor
-                        FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height/1.1
-                        PaddingLeft: =15
-                        Text: |-
-                            ="Total LWP :"
-                        Width: |-
-                            =Switch(
-                                App.ActiveScreen.Size,
-                                ScreenSize.Small,
-                                Parent.Width/1.5,
-                                Parent.Width/1.7
-                            )
-                        ZIndex: =1
-
-                    LAS_lbl_LWPValue As label:
-                        Color: =AppColor.PrimaryColor
-                        FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height
-                        PaddingLeft: =15
-                        Text: |-
-                            =//Value(_requesterBalanceRecord.'Leave Without Pay')
-                            //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Leave Without Pay'))
-                            //Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Leave without Pay",'Total Leave'))
+                        Text: =
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -1052,7 +1081,7 @@
                             Parent.Width/2,
                             Parent.Width
                         )
-                    ZIndex: =9
+                    ZIndex: =8
 
                     LAS_btn_TransactionReport As button:
                         Fill: =AppColor.PrimaryColor

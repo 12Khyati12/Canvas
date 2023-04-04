@@ -479,9 +479,7 @@ ExtraWorkingScreen As screen:
                             OnSelect: |-
                                 =Navigate(ExtraWorkingRequestScreen);
                                 Set(IsEWDEdit,true);
-                            Visible: |-
-                                =//If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Cancelled",false,true)
-                                false
+                            Visible: =false
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
@@ -556,9 +554,6 @@ ExtraWorkingScreen As screen:
                             OnSelect: |-
                                 =Navigate(ExtraWorkingRequestScreen);
                                 Set(IsEWDEdit,true);
-                            Visible: |-
-                                =//If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Cancelled",false,true)
-                                true
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
