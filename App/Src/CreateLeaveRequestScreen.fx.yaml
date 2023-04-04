@@ -1281,23 +1281,21 @@
                         Default: =If(IsLeaveEdit = true,LAS_gallery_FilterRequest.Selected.Description,"")
                         DisplayMode: |
                             =If(
-                                !IsLeaveEdit && 
-                                Value(
+                                !IsLeaveEdit && Value(
                                     LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName &&
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) < Value(
                                     LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName &&
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
-                                    ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && 
-                                    Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
-                                ),
+                                    )
+                                ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                 DisplayMode.Edit,
                                 If(IsBlank(Value(
                                     LookUp(
@@ -1667,7 +1665,7 @@
                         BorderColor: =AppColor.PrimaryColor
                         Color: =AppColor.PrimaryColor
                         Default: |-
-                            =If(IsLeaveEdit = true,
+                            =If(IsLeaveEdit,
                             LAS_gallery_FilterRequest.Selected.'Request Delegate Approver '.'Full Name',
                             Office365Users.Manager(User().Email).DisplayName)
                         DisplayMode: |-
@@ -1861,22 +1859,21 @@
             CLRS_btn_Submited As button:
                 DisplayMode: |-
                     =If(
-                        !IsLeaveEdit && 
-                        Value(
+                        !IsLeaveEdit && Value(
                             LookUp(
                                 'Leave Balances',
                                 Employee.Email = _myProfile.UserPrincipalName &&
                                 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                 'Available Leave'
                             )
-                        ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                        ) > 0 && Value(CLRS_lbl_DayCount.Text) < Value(
                             LookUp(
                                 'Leave Balances',
                                 Employee.Email = _myProfile.UserPrincipalName &&
                                 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                 'Available Leave'
-                            ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
-                        ),
+                            )
+                        ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                         DisplayMode.Edit,
                         If(IsBlank(Value(
                             LookUp(
