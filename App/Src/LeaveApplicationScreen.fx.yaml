@@ -27,9 +27,9 @@
                 )
             )
         );
-        Set(PL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Paid Leave",'Available Leave')));
-        Set(HL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Holiday Leave",'Available Leave')));
-        Set(BL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Birthday Leave",'Available Leave')));
+        //Set(PL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Paid Leave",'Available Leave')));
+        //Set(HL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Holiday Leave",'Available Leave')));
+        //Set(BL,Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Birthday Leave",'Available Leave')));
         
         
 
@@ -1015,7 +1015,7 @@
                         Text: |-
                             =//Value(_requesterBalanceRecord.'Leave Without Pay')
                             //Value(LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName,'Leave Without Pay'))
-                            Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Leave without Pay",'Total Leave'))
+                            //Value(LookUp(RequesterLeaveBalance,'Leave Balance Type'.'Leave Type Name' = "Leave without Pay",'Total Leave'))
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

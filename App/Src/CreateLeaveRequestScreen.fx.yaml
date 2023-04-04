@@ -4,21 +4,23 @@
         Reset(CLRS_dp_FromDate);
         Reset(CLRS_dp_ToDate);
         Reset(CLRS_txt_Description);
-        Set(
+        /*Set(
             SumOfPendingRequestPL,
             Sum(
                 Filter(
                     [@'Application Requests'],
-                    'Requested Employee'.Email = _myProfile.UserPrincipalName && 'Application Request Status' = [@'Application Request Status'].Submitted && 'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                    'Requested Employee'.Email = _myProfile.UserPrincipalName && 
+                    'Application Request Status' = [@'Application Request Status'].Submitted &&
+                     'Application Request Type'.'Application Request Type Name' = "Leave Request",
                     'Leave Type'.'Leave Type Name' = "Paid Leave"
                 ),
                 Day
             )
-        );
-        Set(
+        );*/
+        /*Set(
             AvailableDayForPL,
             PL - SumOfPendingRequestPL
-        );
+        );*/
         /*Set(
             AvailableDayForPL,
             Value(_requesterBalanceRecord.'Available Paid Leave') - SumOfPendingRequestPL
@@ -39,21 +41,23 @@
             Value(_requesterBalanceRecord.' Available Sick Leave') - SumOfPendingRequestSL
         );*/
         
-        Set(
+        /*Set(
             SumOfPendingRequestHL,
             Sum(
                 Filter(
                     [@'Application Requests'],
-                    'Requested Employee'.Email = _myProfile.UserPrincipalName && 'Application Request Status' = [@'Application Request Status'].Submitted && 'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                    'Requested Employee'.Email = _myProfile.UserPrincipalName && 
+                    'Application Request Status' = [@'Application Request Status'].Submitted &&
+                    'Application Request Type'.'Application Request Type Name' = "Leave Request",
                     'Leave Type'.'Leave Type Name' = "Holiday Leave"
                 ),
                 Day
             )
-        );
-        Set(
+        );*/
+        /*Set(
             AvailableDayForHL,
             HL - SumOfPendingRequestHL
-        );
+        );*/
         /*Set(
             AvailableDayForHL,
             Value(_requesterBalanceRecord.'Available Holiday Leave') - SumOfPendingRequestHL
@@ -474,7 +478,8 @@
                         DefaultDate: =If(IsLeaveEdit = true,LAS_gallery_FilterRequest.Selected.Startdate,Today())
                         DisplayMode: |-
                             =If(
-                                !IsLeaveEdit && Value(
+                                !IsLeaveEdit && 
+                                Value(
                                     LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName &&
@@ -483,7 +488,14 @@
                                     )
                                 ) > 0,
                                 DisplayMode.Edit,
-                                DisplayMode.Disabled
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
                             )
                                 
                             /*If(
@@ -689,7 +701,14 @@
                                     )
                                 ) > 0 || Month(CLRS_dp_FromDate.SelectedDate) > Month(Today()),
                                 DisplayMode.Edit,
-                                DisplayMode.Disabled
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
                             )
                             
                             /*If(
@@ -1029,18 +1048,46 @@
                                 )
                         DisplayMode: |-
                             =If(
+                                !IsLeaveEdit && 
+                                Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
+                                ),
+                                DisplayMode.Edit,
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                            )
+                            
+                            /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                     PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0&& AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),*/
+                                ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                     HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
@@ -1059,7 +1106,7 @@
                                     DisplayMode.Disabled
                                 )
                                 
-                            )
+                            )*/
                             
                             /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
@@ -1105,7 +1152,7 @@
                                 35
                                 
                             )
-                        OnChange: =If(Value(CLRS_lbl_DayCount.Text)>AvailableDayForPL,Notify("You have insuficient balance to apply leave"))
+                        OnChange: =//If(Value(CLRS_lbl_DayCount.Text)>AvailableDayForPL,Notify("You have insuficient balance to apply leave"))
                         Size: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -1140,18 +1187,45 @@
                         DisabledBorderColor: =RGBA(153, 153, 153, 1)
                         DisplayMode: |-
                             =If(
+                                !IsLeaveEdit && Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) < Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                DisplayMode.Edit,
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                            )
+                            
+                            /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                    !IsLeaveEdit && PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) < PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                   !IsLeaveEdit &&  Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) < Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date <=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),*/
+                                ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                    !IsLeaveEdit && HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) < HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
@@ -1171,7 +1245,7 @@
                                      DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 )
-                            )
+                            )*/
                             
                             /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
@@ -1249,18 +1323,46 @@
                         Default: =
                         DisplayMode: |-
                             =If(
+                                !IsLeaveEdit && 
+                                Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
+                                ),
+                                DisplayMode.Edit,
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                            )
+                            
+                            /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                     !IsLeaveEdit && PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&& Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),*/
+                                ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                    !IsLeaveEdit && HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && AllListCount<=0&&approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
@@ -1286,7 +1388,7 @@
                                      DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 )
-                            )
+                            )*/
                             
                             /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
@@ -1338,11 +1440,18 @@
                                 
                                 
                             )
-                        Items: |
+                        Items: |-
                             =If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Birthday Leave",
                                 ["Half Day"],
-                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave" && AvailableDayForHL < 1 && !IsLeaveEdit,
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave" && Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) < 1 && !IsLeaveEdit,
                                 ["Half Day"],
                                 [
                                     "Half Day",
@@ -1398,18 +1507,46 @@
                         Default: =If(IsLeaveEdit = true,LAS_gallery_FilterRequest.Selected.'Half Day')
                         DisplayMode: |-
                             =If(
+                                !IsLeaveEdit && 
+                                Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
+                                ),
+                                DisplayMode.Edit,
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                            )
+                            
+                            /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                    !IsLeaveEdit && PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0&&Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),*/
+                                ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                    !IsLeaveEdit && HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
@@ -1437,7 +1574,7 @@
                                     DisplayMode.Disabled
                                 )
                                 
-                            )
+                            )*/
                             
                             /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
@@ -1596,6 +1733,35 @@
                         Default: =If(IsLeaveEdit = true,LAS_gallery_FilterRequest.Selected.Description,"")
                         DisplayMode: |-
                             =If(
+                                !IsLeaveEdit && 
+                                Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && 
+                                    Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
+                                ),
+                                DisplayMode.Edit,
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                            )
+                            
+                            /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                     !IsLeaveEdit && PL > 0 &&
@@ -1610,7 +1776,7 @@
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 ),
-                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     !IsLeaveEdit && Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && 
                                     AvailableDayForSL > 0 && 
@@ -1623,7 +1789,7 @@
                                     Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
-                                ),*/
+                                ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                     !IsLeaveEdit && HL > 0 && 
@@ -1666,7 +1832,7 @@
                                     DisplayMode.Edit,
                                     DisplayMode.Disabled
                                 )
-                            )
+                            )*/
                             
                             /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
@@ -1825,20 +1991,47 @@
                                13
                             )
                         Text: |-
-                            =
-                            If(
+                            =If(
+                                Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                ),
+                                "",
+                                If(IsBlank(Value(
+                                    LookUp(
+                                        'Leave Balances',
+                                        Employee.Email = _myProfile.UserPrincipalName &&
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        'Available Leave'
+                                    )
+                                )),"","You dont have suficient balance to take leave")
+                            )
+                            
+                            
+                            /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                                 If(
                                     PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL,
                                     "",
                                     "You dont have suficient balance to take leave"
                                 ),
-                                /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                                CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                                 If(
                                     Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave'),
                                     "",
                                     "You dont have suficient balance to take leave"
-                                ),*/
+                                ),
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                                 If(
                                     HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL,
@@ -1852,7 +2045,7 @@
                                     "You dont have suficient balance to take leave"
                                 )
                                 
-                            )
+                            )*/
                             
                             /*If(
                                 CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
@@ -2322,19 +2515,47 @@
 
             CLRS_btn_Submited As button:
                 DisplayMode: |-
-                    =If(!IsLeaveEdit,If(
+                    =If(
+                        !IsLeaveEdit && 
+                        Value(
+                            LookUp(
+                                'Leave Balances',
+                                Employee.Email = _myProfile.UserPrincipalName &&
+                                'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                'Available Leave'
+                            )
+                        ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
+                            LookUp(
+                                'Leave Balances',
+                                Employee.Email = _myProfile.UserPrincipalName &&
+                                'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                'Available Leave'
+                            ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
+                        ),
+                        DisplayMode.Edit,
+                        If(IsBlank(Value(
+                            LookUp(
+                                'Leave Balances',
+                                Employee.Email = _myProfile.UserPrincipalName &&
+                                'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                'Available Leave'
+                            )
+                        )),DisplayMode.Edit,DisplayMode.Disabled)
+                    )
+                    
+                    /*If(!IsLeaveEdit,If(
                         CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
                         If(
                             PL > 0 && AvailableDayForPL > 0 && Value(CLRS_lbl_DayCount.Text) <= PL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
                         ),
-                        /*CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
+                        CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Sick Leave",
                         If(
                             Value(_requesterBalanceRecord.' Available Sick Leave') > 0 && AvailableDayForSL > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(_requesterBalanceRecord.' Available Sick Leave') && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                             DisplayMode.Edit,
                             DisplayMode.Disabled
-                        ),*/
+                        ),
                         CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Holiday Leave",
                         If(
                             HL > 0 && AvailableDayForHL > 0 && Value(CLRS_lbl_DayCount.Text) <= HL && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 &&AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
@@ -2354,7 +2575,7 @@
                              DisplayMode.Edit,
                             DisplayMode.Disabled
                         )
-                    ))
+                    ))*/
                     
                     /*If(!IsLeaveEdit,If(
                         CLRS_dd_LeaveType.SelectedText.'Leave Type Name' = "Paid Leave",
