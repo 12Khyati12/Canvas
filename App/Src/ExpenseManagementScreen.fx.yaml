@@ -145,17 +145,14 @@
                             RequestSelect,
                             "Submitted"
                         );
+                    
                         If(
-                            IsManager > 0,
-                            If(
-                                IsAccountant > 0,
-                                Navigate(
-                                    ExpenseReviewerScreen,
-                                    ScreenTransition.Fade
-                                ),
-                                Notify("You dont have permisson")
+                            IsAccountant > 0,
+                            Navigate(
+                                ExpenseReviewerScreen,
+                                ScreenTransition.Fade
                             ),
-                            Notify("Not Manager")
+                            Notify("You dont have permisson")
                         ),
                         EMS_dd_Login.Selected.Value = "Approver",
                         If(

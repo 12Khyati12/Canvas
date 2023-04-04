@@ -1,5 +1,5 @@
 "LeaveApplicationScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
-    OnVisible: |+
+    OnVisible: |
         =Reset(LAS_dd_Login);
         Set(
             _requestTypeFilter,
@@ -27,8 +27,6 @@
                 )
             )
         );
-        
-        
 
     LAS_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -737,7 +735,17 @@
                     Icon1 As icon.Reload:
                         Color: =AppColor.PrimaryColor
                         Icon: =Icon.Reload
-                        OnSelect: =Refresh([@'Leave Balances']);
+                        OnSelect: |-
+                            =Refresh([@'Leave Balances']);
+                            ClearCollect(
+                                EmployeeBalanceData,
+                                ShowColumns(Filter([@contact],Email = _myProfile.UserPrincipalName),
+                                    "dt_leave_without_pay",
+                                    "dt_night_shift_allowance",
+                                    "dt_extra_working_day",
+                                    "dt_work_from_home"
+                                )
+                            );
                         PaddingBottom: =20
                         PaddingLeft: =20
                         PaddingRight: =20
@@ -783,7 +791,7 @@
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         PaddingLeft: =15
-                        Text: =
+                        Text: =If(IsBlank(First(EmployeeBalanceData).dt_leave_without_pay),"0",First(EmployeeBalanceData).dt_leave_without_pay)
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

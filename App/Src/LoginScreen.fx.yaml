@@ -1,5 +1,14 @@
 "LoginScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
-    OnVisible: =
+    OnVisible: |
+        =ClearCollect(
+            EmployeeBalanceData,
+            ShowColumns(Filter([@contact],Email = _myProfile.UserPrincipalName),
+                "dt_leave_without_pay",
+                "dt_night_shift_allowance",
+                "dt_extra_working_day",
+                "dt_work_from_home"
+            )
+        );
 
     HS_ScreenContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
