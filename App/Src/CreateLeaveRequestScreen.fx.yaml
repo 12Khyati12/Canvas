@@ -764,19 +764,19 @@
                             )
                         IconBackground: =AppColor.PrimaryColor
                         OnChange: |
-                            =Set(AlreadyDateInDataBase,
-                            Filter(
-                               'Application Requests',
-                               'Requested Employee'.Email = _myProfile.UserPrincipalName,
-                               'Application Request Type'.'Application Request Type Name' = "Leave Request",
-                                  Startdate = CLRS_dp_FromDate.SelectedDate ||                                                 //FromDate equals StartDate
-                            	  Startdate = CLRS_dp_ToDate.SelectedDate ||                                                   //ToDate equals StartDate
-                            	  Enddate = CLRS_dp_FromDate.SelectedDate ||                                                   //FromDate equals EndDate
-                            	  Enddate = CLRS_dp_ToDate.SelectedDate ||                                                     //ToDate equals EndDate
-                                  (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||  //FromDate before StartDate and ToDate after StartDate
-                            	  (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||      //FromDate before EndDate and ToDate after EndDate
-                            	  (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)      //FromDate after StartDate and ToDate before EndDate
-                                
+                            =Set(
+                                AlreadyDateInDataBase,
+                                Filter(
+                                    'Application Requests',
+                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                                    'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                                    Startdate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals StartDate
+                            Startdate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals StartDate
+                            Enddate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals EndDate
+                            Enddate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals EndDate
+                             (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
+                             (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
+                             (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)//FromDate after StartDate and ToDate before EndDate
                                 )
                             );
                             Set(
