@@ -1615,8 +1615,10 @@
                                 10,
                                13
                             )
-                        Text: |
-                            =Office365Users.Manager(User().Email).DisplayName
+                        Text: |-
+                            =If(IsLeaveEdit,
+                            LAS_gallery_FilterRequest.Selected.'Request Approver'.'Full Name',
+                            Office365Users.Manager(User().Email).DisplayName)
                         Width: =Parent.Width/2.2
                         ZIndex: =4
 
@@ -1684,7 +1686,15 @@
                         Items: =Filter([@contact],'Is Manager' = [@'Is Manager (contact)'].Yes)
                         OnChange: =true
                         OnSelect: =true
+                        PaddingLeft: =5
                         Reset: =true
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
                         Width: =Parent.Width/2.2
                         ZIndex: =2
 

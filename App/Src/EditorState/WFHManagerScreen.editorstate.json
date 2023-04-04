@@ -2914,7 +2914,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHM_dd_View",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7655,7 +7655,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHM_SearchContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

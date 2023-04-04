@@ -1121,7 +1121,15 @@ NightShiftRequestScreen_2 As screen:
                         Items: =Filter([@contact],'Is Manager' = [@'Is Manager (contact)'].Yes)
                         OnChange: =true
                         OnSelect: =true
+                        PaddingLeft: =5
                         Reset: =true
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
                         Width: =Parent.Width/2.2
                         ZIndex: =3
 

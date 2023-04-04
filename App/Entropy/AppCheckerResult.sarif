@@ -15285,6 +15285,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_ReportingContainer.CLRS_lblReportingValue.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_ReportingContainer.CLRS_lblReportingValue.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "CreateLeaveRequestScreen",
+                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_ReportingContainer.CLRS_lblReportingValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue.Text"
                 }
               ],
