@@ -2090,7 +2090,7 @@
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName && 
                                         Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = "Holiday Leave") //CLRS_dd_LeaveType.SelectedText
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')
                                 }
                             ),
                         //Create a new requets
@@ -2103,27 +2103,19 @@
                                     Enddate: CLRS_dp_ToDate.SelectedDate,
                                     Description: CLRS_txt_Description.Text,
                                     'Application Request Status': [@'Application Request Status'].Submitted,
-                                    'Request Approver': LookUp(
-                                        contact,
-                                        Email = _myProfile.UserPrincipalName//_myManager.UserPrincipalName
+                                    'Request Approver': LookUp(contact,Email = _myProfile.UserPrincipalName//_myManager.UserPrincipalName
                                     ),
                                     'Request Delegate Approver ': LookUp(contact,'Full Name' = CLRS_dd_DelegateValue.SelectedText.Value),
-                                    'Application Request Type': LookUp(
-                                        'Application Request Types',
-                                        'Application Request Type Name' = "Leave Request"
-                                    ),
+                                    'Application Request Type': LookUp('Application Request Types','Application Request Type Name' = "Leave Request"),
                                     Day: Value(CLRS_lbl_DayCount.Text),
                                     'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
-                                    'Requested Employee': LookUp(
-                                        contact,
-                                        Email = _myProfile.UserPrincipalName
-                                    ),
+                                    'Requested Employee': LookUp(contact,Email = _myProfile.UserPrincipalName),
                                     'Leave Balance': 
                                         LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName && 
                                         Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = "Holiday Leave") //CLRS_dd_LeaveType.SelectedText
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')
                                 }
                             )
                         );

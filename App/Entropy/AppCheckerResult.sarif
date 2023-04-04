@@ -2038,19 +2038,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.AccessibleLabel"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.AccessibleLabel",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "HolidayListScreen",
-                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
               }
             }
           ],
@@ -2068,19 +2068,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.TabIndex"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.TabIndex",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "HolidayListScreen",
-                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
               }
             }
           ],
@@ -2098,19 +2098,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.AccessibleLabel"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.AccessibleLabel",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "HolidayListScreen",
-                "type": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1"
               }
             }
           ],
@@ -2128,49 +2128,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.TabIndex"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "HolidayListScreen",
-                "type": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.AccessibleLabel",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1"
               }
             }
           ],
@@ -2188,49 +2158,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.TabIndex"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_LeaveDayContainer_1.NSAR_dd_DaysView_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.AccessibleLabel",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_LeaveDayContainer_1.NSAR_dd_DaysView_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_LeaveDayContainer_1.NSAR_dd_DaysView_1"
               }
             }
           ],
@@ -2248,19 +2188,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.AccessibleLabel"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.AccessibleLabel",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1"
               }
             }
           ],
@@ -2278,19 +2218,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.AccessibleLabel"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_DelegateContainer_1.NSAR_dd_DelegateValue_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.AccessibleLabel",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_DelegateContainer_1.NSAR_dd_DelegateValue_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_DelegateContainer_1.NSAR_dd_DelegateValue_1"
               }
             }
           ],
@@ -2302,486 +2242,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_dd_Login.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_dd_Login.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_dd_Login"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_ViewContainer.NSA_dd_View.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_ViewContainer.NSA_dd_View.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_ViewContainer.NSA_dd_View"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2902,6 +2362,306 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_txt_DayCount.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_txt_DayCount.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_txt_DayCount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_HalfDaysView.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_HalfDaysView.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_HalfDaysView"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -4678,6 +4438,216 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WFHManagerScreen.WFHM_MainContainer.WFHM_HeaderContainer.WFHM_icon_back.AccessibleLabel"
                 }
               ],
@@ -4991,6 +4961,126 @@
                 "member": "TabIndex",
                 "module": "WFHManagerScreen",
                 "type": "WFHManagerScreen.WFHM_MainContainer.WFHM_DataContainer.WFHM_RequestContainer.WFHM_gallery_FilterRequest.WFHM_icon_Next"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HolidayListScreen",
+                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "HolidayListScreen",
+                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HolidayListScreen",
+                "type": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "HolidayListScreen",
+                "type": "HolidayListScreen.HLS_MainContainer.HLS_DataContainer.HLS_DayListContainer.HLS_HLDataContainer.HLS_gallery_HolidayList"
               }
             }
           ],
@@ -7168,19 +7258,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_DaysView.AccessibleLabel"
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_HalfDaysView.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_DaysView.AccessibleLabel",
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_HalfDaysView.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "WorkFromHomeRequestScreen",
-                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_DaysView"
+                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_HalfDaysView"
               }
             }
           ],
@@ -7198,19 +7288,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_HalfDaysView.AccessibleLabel"
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_DaysView.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_HalfDaysView.AccessibleLabel",
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_DaysView.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "WorkFromHomeRequestScreen",
-                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_HalfDaysView"
+                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_DataRequestContainer.WFHR_LeaveDayContainer.WFHR_dd_DaysView"
               }
             }
           ],
@@ -7348,36 +7438,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_dd_Login.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_dd_Login.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExpenseManagementScreen",
-                "type": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_dd_Login"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_icon_add.AccessibleLabel"
                 }
               ],
@@ -7432,6 +7492,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_dd_Login.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_dd_Login.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ExpenseManagementScreen",
+                "type": "ExpenseManagementScreen.EMS_MainContainer.EMS_HeaderContainer.EMS_dd_Login"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -8392,6 +8482,426 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_dd_Login.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_dd_Login.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_dd_Login"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterContainer.NSA_gallery_RequestFilter"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_ViewContainer.NSA_dd_View.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_ViewContainer.NSA_dd_View.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_ViewContainer.NSA_dd_View"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_icon_Next"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_DataContainer.NSA_RequestContainer.NSA_FilterDataContainer.NSA_gallery_FilterRequest.NSA_img_Edit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -10828,516 +11338,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_LeaveDayContainer_1.NSAR_dd_DaysView_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_LeaveDayContainer_1.NSAR_dd_DaysView_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_LeaveDayContainer_1.NSAR_dd_DaysView_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_DelegateContainer_1.NSAR_dd_DelegateValue_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_DelegateContainer_1.NSAR_dd_DelegateValue_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_DelegateContainer_1.NSAR_dd_DelegateValue_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_txt_DayCount.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_txt_DayCount.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_txt_DayCount"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_HalfDaysView.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_HalfDaysView.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_HalfDaysView"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],
@@ -11457,19 +11457,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.Height"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.Height"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.Height",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.Height",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Height",
-                "module": "HolidayListScreen",
-                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1"
               }
             }
           ],
@@ -11487,19 +11487,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.Width"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Width"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.Width",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Width",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Width",
-                "module": "HolidayListScreen",
-                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
               }
             }
           ],
@@ -11517,19 +11517,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.Height"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Height"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.Height",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Height",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Height",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
               }
             }
           ],
@@ -11547,79 +11547,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Width"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_RequestNumberContainer_1.NSAR_lbl_RequestNumberValue_1.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Width",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_RequestNumberContainer_2.NSAR_lbl_RequestNumberValue_2.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_RequestNumberContainer_2.NSAR_lbl_RequestNumberValue_2.Text",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_RequestNumberContainer_1.NSAR_lbl_RequestNumberValue_1.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_RequestNumberContainer_2.NSAR_lbl_RequestNumberValue_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_RequestNumberContainer_1.NSAR_lbl_RequestNumberValue_1"
               }
             }
           ],
@@ -11637,19 +11577,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.DefaultDate"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.DefaultDate"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.DefaultDate",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.DefaultDate",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DefaultDate",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1"
               }
             }
           ],
@@ -11667,19 +11607,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.DefaultDate"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.DefaultDate"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.DefaultDate",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.DefaultDate",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DefaultDate",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1"
               }
             }
           ],
@@ -11697,19 +11637,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.Default"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.Default"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.Default",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.Default",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Default",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1"
               }
             }
           ],
@@ -11727,259 +11667,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.Default"
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_StatusContainer_1.NSAR_lblStatusValue_1.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2.Text",
+                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_StatusContainer_1.NSAR_lblStatusValue_1.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "NightShiftRequestScreen_2",
-                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Width",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.LayoutMinWidth"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.LayoutMinWidth",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "LayoutMinWidth",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Width",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "NightShiftScreen",
-                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+                "module": "NightShiftRequestScreen_1",
+                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_StatusContainer_1.NSAR_lblStatusValue_1"
               }
             }
           ],
@@ -12040,6 +11740,366 @@
                 "member": "Width",
                 "module": "TransactionReport",
                 "type": "TransactionReport.TR_MainContainer.TR_HeaderContainer.TR_BackIcon"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_RequestNumberContainer.EWDR_lbl_RequestNumberValue.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_RequestNumberContainer.EWDR_lbl_RequestNumberValue.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_RequestNumberContainer.EWDR_lbl_RequestNumberValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.DefaultDate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.DefaultDate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultDate",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.DefaultDate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.DefaultDate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultDate",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_lbl_DayCount.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_lbl_DayCount.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_lbl_DayCount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ExtraWorkingRequestScreen",
+                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue"
               }
             }
           ],
@@ -12447,6 +12507,306 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_HeaderContainer_2.NSAR_icon_Back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_RequestNumberContainer_2.NSAR_lbl_RequestNumberValue_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_RequestNumberContainer_2.NSAR_lbl_RequestNumberValue_2.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_RequestNumberContainer_2.NSAR_lbl_RequestNumberValue_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.DefaultDate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2.DefaultDate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultDate",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_FormDateContainer_2.NSAR_dp_FromDate_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.DefaultDate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2.DefaultDate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultDate",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_ToDateContainer_2.NSAR_dp_ToDate_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_LeaveDayContainer_3.NSAR_dd_DaysView_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_DataRequestContainer_2.NSAR_DescriptionContainer_2.NSAR_txt_Description_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_DelegateContainer_2.NSAR_dd_DelegateValue_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "NightShiftRequestScreen_2",
+                "type": "NightShiftRequestScreen_2.NSAR_MainContainer_2.NSAR_DataContainer_2.NSAR_ManagerContainer_2.NSAR_StatusContainer_2.NSAR_lblStatusValue_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "WFHManagerScreen.WFHM_MainContainer.WFHM_HeaderContainer.Height"
                 }
               ],
@@ -12520,6 +12880,66 @@
                 "member": "Height",
                 "module": "WFHManagerScreen",
                 "type": "WFHManagerScreen.WFHM_MainContainer.WFHM_HeaderContainer.WFHM_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "HolidayListScreen",
+                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "HolidayListScreen",
+                "type": "HolidayListScreen.HLS_MainContainer.HLS_HeaderContainer.HLS_icon_back"
               }
             }
           ],
@@ -13857,19 +14277,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue.Default"
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue.Default",
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Default",
+                "member": "Text",
                 "module": "WorkFromHomeRequestScreen",
-                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue"
+                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue"
               }
             }
           ],
@@ -13887,19 +14307,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue.Text"
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue.Default"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue.Text",
+                  "fullyQualifiedName": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue.Default",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Text",
+                "member": "Default",
                 "module": "WorkFromHomeRequestScreen",
-                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_StatusContainer.WFHR_lblStatusValue"
+                "type": "WorkFromHomeRequestScreen.WFHR_MainContainer.WFHR_DataContainer.WFHR_ManagerContainer.WFHR_DelegateContainer.WFHR_dd_DelegateValue"
               }
             }
           ],
@@ -14697,6 +15117,186 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.LayoutMinWidth"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back.LayoutMinWidth",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "LayoutMinWidth",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_back"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "NightShiftScreen",
+                "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "LeaveRequestScreen.LRS_MainContainer.LRS_HeaderContainer.Height"
                 }
               ],
@@ -15327,19 +15927,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue.Default"
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue.Default",
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Default",
+                "member": "Text",
                 "module": "CreateLeaveRequestScreen",
-                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue"
+                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue"
               }
             }
           ],
@@ -15357,19 +15957,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue.Text"
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue.Default"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue.Text",
+                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue.Default",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Text",
+                "member": "Default",
                 "module": "CreateLeaveRequestScreen",
-                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_StatusContainer.CLRS_lblStatusValue"
+                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_DataContainer.CLRS_ManagerContainer.CLRS_DelegateContainer.CLRS_dd_DelegateValue"
               }
             }
           ],
@@ -16750,606 +17350,6 @@
                 "member": "Text",
                 "module": "EWDRequestDetailScreen",
                 "type": "EWDRequestDetailScreen.EWDS_MainContainer.EWDS_DataContainer.EWDS_ManagerContainer.EWDS_RequesterContainer.EWDS_lbl_RequesterValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Width",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_HeaderContainer_1.NSAR_icon_Back_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_RequestNumberContainer_1.NSAR_lbl_RequestNumberValue_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_RequestNumberContainer_1.NSAR_lbl_RequestNumberValue_1.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_RequestNumberContainer_1.NSAR_lbl_RequestNumberValue_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.DefaultDate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1.DefaultDate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DefaultDate",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_FormDateContainer_1.NSAR_dp_FromDate_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.DefaultDate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1.DefaultDate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DefaultDate",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_ToDateContainer_1.NSAR_dp_ToDate_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_DataRequestContainer_1.NSAR_DescriptionContainer_1.NSAR_txt_Description_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_StatusContainer_1.NSAR_lblStatusValue_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_StatusContainer_1.NSAR_lblStatusValue_1.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "NightShiftRequestScreen_1",
-                "type": "NightShiftRequestScreen_1.NSAR_MainContainer_1.NSAR_DataContainer_1.NSAR_ManagerContainer_1.NSAR_StatusContainer_1.NSAR_lblStatusValue_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Width"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Width",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Width",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Height"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back.Height",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Height",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_HeaderContainer.EWDR_icon_Back"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_RequestNumberContainer.EWDR_lbl_RequestNumberValue.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_RequestNumberContainer.EWDR_lbl_RequestNumberValue.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_RequestNumberContainer.EWDR_lbl_RequestNumberValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.DefaultDate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate.DefaultDate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DefaultDate",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_FormDateContainer.EWDR_dp_FromDate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.DefaultDate"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate.DefaultDate",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DefaultDate",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ToDateContainer.EWDR_dp_ToDate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_lbl_DayCount.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_lbl_DayCount.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_lbl_DayCount"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_LeaveDayContainer.EWDR_dd_DaysView"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_DescriptionContainer.EWDR_txt_Description"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_DataRequestContainer.EWDR_ReasonContainer.EWDR_txt_Reason"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_DelegateContainer.EWDR_dd_DelegateValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ExtraWorkingRequestScreen",
-                "type": "ExtraWorkingRequestScreen.EWDR_MainContainer.EWDR_DataContainer.EWDR_ManagerContainer.EWDR_StatusContainer.EWDR_lblStatusValue"
               }
             }
           ],

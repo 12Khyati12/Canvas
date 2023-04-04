@@ -441,6 +441,8 @@
       "dt_dt_application_request_requested_employee": "Application Requests (dt_dt_application_request_requested_employee)",
       "dt_dt_application_transaction_request_approv": "Application Transactions (dt_dt_application_transaction_request_approv)",
       "dt_dt_application_transaction_requested_empl": "Application Transactions (dt_dt_application_transaction_requested_empl)",
+      "dt_dt_appraisal_response_employee_contact": "Appraisal Responses (dt_dt_appraisal_response_employee_contact)",
+      "dt_dt_appraisal_response_response_by_contact": "Appraisal Responses (dt_dt_appraisal_response_response_by_contact)",
       "dt_dt_expense_request_expense_approver_conta": "Expense Requests (dt_dt_expense_request_expense_approver_conta)",
       "dt_dt_expense_request_expense_delegate_appro": "Expense Requests (dt_dt_expense_request_expense_delegate_appro)",
       "dt_dt_expense_request_expense_requester_cont": "Expense Requests (dt_dt_expense_request_expense_requester_cont)",
