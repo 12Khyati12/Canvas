@@ -5,7 +5,7 @@
             "Pending"
         );
         
-        ClearCollect(RequesterLeaveBalance,Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName));
+        //ClearCollect(RequesterLeaveBalance,Filter('Leave Balances',Employee.Email = _myProfile.UserPrincipalName));
         
           /*Set(
                 _requesterBalanceRecord,
