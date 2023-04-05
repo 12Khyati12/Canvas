@@ -17,7 +17,6 @@
       "dt_dt_application_request_leave_balance_dt_l": "Application Requests",
       "dt_dt_application_transaction_leave_balance_": "Application Transactions",
       "dt_employee": "Employee",
-      "dt_extra_working_day": "Extra Working Day",
       "dt_leave_balance_AsyncOperations": "System Jobs",
       "dt_leave_balance_BulkDeleteFailures": "Bulk Delete Failures",
       "dt_leave_balance_DuplicateBaseRecord": "Duplicate Records (dt_leave_balance_DuplicateBaseRecord)",

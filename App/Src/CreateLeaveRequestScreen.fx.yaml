@@ -1,10 +1,9 @@
 "CreateLeaveRequestScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
-    OnVisible: |+
+    OnVisible: |-
         =Reset(CLRS_dd_LeaveType);
         Reset(CLRS_dp_FromDate);
         Reset(CLRS_dp_ToDate);
         Reset(CLRS_txt_Description);
-        
 
     CLRS_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -468,7 +467,7 @@
                                   SelectedStartDate,
                                   CLRS_dp_FromDate.SelectedDate
                             );
-                        OnSelect: |-
+                        OnSelect: |
                             =If(
                                     !IsBlank(
                                         LookUp(
@@ -488,7 +487,7 @@
                                     ).'Holiday Name'
                                 )
                                 
-                            )
+                            );
                         Size: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -619,18 +618,20 @@
                                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
                                     'Application Request Type'.'Application Request Type Name' = "Leave Request",
                                     Startdate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals StartDate
-                            Startdate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals StartDate
-                            Enddate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals EndDate
-                            Enddate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals EndDate
-                             (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
-                             (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
-                             (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)//FromDate after StartDate and ToDate before EndDate
+                                    Startdate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals StartDate
+                                    Enddate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals EndDate
+                                    Enddate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals EndDate
+                                    (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
+                                    (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
+                                    (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)//FromDate after StartDate and ToDate before EndDate
                                 )
                             );
+                            
                             Set(
                                 AllListCount,
                                 CountRows(AlreadyDateInDataBase)
                             );
+                            
                             Set(
                                 checkStartDateAlreadyExists1,
                                 Filter(
@@ -642,10 +643,12 @@
                                     'Application Request Status' = [@'Application Request Status'].Submitted
                                 )
                             );
+                            
                             Set(
                                 pendingListCount,
                                 CountRows(checkStartDateAlreadyExists1)
                             );
+                            
                             Set(
                                 checkStartDateAlreadyExists,
                                 Filter(
@@ -920,7 +923,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                             )
                         Height: |-
                             =Switch(
@@ -990,7 +993,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                             )
                         Height: |-
                             =Switch(
@@ -1059,7 +1062,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                             )
                         Height: |-
                             =Switch(
@@ -1163,7 +1166,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                             )
                         Height: |-
                             =Switch(
@@ -1295,7 +1298,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >=        Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                 DisplayMode.Edit,
                                 If(IsBlank(Value(
                                     LookUp(
@@ -1304,7 +1307,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                )),DisplayMode.Edit,DisplayMode.Disabled)
+                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                             )
                         Height: |-
                             =Switch(
@@ -1892,7 +1895,7 @@
                                 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                 'Available Leave'
                             )
-                        )),DisplayMode.Edit,DisplayMode.Disabled)
+                        )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                     )
                 Fill: =AppColor.PrimaryColor
                 Height: |-

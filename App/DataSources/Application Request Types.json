@@ -63,7 +63,8 @@
     "OptionSetInfoNameMapping": {
       "206500000": "Credit",
       "206500001": "Debit",
-      "206500002": "Do Nothing"
+      "206500002": "Monthly ",
+      "206500003": "Do Nothing"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": true,
