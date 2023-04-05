@@ -626,7 +626,7 @@
                 },
                 "region": {
                   "charLength": 15,
-                  "charOffset": 2185,
+                  "charOffset": 2843,
                   "snippet": {
                     "text": "DateValue(Date)"
                   }
@@ -666,7 +666,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 2201,
+                  "charOffset": 2859,
                   "snippet": {
                     "text": ">="
                   }

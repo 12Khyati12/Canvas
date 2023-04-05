@@ -12,20 +12,25 @@ NightShiftRequestScreen_2 As screen:
                     'Application Requests',
                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
                     'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                    Startdate >= NSAR_dp_FromDate_2.SelectedDate,
-                    Enddate >= NSAR_dp_ToDate_2.SelectedDate
+                    //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
+                    //Enddate >= NSAR_dp_ToDate_2.SelectedDate
+                           Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
+               Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days)
                 ),
                 Day
             )
         );
+        
         Set(
             NSApendingListCount,
             Sum(
                 Filter(
                     'Application Requests',
                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
-                    Startdate >= NSAR_dp_FromDate_2.SelectedDate,
-                    Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                    //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
+                    //Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                           Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
+               Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days),
                     'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
                     'Application Request Status' = [@'Application Request Status'].Submitted
                 ),
@@ -39,8 +44,10 @@ NightShiftRequestScreen_2 As screen:
                     'Application Requests',
                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
                     'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                    Startdate >= NSAR_dp_FromDate_2.SelectedDate,
-                    Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                    //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
+                    //Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                           Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
+               Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days),
                     'Application Request Status' = [@'Application Request Status'].Approved
                 ),
                 Day
@@ -396,6 +403,7 @@ NightShiftRequestScreen_2 As screen:
                                 ),Day)
                             );*/
                             
+                            
                             Set(
                                 NSAallListCount,
                                 Sum(
@@ -403,8 +411,10 @@ NightShiftRequestScreen_2 As screen:
                                         'Application Requests',
                                         'Requested Employee'.Email = _myProfile.UserPrincipalName,
                                         'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                                        Startdate >= NSAR_dp_FromDate_2.SelectedDate,
-                                        Enddate >= NSAR_dp_ToDate_2.SelectedDate
+                                        //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
+                                        //Enddate >= NSAR_dp_ToDate_2.SelectedDate
+                                               Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
+                                   Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days)
                                     ),
                                     Day
                                 )
@@ -415,8 +425,10 @@ NightShiftRequestScreen_2 As screen:
                                     Filter(
                                         'Application Requests',
                                         'Requested Employee'.Email = _myProfile.UserPrincipalName,
-                                        Startdate >= NSAR_dp_FromDate_2.SelectedDate,
-                                        Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                                        //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
+                                        //Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                                               Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
+                                   Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days),
                                         'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
                                         'Application Request Status' = [@'Application Request Status'].Submitted
                                     ),
@@ -430,8 +442,10 @@ NightShiftRequestScreen_2 As screen:
                                         'Application Requests',
                                         'Requested Employee'.Email = _myProfile.UserPrincipalName,
                                         'Application Request Type'.'Application Request Type Name' = "Night Shift Allowance Request",
-                                        Startdate >= NSAR_dp_FromDate_2.SelectedDate,
-                                        Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                                        //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
+                                        //Enddate >= NSAR_dp_ToDate_2.SelectedDate,
+                                               Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
+                                   Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days),
                                         'Application Request Status' = [@'Application Request Status'].Approved
                                     ),
                                     Day

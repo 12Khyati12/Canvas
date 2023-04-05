@@ -4,6 +4,72 @@
         Reset(CLRS_dp_FromDate);
         Reset(CLRS_dp_ToDate);
         Reset(CLRS_txt_Description);
+        Set(
+            AlreadyDateInDataBase,
+            Filter(
+                'Application Requests',
+                'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                (Startdate >= CLRS_dp_FromDate.SelectedDate && Enddate < DateAdd(CLRS_dp_ToDate.SelectedDate, 1, TimeUnit.Days)) ||
+                (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||
+                (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||
+                (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)
+             )
+        );
+        
+        /*Set(
+            AlreadyDateInDataBase,
+            Filter(
+                'Application Requests',
+                'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                Startdate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals StartDate
+                Startdate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals StartDate
+                Enddate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals EndDate
+                Enddate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals EndDate
+        (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
+                (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
+                (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)//FromDate after StartDate and ToDate before EndDate
+            )
+        );*/
+        
+        Set(
+            AllListCount,
+            CountRows(AlreadyDateInDataBase)
+        );
+        
+        Set(
+            checkStartDateAlreadyExists1,
+            Filter(
+                'Application Requests',
+                'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                Startdate >= CLRS_dp_FromDate.SelectedDate,
+                Enddate <= CLRS_dp_ToDate.SelectedDate,
+                'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                'Application Request Status' = [@'Application Request Status'].Submitted
+            )
+        );
+        
+        Set(
+            pendingListCount,
+            CountRows(checkStartDateAlreadyExists1)
+        );
+        
+        Set(
+            checkStartDateAlreadyExists,
+            Filter(
+                'Application Requests',
+                'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                Startdate >= CLRS_dp_FromDate.SelectedDate,
+                Enddate <= CLRS_dp_ToDate.SelectedDate,
+                'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                'Application Request Status' = [@'Application Request Status'].Approved
+            )
+        );
+        Set(
+            approveListCount,
+            CountRows(checkStartDateAlreadyExists)
+        );
 
     CLRS_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -617,15 +683,28 @@
                                     'Application Requests',
                                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
                                     'Application Request Type'.'Application Request Type Name' = "Leave Request",
+                                    (Startdate >= CLRS_dp_FromDate.SelectedDate && Enddate < DateAdd(CLRS_dp_ToDate.SelectedDate, 1, TimeUnit.Days)) ||
+                                    (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||
+                                    (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||
+                                    (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)
+                                 )
+                            );
+                            
+                            /*Set(
+                                AlreadyDateInDataBase,
+                                Filter(
+                                    'Application Requests',
+                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                                    'Application Request Type'.'Application Request Type Name' = "Leave Request",
                                     Startdate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals StartDate
                                     Startdate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals StartDate
                                     Enddate = CLRS_dp_FromDate.SelectedDate ||//FromDate equals EndDate
                                     Enddate = CLRS_dp_ToDate.SelectedDate ||//ToDate equals EndDate
-                                    (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
+                            (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
                                     (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
                                     (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)//FromDate after StartDate and ToDate before EndDate
                                 )
-                            );
+                            );*/
                             
                             Set(
                                 AllListCount,
