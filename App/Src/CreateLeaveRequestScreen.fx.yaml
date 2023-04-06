@@ -614,13 +614,63 @@
                             =Set(
                                 AlreadyDateInDataBase,
                                 Filter(
+                                    'Application Transactions',
+                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                                    'Application Transaction Type'.'Application Request Type Name' = "Leave Request",
+                                    Date >= CLRS_dp_FromDate.SelectedDate ,
+                                    Date < DateAdd(CLRS_dp_ToDate.SelectedDate,1,TimeUnit.Days)
+                                )
+                            );
+                            
+                            Set(
+                                AllListCount,
+                                CountRows(AlreadyDateInDataBase)
+                            );
+                            
+                            Set(
+                                checkStartDateAlreadyExists1,
+                                Filter(
+                                    'Application Transactions',
+                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                                    Date >= CLRS_dp_FromDate.SelectedDate,
+                                    Date <= CLRS_dp_ToDate.SelectedDate,
+                                    'Application Transaction Type'.'Application Request Type Name' = "Leave Request",
+                                    'Application Transaction Status' = [@'Application Transaction Status'].Submitted
+                                )
+                            );
+                            Set(
+                                pendingListCount,
+                                CountRows(checkStartDateAlreadyExists1)
+                            );
+                            Set(
+                                checkStartDateAlreadyExists,
+                                Filter(
+                                    'Application Transactions',
+                                    'Requested Employee'.Email = _myProfile.UserPrincipalName,
+                                    Date >= CLRS_dp_FromDate.SelectedDate,
+                                    Date <= CLRS_dp_ToDate.SelectedDate,
+                                    'Application Transaction Type'.'Application Request Type Name' = "Leave Request",
+                                    'Application Transaction Status' = [@'Application Transaction Status'].Approved
+                                )
+                            );
+                            Set(
+                                approveListCount,
+                                CountRows(checkStartDateAlreadyExists)
+                            );
+                            
+                            
+                            
+                            
+                            /*Set(
+                                AlreadyDateInDataBase,
+                                Filter(
                                     'Application Requests',
                                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
                                     'Application Request Type'.'Application Request Type Name' = "Leave Request",
-                                    Startdate >= CLRS_dp_FromDate.SelectedDate||
-                            (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
-                                    (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
-                                    (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate) //FromDate after StartDate and ToDate before EndDate
+                                (Startdate >= CLRS_dp_FromDate.SelectedDate && Enddate < DateAdd(CLRS_dp_FromDate.SelectedDate,1,TimeUnit.Days)) ||
+                                (Startdate > CLRS_dp_FromDate.SelectedDate && Startdate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before StartDate and ToDate after StartDate
+                                (Enddate > CLRS_dp_FromDate.SelectedDate && Enddate < CLRS_dp_ToDate.SelectedDate) ||//FromDate before EndDate and ToDate after EndDate
+                                (Startdate < CLRS_dp_FromDate.SelectedDate && Enddate > CLRS_dp_ToDate.SelectedDate)//FromDate after StartDate and ToDate before EndDate
                                 )
                             );
                             
@@ -640,12 +690,10 @@
                                     'Application Request Status' = [@'Application Request Status'].Submitted
                                 )
                             );
-                            
                             Set(
                                 pendingListCount,
                                 CountRows(checkStartDateAlreadyExists1)
                             );
-                            
                             Set(
                                 checkStartDateAlreadyExists,
                                 Filter(
@@ -660,7 +708,7 @@
                             Set(
                                 approveListCount,
                                 CountRows(checkStartDateAlreadyExists)
-                            );
+                            );*/
                             ClearCollect(
                                 HolidayListDate1,
                                 Filter(
@@ -1790,23 +1838,10 @@
                         ZIndex: =2
 
         CLRS_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            FillPortions: =0
             Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =100
-            LayoutMinWidth: |-
-                =Switch(
-                    App.ActiveScreen.Size,
-                    ScreenSize.Small,
-                    200,
-                    ScreenSize.Medium,
-                    250,
-                    350
-                    
-                )
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
             Y: =462
@@ -1905,16 +1940,6 @@
                         45
                         
                     )
-                LayoutMinWidth: |-
-                    =Switch(
-                        App.ActiveScreen.Size,
-                        ScreenSize.Small,
-                        200,
-                        ScreenSize.Medium,
-                        300,
-                        350
-                        
-                    )
                 OnSelect: |-
                     =If(
                         !IsBlank(CLRS_txt_Description.Text),
@@ -1951,11 +1976,11 @@
                                         Email = _myProfile.UserPrincipalName
                                     ),
                                     'Leave Balance': 
-                                    LookUp(
+                    If(!CLRS_dd_LeaveType.Selected.'Leave Type Name' = "Leave Without Pay",LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName && 
                                         Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'))
                                 }
                             ),
                         //Create a new requets
@@ -1975,12 +2000,11 @@
                                     Day: Value(CLRS_lbl_DayCount.Text),
                                     'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
                                     'Requested Employee': LookUp(contact,Email = _myProfile.UserPrincipalName),
-                                    'Leave Balance': 
-                                        LookUp(
+                                    'Leave Balance': If(!CLRS_dd_LeaveType.Selected.'Leave Type Name' = "Leave Without Pay",LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName && 
                                         Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'))
                                 }
                             )
                         );

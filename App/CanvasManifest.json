@@ -150,6 +150,7 @@
     "EmployeeDetailScreen",
     "UserGuideScreen",
     "HRBulkRequestScreen",
-    "HRSingleRequestScreen"
+    "HRSingleRequestScreen",
+    "Screen1"
   ]
 }

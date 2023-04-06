@@ -472,7 +472,7 @@
                 CNE_text_Reporting As text:
                     BorderColor: =AppColor.PrimaryColor
                     Color: =AppColor.PrimaryColor
-                    Default: =Office365Users.Manager(User().Email).DisplayName
+                    Default: =_myProfile.DisplayName//Office365Users.Manager(User().Email).DisplayName
                     DisplayMode: =DisplayMode.View
                     Height: |-
                         =Switch(
@@ -553,7 +553,7 @@
                 CNE_text_Delegate As text:
                     BorderColor: =AppColor.PrimaryColor
                     Color: =AppColor.PrimaryColor
-                    Default: =Office365Users.Manager(User().Email).DisplayName
+                    Default: =_myProfile.DisplayName//Office365Users.Manager(User().Email).DisplayName
                     DisplayMode: =DisplayMode.View
                     Height: |-
                         =Switch(
@@ -616,7 +616,7 @@
                         )
                     OnSelect: |
                         =If(
-                            !IsBlank(CLRS_txt_Description.Text),
+                            !IsBlank(CNE_text_Title.Text),
                         Patch(
                             'Expense Requests',
                             Defaults('Expense Requests'),

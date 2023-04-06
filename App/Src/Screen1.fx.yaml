@@ -1,0 +1,135 @@
+"Screen1 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            icon_back As icon.ChevronLeft:
+                Color: =AppColor.PrimaryColor
+                Height: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Height/1.1,
+                       Parent.Height
+                    )
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Back()
+                PaddingLeft: =10
+                PaddingRight: =10
+                Width: |
+                    =
+                    Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+                ZIndex: =1
+
+            lbl_AppTitle As label:
+                Align: =Align.Center
+                Color: =AppColor.PrimaryColor
+                FillPortions: =11
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        12,
+                        ScreenSize.Medium,
+                       16,
+                       18
+                    )
+                Text: ="Adjust Leave Balance"
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Width,
+                        Parent.Width/1.2
+                    )
+                Wrap: =false
+                ZIndex: =2
+
+        rect_Divider As rectangle:
+            Height: =1
+            Width: =Parent.Width
+            Y: =88
+            ZIndex: =2
+
+        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+        FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height/10
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: |-
+                =Switch(
+                    App.ActiveScreen.Size,
+                    ScreenSize.Small,
+                    200,
+                    ScreenSize.Medium,
+                    250,
+                    350
+                    
+                )
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+
+            btn_Submited As button:
+                Fill: =AppColor.PrimaryColor
+                Height: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        30,
+                        ScreenSize.Medium,
+                        40,
+                        45
+                        
+                    )
+                LayoutMinWidth: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        200,
+                        ScreenSize.Medium,
+                        300,
+                        350
+                        
+                    )
+                OnSelect: =
+                Size: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        9,
+                       12
+                    )
+                Text: ="Submit"
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                       Parent.Width/3,
+                       Parent.Width/5
+                    )
+                ZIndex: =1
+
