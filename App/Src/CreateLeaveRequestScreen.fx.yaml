@@ -1930,6 +1930,7 @@
                         )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
                     )
                 Fill: =AppColor.PrimaryColor
+                FontWeight: =FontWeight.Bold
                 Height: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -1964,54 +1965,71 @@
                                         contact,
                                         Email = _myProfile.UserPrincipalName//_myManager.UserPrincipalName
                                     ),
-                                    'Request Delegate Approver ': LookUp(contact,'Full Name' = CLRS_dd_DelegateValue.SelectedText.Value),
+                                    'Request Delegate Approver ': LookUp(
+                                        contact,
+                                        'Full Name' = CLRS_dd_DelegateValue.SelectedText.Value
+                                    ),
                                     'Application Request Type': LookUp(
                                         'Application Request Types',
                                         'Application Request Type Name' = "Leave Request"
                                     ),
                                     Day: Value(CLRS_lbl_DayCount.Text),
-                                    'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
+                                    'Half Day': If(
+                                        Value(CLRS_lbl_DayCount.Text) < 1,
+                                        CLRS_dd_HalfDaysView.Selected.Value
+                                    ),
                                     'Requested Employee': LookUp(
                                         contact,
                                         Email = _myProfile.UserPrincipalName
                                     ),
-                                    'Leave Balance': If(IsBlankOrError(LookUp('Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName && 
-                                        Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')),Blank(),
-                                        LookUp('Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName && 
-                                        Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'))
+                                    'Leave Balance': If(
+                                        IsBlankOrError(
+                                            LookUp(
+                                                'Leave Balances',
+                                                Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'
+                                            )
+                                        ),
+                                        Blank(),
+                                        LookUp(
+                                            'Leave Balances',
+                                            Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'
+                                        )
+                                    )
                                 }
                             ),
                         //Create a new requets
-                            Patch(
-                                'Application Requests',
-                                Defaults('Application Requests'),
-                                {
-                                    'Leave Type': CLRS_dd_LeaveType.SelectedText,
-                                    Startdate: CLRS_dp_FromDate.SelectedDate,
-                                    Enddate: CLRS_dp_ToDate.SelectedDate,
-                                    Description: CLRS_txt_Description.Text,
-                                    'Application Request Status': [@'Application Request Status'].Submitted,
-                                    'Request Approver': LookUp(contact,Email = _myProfile.UserPrincipalName//_myManager.UserPrincipalName
-                                    ),
-                                    'Request Delegate Approver ': LookUp(contact,'Full Name' = CLRS_dd_DelegateValue.SelectedText.Value),
-                                    'Application Request Type': LookUp('Application Request Types','Application Request Type Name' = "Leave Request"),
-                                    Day: Value(CLRS_lbl_DayCount.Text),
-                                    'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
-                                    'Requested Employee': LookUp(contact,Email = _myProfile.UserPrincipalName),
-                                    'Leave Balance': If(IsBlankOrError(LookUp('Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName && 
-                                        Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')),Blank(),
-                                        LookUp('Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName && 
-                                        Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'))
-                                }
-                            )
+                    Patch(
+                                    'Application Requests',
+                                    Defaults('Application Requests'),
+                                    {
+                                        'Leave Type': CLRS_dd_LeaveType.SelectedText,
+                                        Startdate: CLRS_dp_FromDate.SelectedDate,
+                                        Enddate: CLRS_dp_ToDate.SelectedDate,
+                                        Description: CLRS_txt_Description.Text,
+                                        'Application Request Status': [@'Application Request Status'].Submitted,
+                                        'Request Approver': LookUp(
+                                            contact,
+                                            Email = _myProfile.UserPrincipalName//_myManager.UserPrincipalName
+                                        ),
+                                        'Request Delegate Approver ': LookUp(
+                                            contact,
+                                            'Full Name' = CLRS_dd_DelegateValue.SelectedText.Value
+                                        ),
+                                        'Application Request Type': LookUp(
+                                            'Application Request Types',
+                                            'Application Request Type Name' = "Leave Request"
+                                        ),
+                                        Day: Value(CLRS_lbl_DayCount.Text),
+                                        'Half Day': If(
+                                            Value(CLRS_lbl_DayCount.Text) < 1,
+                                            CLRS_dd_HalfDaysView.Selected.Value
+                                        ),
+                                        'Requested Employee': LookUp(
+                                            contact,
+                                            Email = _myProfile.UserPrincipalName
+                                        )
+                                    }
+                                )
                         );
                         Navigate(LeaveApplicationScreen);
                         Reset(CLRS_dp_FromDate);
