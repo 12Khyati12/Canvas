@@ -1976,11 +1976,11 @@
                                         Email = _myProfile.UserPrincipalName
                                     ),
                                     'Leave Balance': 
-                    If(!CLRS_dd_LeaveType.Selected.'Leave Type Name' = "Leave Without Pay",LookUp(
+                                    LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName && 
                                         Employee.'Full Name' = _myProfile.DisplayName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'))
+                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name')
                                 }
                             ),
                         //Create a new requets
@@ -2000,7 +2000,7 @@
                                     Day: Value(CLRS_lbl_DayCount.Text),
                                     'Half Day': If(Value(CLRS_lbl_DayCount.Text) < 1,CLRS_dd_HalfDaysView.Selected.Value),
                                     'Requested Employee': LookUp(contact,Email = _myProfile.UserPrincipalName),
-                                    'Leave Balance': If(!CLRS_dd_LeaveType.Selected.'Leave Type Name' = "Leave Without Pay",LookUp(
+                                    'Leave Balance': If(!(CLRS_dd_LeaveType.Selected.'Leave Type Name') = "Leave without Pay",LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName && 
                                         Employee.'Full Name' = _myProfile.DisplayName &&

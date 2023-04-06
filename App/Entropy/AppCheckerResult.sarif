@@ -821,48 +821,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1630,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "CreateLeaveRequestScreen",
-                "type": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_SubmitContainer.CLRS_btn_Submited"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Boolean",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_SubmitContainer.CLRS_btn_Submited.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CreateLeaveRequestScreen.CLRS_MainContainer.CLRS_SubmitContainer.CLRS_btn_Submited.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 3166,
+                  "charOffset": 3112,
                   "snippet": {
                     "text": "="
                   }
