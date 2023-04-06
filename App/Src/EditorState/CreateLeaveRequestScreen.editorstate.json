@@ -1479,7 +1479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_DaysView",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1888,7 +1888,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_DelegateValue",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2315,7 +2315,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_HalfDaysView",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2750,7 +2750,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_LeaveType",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3656,7 +3656,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dp_FromDate",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4082,7 +4082,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dp_ToDate",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6062,7 +6062,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_DayCount",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6411,7 +6411,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_Delegate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6754,7 +6754,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_DelegateValue",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7108,7 +7108,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_Description",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7457,7 +7457,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_FromDate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8174,7 +8174,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_LeaveDay",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8523,7 +8523,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_LeaveType",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11018,7 +11018,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_ToDate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14746,7 +14746,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_txt_DayCount",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15100,7 +15100,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_txt_Description",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

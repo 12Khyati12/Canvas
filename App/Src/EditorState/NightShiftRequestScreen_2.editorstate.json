@@ -1601,7 +1601,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dd_DaysView_2",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2005,7 +2005,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dd_DelegateValue_2",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2920,7 +2920,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dp_FromDate_2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3339,7 +3339,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dp_ToDate_2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4967,7 +4967,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_DayCount_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5341,7 +5341,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Delegate_2",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5703,7 +5703,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_DelegateValue_2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6057,7 +6057,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Description_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6406,7 +6406,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_FromDate_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6755,7 +6755,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_LeaveDay_3",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7494,7 +7494,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Reporting_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8561,7 +8561,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Status_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8915,7 +8915,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_ToDate_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9271,7 +9271,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lblReportingValue_2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9627,7 +9627,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lblStatusValue_2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12417,7 +12417,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_txt_Description_2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
