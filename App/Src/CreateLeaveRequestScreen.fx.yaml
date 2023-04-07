@@ -1838,10 +1838,13 @@
                         ZIndex: =2
 
         CLRS_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
             Y: =462
@@ -1982,18 +1985,11 @@
                                         contact,
                                         Email = _myProfile.UserPrincipalName
                                     ),
-                                    'Leave Balance': If(
-                                        IsBlankOrError(
-                                            LookUp(
-                                                'Leave Balances',
-                                                Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'
-                                            )
-                                        ),
-                                        Blank(),
+                                    'Leave Balance': 
                                         LookUp(
                                             'Leave Balances',
                                             Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'
-                                        )
+                                        
                                     )
                                 }
                             ),
@@ -2027,7 +2023,12 @@
                                         'Requested Employee': LookUp(
                                             contact,
                                             Email = _myProfile.UserPrincipalName
-                                        )
+                                        ),
+                                        'Leave Balance': 
+                                        LookUp(
+                                            'Leave Balances',
+                                            Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name'
+                                    )
                                     }
                                 )
                         );
