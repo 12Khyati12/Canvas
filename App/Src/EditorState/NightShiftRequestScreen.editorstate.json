@@ -1601,7 +1601,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dd_DaysView",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2014,7 +2014,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_ddEndHours",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2412,7 +2412,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_ddEndMin",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2825,7 +2825,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_ddStartHours",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3228,7 +3228,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_ddStartMin",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3573,7 +3573,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_DelegateContainer",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4117,7 +4117,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dp_FromDate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4530,7 +4530,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_dp_ToDate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6153,7 +6153,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_DayCount",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6527,7 +6527,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Delegate",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6888,7 +6888,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_DelegateValue",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7237,7 +7237,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Description",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7586,7 +7586,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_FromDate",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7935,7 +7935,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_LeaveDay",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8674,7 +8674,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_Reporting",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10095,7 +10095,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lbl_ToDate",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10451,7 +10451,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_lblReportingValue",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12814,7 +12814,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_StatusContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13604,7 +13604,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_txt_DayCount",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13946,7 +13946,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NSAR_txt_Description",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

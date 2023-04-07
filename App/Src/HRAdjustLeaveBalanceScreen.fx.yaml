@@ -653,22 +653,21 @@
                         45
                         
                     )
-                LayoutMinWidth: |-
-                    =Switch(
-                        App.ActiveScreen.Size,
-                        ScreenSize.Small,
-                        200,
-                        ScreenSize.Medium,
-                        300,
-                        350
-                        
-                    )
                 OnSelect: |
                     =Patch(
                         'Application Transactions',
                         Defaults('Application Transactions'),
                         {
-                            
+                            'Application Transaction Type': Blank(),
+                            'Leave Type': HRLB_dd_LeaveType.SelectedText,
+                            'Requested Employee': LookUp(contact,'Full Name' = HRLB_dd_Employee.SelectedText.Value),
+                            Day: Value(HRLB_txt_DayCount.Text),
+                            Description: HRLB_txt_Description.Text,
+                            'Leave Balance':LookUp('Leave Balances',Employee.Email = HRLB_dd_Employee.SelectedText.Value && 
+                                            Employee.'Full Name' = HRLB_dd_Employee.SelectedText.Value && 
+                                            'Leave Balance Type'.'Leave Type Name' = HRLB_dd_LeaveType.Selected.'Leave Type Name'),
+                            Date: Today(),
+                            'Application Transaction Status': [@'Application Transaction Status'].Approved
                         }
                     );
                 Size: |-
