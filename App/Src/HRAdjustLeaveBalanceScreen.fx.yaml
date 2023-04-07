@@ -167,10 +167,15 @@
                             )
                         ZIndex: =1
 
-                    HRLB_lbl_RequestTypeValue As label:
-                        BorderColor: =RGBA(39, 113, 194, 1)
-                        BorderThickness: =2
-                        Color: =RGBA(39, 113, 194, 1)
+                    HRLB_dd_RequestTypeValue As dropdown:
+                        BorderColor: =AppColor.PrimaryColor
+                        ChevronBackground: =RGBA(39, 113, 194, 1)
+                        ChevronDisabledBackground: =RGBA(128, 128, 128, 1)
+                        Color: =AppColor.PrimaryColor
+                        Default: =
+                        DisabledBorderColor: =RGBA(149, 149, 149, 1)
+                        DisabledColor: =RGBA(39, 113, 194, 1)
+                        DisplayMode: =DisplayMode.Disabled
                         Height: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -182,6 +187,17 @@
                                 
                                 
                             )
+                        Items: |
+                            =Filter(
+                               'Application Request Types',
+                               Status = [@'Status (Application Request Types)'].Active 
+                            )
+                        OnChange: =
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        SelectionFill: =RGBA(39, 113, 194, 1)
                         Size: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -192,9 +208,9 @@
                                 13
                                 
                             )
-                        Text: ="Leave Adjustment"
                         Width: |-
-                            =Switch(
+                            =
+                            Switch(
                                 App.ActiveScreen.Size,
                                 ScreenSize.Small,
                                 Parent.Width/2,
@@ -205,7 +221,7 @@
                                ScreenSize.ExtraLarge,
                                 Parent.Width/3
                             )
-                        ZIndex: =2
+                        ZIndex: =3
 
                 HRLB_LeaveTypeContainer As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
@@ -662,7 +678,7 @@
                         'Application Transactions',
                         Defaults('Application Transactions'),
                         {
-                            'Application Transaction Type': HRLB_lbl_RequestTypeValue,
+                            'Application Transaction Type': HRLB_dd_RequestTypeValue.SelectedText,
                             'Leave Type': HRLB_dd_LeaveType.SelectedText,
                             'Requested Employee': LookUp(contact,'Full Name' = HRLB_dd_Employee.SelectedText.Value),
                             Day: Value(HRLB_txt_DayCount.Text),
