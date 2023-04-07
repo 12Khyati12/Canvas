@@ -653,7 +653,7 @@
                         45
                         
                     )
-                OnSelect: |
+                OnSelect: |-
                     =Patch(
                         'Application Transactions',
                         Defaults('Application Transactions'),
@@ -664,8 +664,8 @@
                             Day: Value(HRLB_txt_DayCount.Text),
                             Description: HRLB_txt_Description.Text,
                             'Leave Balance':LookUp('Leave Balances',
-                                            Employee.Email = LookUp(contact,'Full Name' = HRLB_dd_Employee.SelectedText.Value).Email &&
-                                            Employee.'Full Name' = HRLB_dd_Employee.SelectedText.Value && 
+                                            Employee.Email = HRLB_dd_Employee.Selected.Email &&
+                                            Employee.'Full Name' = HRLB_dd_Employee.Selected.'Full Name' && 
                                             'Leave Balance Type'.'Leave Type Name' = HRLB_dd_LeaveType.Selected.'Leave Type Name'),
                             Date: Today(),
                             'Application Transaction Status': [@'Application Transaction Status'].Approved
