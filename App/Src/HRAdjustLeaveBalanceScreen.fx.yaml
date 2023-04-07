@@ -654,7 +654,11 @@
                         
                     )
                 OnSelect: |-
-                    =Patch(
+                    =If(IsBlank(HRLB_txt_Description),Notify("Description Requried"),
+                    IsBlank(HRLB_txt_DayCount),Notify("Day Requried"),
+                    IsBlank(HRLB_dd_Employee),Notify("Employee Name Requried"),
+                    IsBlank(HRLB_dd_LeaveType),Notify("Leave Type Requried"),
+                    Patch(
                         'Application Transactions',
                         Defaults('Application Transactions'),
                         {
@@ -670,7 +674,8 @@
                             Date: Today(),
                             'Application Transaction Status': [@'Application Transaction Status'].Approved
                         }
-                    );
+                    ));
+                    Reset(HRLB_dd_LeaveType);Reset(HRLB_txt_DayCount);Reset(HRLB_txt_Description);Reset(HRLB_dd_Employee);
                 Size: |-
                     =Switch(
                         App.ActiveScreen.Size,
