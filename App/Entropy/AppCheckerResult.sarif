@@ -2041,6 +2041,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_HeaderContainer.HRLB_icon_back.AccessibleLabel"
                 }
               ],
@@ -10231,6 +10261,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveDayContainer.HRLB_txt_DayCount.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveDayContainer.HRLB_txt_DayCount.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveDayContainer.HRLB_txt_DayCount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_EmployeeContainer.HRLB_dd_Employee.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_EmployeeContainer.HRLB_dd_Employee.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_EmployeeContainer.HRLB_dd_Employee"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],
@@ -16303,6 +16423,36 @@
                 "member": "Height",
                 "module": "NightShiftScreen",
                 "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description"
               }
             }
           ],

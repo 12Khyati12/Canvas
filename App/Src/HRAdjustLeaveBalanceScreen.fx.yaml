@@ -76,6 +76,551 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
+            HRLB_DataRequestContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =AppColor.PrimaryColor
+                FillPortions: =2
+                Height: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Height/1.5,
+                       Parent.Height
+                    )
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =500
+                LayoutMinWidth: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        300,
+                        ScreenSize.Medium,
+                        400,
+                        500
+                        
+                    )
+                LayoutMode: =LayoutMode.Auto
+                LayoutWrap: =true
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Width,
+                       Parent.Width/1.6
+                    )
+                ZIndex: =1
+
+                HRLB_RequestTypeContainer As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: |-
+                        =
+                        Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Height/8,
+                           Parent.Height/8
+                        )
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/1,
+                            Parent.Width
+                        )
+                    ZIndex: =1
+
+                    HRLB_lbl_RequestType As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/1.1,
+                                ScreenSize.Medium,
+                                Parent.Height/1.5,
+                                Parent.Height/2
+                                
+                            )
+                        PaddingLeft: =15
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
+                        Text: |-
+                            ="Request Type:"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2.8-10,
+                                Parent.Width/2.5-10
+                            )
+                        ZIndex: =1
+
+                    HRLB_lbl_RequestTypeValue As label:
+                        BorderColor: =RGBA(39, 113, 194, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(39, 113, 194, 1)
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                28,
+                                ScreenSize.Medium,
+                                30,
+                                40
+                                
+                                
+                            )
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                9,
+                                ScreenSize.Medium,
+                                10,
+                                13
+                                
+                            )
+                        Text: ="Leave Adjustment"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2,
+                                ScreenSize.Medium,
+                                Parent.Width/2,
+                                ScreenSize.Large,
+                                Parent.Width/2,
+                               ScreenSize.ExtraLarge,
+                                Parent.Width/3
+                            )
+                        ZIndex: =2
+
+                HRLB_LeaveTypeContainer As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: |-
+                        =
+                        Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Height/8,
+                           Parent.Height/8
+                        )
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/1,
+                            Parent.Width
+                        )
+                    ZIndex: =2
+
+                    HRLB_lbl_LeaveType As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/1.1,
+                                ScreenSize.Medium,
+                                Parent.Height/1.5,
+                                Parent.Height/2
+                                
+                            )
+                        PaddingLeft: =15
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
+                        Text: |-
+                            ="Leave Type:"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2.8-10,
+                                Parent.Width/2.5-10
+                            )
+                        ZIndex: =1
+
+                    HRLB_dd_LeaveType As dropdown:
+                        BorderColor: =AppColor.PrimaryColor
+                        ChevronBackground: =RGBA(39, 113, 194, 1)
+                        Color: =AppColor.PrimaryColor
+                        Default: =
+                        DisplayMode: =If(IsLeaveEdit,DisplayMode.Disabled,DisplayMode.Edit)
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                28,
+                                ScreenSize.Medium,
+                                30,
+                                40
+                                
+                                
+                            )
+                        Items: |
+                            =Filter(
+                               'Leave Types',
+                               Status = [@'Status (Leave Types)'].Active 
+                            )
+                        OnChange: =
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        SelectionFill: =RGBA(39, 113, 194, 1)
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                9,
+                                ScreenSize.Medium,
+                                10,
+                                13
+                                
+                            )
+                        Width: |-
+                            =
+                            Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2,
+                                ScreenSize.Medium,
+                                Parent.Width/2,
+                                ScreenSize.Large,
+                                Parent.Width/2,
+                               ScreenSize.ExtraLarge,
+                                Parent.Width/3
+                            )
+                        ZIndex: =3
+
+                HRLB_EmployeeContainer As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: |-
+                        =
+                        Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Height/8,
+                           Parent.Height/8
+                        )
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/1,
+                            Parent.Width
+                        )
+                    ZIndex: =3
+
+                    HRLB_lbl_RequestEmployee As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/1.1,
+                                ScreenSize.Medium,
+                                Parent.Height/1.5,
+                                Parent.Height/2
+                                
+                            )
+                        PaddingLeft: =15
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
+                        Text: |-
+                            ="Employee Name:"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2.8-10,
+                                Parent.Width/2.5-10
+                            )
+                        ZIndex: =1
+
+                    HRLB_dd_Employee As dropdown:
+                        BorderColor: =AppColor.PrimaryColor
+                        ChevronBackground: =RGBA(39, 113, 194, 1)
+                        Color: =AppColor.PrimaryColor
+                        Default: =
+                        DisplayMode: =If(IsLeaveEdit,DisplayMode.Disabled,DisplayMode.Edit)
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                28,
+                                ScreenSize.Medium,
+                                30,
+                                40
+                                
+                                
+                            )
+                        Items: |-
+                            =Filter(
+                               [@contact],
+                               Status = [@'Status (contact)'].Active 
+                            )
+                        OnChange: =
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        SelectionFill: =RGBA(39, 113, 194, 1)
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                9,
+                                ScreenSize.Medium,
+                                10,
+                                13
+                                
+                            )
+                        Width: |-
+                            =
+                            Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2,
+                                ScreenSize.Medium,
+                                Parent.Width/2,
+                                ScreenSize.Large,
+                                Parent.Width/2,
+                               ScreenSize.ExtraLarge,
+                                Parent.Width/3
+                            )
+                        ZIndex: =3
+
+                HRLB_LeaveDayContainer As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: |-
+                        =
+                        Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Height/8,
+                           Parent.Height/8
+                        )
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/1,
+                            Parent.Width
+                        )
+                    ZIndex: =4
+
+                    HRLB_lbl_LeaveDay As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/1.1,
+                                ScreenSize.Medium,
+                                Parent.Height/1.5,
+                                Parent.Height/2
+                                
+                            )
+                        PaddingLeft: =15
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
+                        Text: |-
+                            ="Days:"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2.8-10,
+                                Parent.Width/2.5-10
+                            )
+                        ZIndex: =1
+
+                    HRLB_txt_DayCount As text:
+                        BorderColor: =AppColor.PrimaryColor
+                        Color: =AppColor.PrimaryColor
+                        Default: =
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                28,
+                                ScreenSize.Medium,
+                                30,
+                                35
+                                
+                            )
+                        OnChange: =
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                9,
+                                ScreenSize.Medium,
+                                10,
+                                13
+                                
+                            )
+                        Width: |-
+                            =
+                            Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/14,
+                                ScreenSize.Medium,
+                                Parent.Width/14,
+                                ScreenSize.Large,
+                                Parent.Width/15,
+                               ScreenSize.ExtraLarge,
+                                Parent.Width/14
+                            )
+                        ZIndex: =2
+
+                HRLB_DescriptionContainer As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Height/6.5,
+                           Parent.Height/6
+                        )
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width/1,
+                            Parent.Width
+                        )
+                    ZIndex: =5
+
+                    HRLB_lbl_Description As label:
+                        Color: =AppColor.PrimaryColor
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/1.1,
+                                ScreenSize.Medium,
+                                Parent.Height/1.5,
+                                Parent.Height/2
+                                
+                            )
+                        PaddingLeft: =15
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                10,
+                               13
+                            )
+                        Text: |-
+                            ="Description:"
+                        Width: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2.8-10,
+                                Parent.Width/2.5-10
+                            )
+                        ZIndex: =1
+
+                    HRLB_txt_Description As text:
+                        BorderColor: =AppColor.PrimaryColor
+                        Color: =AppColor.PrimaryColor
+                        Default: =If(IsLeaveEdit = true,LAS_gallery_FilterRequest.Selected.Description,"")
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                40,
+                                ScreenSize.Medium,
+                                50,
+                                80
+                                
+                            )
+                        MaxLength: =50
+                        Mode: =TextMode.MultiLine
+                        Size: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                9,
+                                ScreenSize.Medium,
+                                10,
+                                13
+                                
+                            )
+                        Width: |-
+                            =
+                            Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Width/2,
+                                ScreenSize.Medium,
+                                Parent.Width/2,
+                                ScreenSize.Large,
+                                Parent.Width/2.5,
+                               ScreenSize.ExtraLarge,
+                                Parent.Width/3
+                            )
+                        ZIndex: =2
+
         HRLB_SubmitContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
@@ -118,7 +663,14 @@
                         350
                         
                     )
-                OnSelect: =
+                OnSelect: |
+                    =Patch(
+                        'Application Transactions',
+                        Defaults('Application Transactions'),
+                        {
+                            
+                        }
+                    );
                 Size: |-
                     =Switch(
                         App.ActiveScreen.Size,
