@@ -687,7 +687,7 @@
         LRDS_ApproveContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =75
+            Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center

@@ -151,6 +151,6 @@
     "UserGuideScreen",
     "HRBulkRequestScreen",
     "HRSingleRequestScreen",
-    "Screen1"
+    "HRAdjustLeaveBalanceScreen"
   ]
 }

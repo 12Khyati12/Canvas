@@ -102,7 +102,8 @@
 
         CLRS_DataContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
-            Height: =Parent.Height
+            FillPortions: =0
+            Height: =Parent.Height/1.3
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: |-
                 =Switch(
@@ -1839,6 +1840,7 @@
 
         CLRS_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
             Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
