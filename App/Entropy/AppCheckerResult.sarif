@@ -2041,36 +2041,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "HRAdjustLeaveBalanceScreen",
-                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_HeaderContainer.HRLB_icon_back.AccessibleLabel"
                 }
               ],
@@ -10304,6 +10274,36 @@
                 "member": "AccessibleLabel",
                 "module": "HRAdjustLeaveBalanceScreen",
                 "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_DescriptionContainer.HRLB_txt_Description"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_DataContainer.HRLB_DataRequestContainer.HRLB_LeaveTypeContainer.HRLB_dd_LeaveType"
               }
             }
           ],
