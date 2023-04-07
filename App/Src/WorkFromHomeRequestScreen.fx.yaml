@@ -1416,8 +1416,6 @@
                                     'Full Name' = WFHR_lblReportingValue.Text
                                 ),
                                 'Request Delegate Approver ': LookUp(contact,'Full Name' = WFHR_dd_DelegateValue.SelectedText.Value),
-                                'Leave Balance': LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName
-                            ),
                                 'Application Request Status': [@'Application Request Status'].Submitted
                             }
                         )

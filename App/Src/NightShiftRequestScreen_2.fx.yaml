@@ -1431,8 +1431,6 @@ NightShiftRequestScreen_2 As screen:
                             'Requested Employee': LookUp(contact,'Full Name' = _myProfile.DisplayName),
                             'Request Approver': LookUp(contact,'Full Name'= NSAR_lblReportingValue_2.Text),
                             'Request Delegate Approver ': LookUp(contact,'Full Name' = NSAR_dd_DelegateValue_2.SelectedText.Value),
-                            'Leave Balance': LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName
-                            ),
                             'Application Request Status': [@'Application Request Status'].Submitted
                         }
                     ));

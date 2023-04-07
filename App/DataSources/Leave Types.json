@@ -29,6 +29,7 @@
       "dt_leave_type_ProcessSession": "Process Sessions",
       "dt_leave_type_SyncErrors": "Sync Errors",
       "dt_leave_typeid": "Leave Type",
+      "dt_performed_action": "Performed Action",
       "dt_year_starting_month": "Year starting Month",
       "importsequencenumber": "Import Sequence Number",
       "modifiedby": "Modified By",
@@ -78,6 +79,26 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "dt_leave_addition_frequency",
+    "RelatedEntityName": "Leave Types",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Performed Action (Leave Types)",
+    "Name": "dt_leave_type_dt_performed_action",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "dt_performed_action",
+        "OptionSetReferenceEntityName": "Leave Types"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "dt_performed_action",
     "RelatedEntityName": "Leave Types",
     "Type": "OptionSetInfo"
   },

@@ -1666,8 +1666,6 @@ ExtraWorkingRequestScreen As screen:
                             'Requested Employee': LookUp(contact,'Full Name' = _myProfile.DisplayName),
                             'Request Approver': LookUp(contact,'Full Name'= EWDR_lblReportingValue.Text),
                             'Request Delegate Approver ': LookUp(contact,'Full Name' = EWDR_dd_DelegateValue.SelectedText.Value),
-                            'Leave Balance': LookUp('Leave Balances',Employee.Email = _myProfile.UserPrincipalName && Employee.'Full Name' = _myProfile.DisplayName
-                            ),
                             'Application Request Status': [@'Application Request Status'].Submitted
                         }
                     ));

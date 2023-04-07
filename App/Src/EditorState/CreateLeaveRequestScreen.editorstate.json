@@ -1465,7 +1465,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_DaysView",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2301,7 +2301,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_dd_HalfDaysView",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6048,7 +6048,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CLRS_lbl_DayCount",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

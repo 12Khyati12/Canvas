@@ -199,7 +199,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_btn_cancelled",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -803,7 +803,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_dd_Login",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1648,7 +1648,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_dp_FromDate",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3987,7 +3987,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_icon_add",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4542,7 +4542,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_icon_Next",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5916,7 +5916,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_lbl_FromDate",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6476,7 +6476,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "HRBS_lbl_ReqNum",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7205,7 +7205,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_lbl_ToDate",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8515,7 +8515,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRBS_txt_RequestNum",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

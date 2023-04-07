@@ -1019,27 +1019,34 @@
                                 !IsLeaveEdit && Value(
                                     LookUp(
                                         'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        Employee.Email = _myProfile.UserPrincipalName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                ) > 0 && Value(CLRS_lbl_DayCount.Text) < Value(
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
                                     LookUp(
                                         'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        Employee.Email = _myProfile.UserPrincipalName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                ) && HL_Date <= 0 && HL_Date1 <= 0 && pendingListCount <= 0 && approveListCount <= 0 && AllListCount <= 0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
                                 DisplayMode.Edit,
-                                If(IsBlank(Value(
-                                    LookUp(
-                                        'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
-                                        'Available Leave'
-                                    )
-                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
+                                If(
+                                    IsBlank(
+                                        Value(
+                                            LookUp(
+                                                'Leave Balances',
+                                                Employee.Email = _myProfile.UserPrincipalName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                                'Available Leave'
+                                            )
+                                        )
+                                    ),
+                                    If(
+                                        HL_Date <= 0 && HL_Date1 <= 0 && pendingListCount <= 0 && approveListCount <= 0 && AllListCount <= 0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                        DisplayMode.Edit,
+                                        DisplayMode.Disabled
+                                    ),
+                                    DisplayMode.Disabled
+                                )
                             )
                         Height: |-
                             =Switch(
@@ -1084,31 +1091,37 @@
                         Default: =
                         DisplayMode: |-
                             =If(
-                                !IsLeaveEdit && 
-                                Value(
+                                !IsLeaveEdit && Value(
                                     LookUp(
                                         'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        Employee.Email = _myProfile.UserPrincipalName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
                                 ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
                                     LookUp(
                                         'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                        Employee.Email = _myProfile.UserPrincipalName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
-                                    ) && HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
+                                    ) && HL_Date <= 0 && HL_Date1 <= 0 && pendingListCount <= 0 && approveListCount <= 0 && AllListCount <= 0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today())
                                 ),
                                 DisplayMode.Edit,
-                                If(IsBlank(Value(
-                                    LookUp(
-                                        'Leave Balances',
-                                        Employee.Email = _myProfile.UserPrincipalName &&
-                                        'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
-                                        'Available Leave'
-                                    )
-                                )),If(HL_Date<=0 && HL_Date1<=0 && pendingListCount <= 0 && approveListCount<=0 && AllListCount<=0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today())&&Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),DisplayMode.Edit,DisplayMode.Disabled),DisplayMode.Disabled)
+                                If(
+                                    IsBlank(
+                                        Value(
+                                            LookUp(
+                                                'Leave Balances',
+                                                Employee.Email = _myProfile.UserPrincipalName && 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
+                                                'Available Leave'
+                                            )
+                                        )
+                                    ),
+                                    If(
+                                        HL_Date <= 0 && HL_Date1 <= 0 && pendingListCount <= 0 && approveListCount <= 0 && AllListCount <= 0 && Month(CLRS_dp_FromDate.SelectedDate) >= Month(Today()) && Month(CLRS_dp_ToDate.SelectedDate) >= Month(Today()),
+                                        DisplayMode.Edit,
+                                        DisplayMode.Disabled
+                                    ),
+                                    DisplayMode.Disabled
+                                )
                             )
                         Height: |-
                             =Switch(
@@ -1337,7 +1350,7 @@
                                         'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                         'Available Leave'
                                     )
-                                ) > 0 && Value(CLRS_lbl_DayCount.Text) < Value(
+                                ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
                                     LookUp(
                                         'Leave Balances',
                                         Employee.Email = _myProfile.UserPrincipalName &&
@@ -1916,7 +1929,7 @@
                                 'Leave Balance Type'.'Leave Type Name' = CLRS_dd_LeaveType.Selected.'Leave Type Name',
                                 'Available Leave'
                             )
-                        ) > 0 && Value(CLRS_lbl_DayCount.Text) < Value(
+                        ) > 0 && Value(CLRS_lbl_DayCount.Text) <= Value(
                             LookUp(
                                 'Leave Balances',
                                 Employee.Email = _myProfile.UserPrincipalName &&

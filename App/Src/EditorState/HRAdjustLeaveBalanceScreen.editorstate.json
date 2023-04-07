@@ -85,15 +85,39 @@
       ],
       "DynamicProperties": [
         {
+          "ControlPropertyState": "FillPortions",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "FillPortions",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "FillPortions"
         },
         {
+          "ControlPropertyState": "AlignInContainer",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "AlignInContainer",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "AlignInContainer"
         },
         {
+          "ControlPropertyState": "LayoutMinWidth",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "LayoutMinWidth",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "LayoutMinWidth"
         },
         {
+          "ControlPropertyState": "LayoutMinHeight",
+          "Property": {
+            "Category": "Design",
+            "PropertyName": "LayoutMinHeight",
+            "RuleProviderType": "Unknown"
+          },
           "PropertyName": "LayoutMinHeight"
         }
       ],
@@ -1029,7 +1053,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_dd_Employee",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1459,7 +1483,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_dd_LeaveType",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1917,7 +1941,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_dd_RequestTypeValue",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3640,7 +3664,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_lbl_Description",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4338,7 +4362,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_lbl_LeaveType",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4687,7 +4711,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_lbl_RequestEmployee",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5036,7 +5060,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_lbl_RequestType",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6961,7 +6985,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HRLB_txt_Description",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
