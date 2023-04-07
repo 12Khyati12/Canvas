@@ -54,7 +54,6 @@
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingRight: =10
             Width: =Parent.Width
             ZIndex: =1
 
@@ -186,6 +185,17 @@
                         
                     )
                 ZIndex: =3
+
+            HRBS_icon_add As image:
+                Height: =Parent.Height
+                Image: =AddNew
+                LayoutMinWidth: =50
+                OnSelect: =Navigate(HRAdjustLeaveBalanceScreen)
+                PaddingLeft: =10
+                PaddingRight: =10
+                Width: |
+                    =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,50,ScreenSize.Medium,50,65)
+                ZIndex: =4
 
         HRBS_rect_Divider As rectangle:
             Height: =1

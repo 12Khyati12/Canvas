@@ -691,7 +691,7 @@
                             'Application Transaction Status': [@'Application Transaction Status'].Approved
                         }
                     );Reset(HRLB_dd_LeaveType);Reset(HRLB_txt_DayCount);Reset(HRLB_txt_Description);Reset(HRLB_dd_Employee);
-                    Notify("Submited",NotificationType.Success));
+                    Notify("Submited",NotificationType.Success);Back());
                 Size: |-
                     =Switch(
                         App.ActiveScreen.Size,

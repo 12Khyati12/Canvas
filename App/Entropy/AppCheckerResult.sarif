@@ -10381,6 +10381,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HRBulkRequestScreen",
+                "type": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "HRBulkRequestScreen",
+                "type": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],
@@ -16453,6 +16513,36 @@
                 "member": "Height",
                 "module": "NightShiftScreen",
                 "type": "NightShiftScreen.NSA_MainContainer.NSA_HeaderContainer.NSA_icon_add"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "HRBulkRequestScreen",
+                "type": "HRBulkRequestScreen.HRBS_MainContainer.HRBS_HeaderContainer.HRBS_icon_add"
               }
             }
           ],
