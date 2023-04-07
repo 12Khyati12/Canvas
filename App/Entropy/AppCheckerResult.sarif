@@ -256,6 +256,166 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 544,
+                  "snippet": {
+                    "text": ".Email"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 477,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 551,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 638,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "HRAdjustLeaveBalanceScreen",
+                "type": "HRAdjustLeaveBalanceScreen.HRLB_MainContainer.HRLB_SubmitContainer.btn_Submited"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "TransactionReport.TR_MainContainer.TR_DownloadContainer.TR_btn_Download.OnSelect"
                 }
               ],

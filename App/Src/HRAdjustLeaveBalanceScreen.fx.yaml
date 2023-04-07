@@ -663,7 +663,8 @@
                             'Requested Employee': LookUp(contact,'Full Name' = HRLB_dd_Employee.SelectedText.Value),
                             Day: Value(HRLB_txt_DayCount.Text),
                             Description: HRLB_txt_Description.Text,
-                            'Leave Balance':LookUp('Leave Balances',Employee.Email = HRLB_dd_Employee.SelectedText.Value && 
+                            'Leave Balance':LookUp('Leave Balances',
+                                            Employee.Email = LookUp(contact,'Full Name' = HRLB_dd_Employee.SelectedText.Value).Email &&
                                             Employee.'Full Name' = HRLB_dd_Employee.SelectedText.Value && 
                                             'Leave Balance Type'.'Leave Type Name' = HRLB_dd_LeaveType.Selected.'Leave Type Name'),
                             Date: Today(),
