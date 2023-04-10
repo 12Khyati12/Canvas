@@ -1,6 +1,7 @@
 ExtraWorkingRequestScreen As screen:
     OnVisible: |-
         =Reset(EWDR_dp_FromDate);Reset(EWDR_dp_ToDate);Reset(EWDR_txt_Description);Reset(EWDR_txt_Reason);
+        
         With({startDate:DateValue(EWDR_dp_FromDate.SelectedDate),
               sequenceDays: Sequence(DateDiff(DateValue(EWDR_dp_FromDate.SelectedDate),
                                               DateValue(EWDR_dp_ToDate.SelectedDate)) + 1)
@@ -449,6 +450,10 @@ ExtraWorkingRequestScreen As screen:
                                      )
                                   },Set(EndLastSaturday,DateAdd(NextMonth, -1 * Weekday(DateAdd(NextMonth, - 7)))
                             ));
+                            If(
+                                //If dates would result in negative Number, show warning
+                                !IsBlank(EWDR_dp_FromDate.SelectedDate) && !IsBlank(EWDR_dp_ToDate.SelectedDate) && (EWDR_dp_FromDate.SelectedDate > EWDR_dp_ToDate.SelectedDate),
+                                "Please select a decision date after the request",
                             With({startDate:DateValue(EWDR_dp_FromDate.SelectedDate),
                                   sequenceDays: Sequence(DateDiff(DateValue(EWDR_dp_FromDate.SelectedDate),
                                                                   DateValue(EWDR_dp_ToDate.SelectedDate)) + 1)
@@ -465,7 +470,7 @@ ExtraWorkingRequestScreen As screen:
                                                           )
                                                )
                                   )
-                            );
+                            ));
                             ClearCollect(colMatch,Filter(GetDatesList,Not(Date in 'Holiday Lists'.Date)));
                         Size: |-
                             =Switch(
