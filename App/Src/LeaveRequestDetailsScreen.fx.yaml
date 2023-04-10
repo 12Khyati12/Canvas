@@ -709,7 +709,7 @@
                                 'Application Request Number' = LRS_gallery_FilterRequest.Selected.dt_application_request_number
                             )
                         ),
-                        {'Application Request Status': [@'Application Request Status'].Cancelled}
+                        {'Application Request Status': [@'Application Request Status'].Declined}
                     );
                     Notify(
                         "Request Rejected",
