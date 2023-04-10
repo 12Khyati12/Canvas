@@ -619,7 +619,8 @@
                                     'Requested Employee'.Email = _myProfile.UserPrincipalName,
                                     'Application Transaction Type'.'Application Request Type Name' = "Leave Request",
                                     Date >= CLRS_dp_FromDate.SelectedDate ,
-                                    Date < DateAdd(CLRS_dp_ToDate.SelectedDate,1,TimeUnit.Days)
+                                    Date < DateAdd(CLRS_dp_ToDate.SelectedDate,1,TimeUnit.Days),
+                                    ('Application Transaction Status' = [@'Application Transaction Status'].Submitted || 'Application Transaction Status' = [@'Application Transaction Status'].Approved)
                                 )
                             );
                             

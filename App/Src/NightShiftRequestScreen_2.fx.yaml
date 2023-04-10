@@ -15,7 +15,8 @@ NightShiftRequestScreen_2 As screen:
                     //Startdate >= NSAR_dp_FromDate_2.SelectedDate,
                     //Enddate >= NSAR_dp_ToDate_2.SelectedDate
                            Startdate >= NSAR_dp_FromDate_2.SelectedDate,  
-               Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days)
+               Enddate < DateAdd(NSAR_dp_FromDate_2.SelectedDate, 1, TimeUnit.Days),
+               ('Application Request Status' = [@'Application Request Status'].Submitted || 'Application Request Status' = [@'Application Request Status'].Approved)
                 ),
                 Day
             )

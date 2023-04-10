@@ -1931,7 +1931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_dd_DelegateValue",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2378,7 +2378,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_dd_HalfDaysView",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2738,7 +2738,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_DelegateContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3289,7 +3289,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_dp_FromDate",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3695,7 +3695,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_dp_ToDate",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5699,7 +5699,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_lbl_Delegate",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6076,7 +6076,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_lbl_DelegateValue",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6435,7 +6435,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_lbl_Description",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6784,7 +6784,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_lbl_FromDate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7133,7 +7133,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_lbl_LeaveDay",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9293,7 +9293,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_lbl_ToDate",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12038,7 +12038,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_StatusContainer",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12841,7 +12841,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_txt_DayCount",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13190,7 +13190,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFHR_txt_Description",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
