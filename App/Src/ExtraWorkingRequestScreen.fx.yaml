@@ -1,12 +1,12 @@
 ExtraWorkingRequestScreen As screen:
-    OnVisible: |-
+    OnVisible: |
         =Reset(EWDR_dp_FromDate);Reset(EWDR_dp_ToDate);Reset(EWDR_txt_Description);Reset(EWDR_txt_Reason);
         
         With({startDate:DateValue(EWDR_dp_FromDate.SelectedDate),
               sequenceDays: Sequence(DateDiff(DateValue(EWDR_dp_FromDate.SelectedDate),
                                               DateValue(EWDR_dp_ToDate.SelectedDate)) + 1)
               },
-              ClearCollect(GetDatesList, 
+              ClearCollect(GetStartDatesList, 
                            AddColumns(sequenceDays,
                                       "Date",
                                        DateAdd(startDate, Value - 1, TimeUnit.Days),
@@ -19,7 +19,26 @@ ExtraWorkingRequestScreen As screen:
                            )
               )
         );
-        ClearCollect(colMatch,Filter(GetDatesList,Not(Date in 'Holiday Lists'.Date)));
+        ClearCollect(colStartMatch,Filter(GetStartDatesList,Not(Date in 'Holiday Lists'.Date)));
+        
+        With({startDate:DateValue(EWDR_dp_ToDate.SelectedDate),
+              sequenceDays: Sequence(DateDiff(DateValue(EWDR_dp_FromDate.SelectedDate),
+                                              DateValue(EWDR_dp_ToDate.SelectedDate)) + 1)
+              },
+              ClearCollect(GetEndDatesList, 
+                           AddColumns(sequenceDays,
+                                      "Date",
+                                       DateAdd(startDate, Value - 1, TimeUnit.Days),
+                                      "Day Num",
+                                      "Day " & (Value),
+                                      "Day Name",                              
+                                      Text(DateAdd(startDate, Value - 1, TimeUnit.Days),
+                                           "dddd"
+                                      )
+                           )
+              )
+        );
+        ClearCollect(colEndMatch,Filter(GetEndDatesList,Not(Date in 'Holiday Lists'.Date)));
 
     EWDR_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -453,12 +472,12 @@ ExtraWorkingRequestScreen As screen:
                             If(
                                 //If dates would result in negative Number, show warning
                                 !IsBlank(EWDR_dp_FromDate.SelectedDate) && !IsBlank(EWDR_dp_ToDate.SelectedDate) && (EWDR_dp_FromDate.SelectedDate > EWDR_dp_ToDate.SelectedDate),
-                                "Please select a decision date after the request",
+                                "Please select a end date after the start date",
                             With({startDate:DateValue(EWDR_dp_FromDate.SelectedDate),
                                   sequenceDays: Sequence(DateDiff(DateValue(EWDR_dp_FromDate.SelectedDate),
                                                                   DateValue(EWDR_dp_ToDate.SelectedDate)) + 1)
                                   },
-                                  ClearCollect(GetDatesList, 
+                                  ClearCollect(GetStartDatesList, 
                                                AddColumns(sequenceDays,
                                                           "Date",
                                                            DateAdd(startDate, Value - 1, TimeUnit.Days),
@@ -471,7 +490,29 @@ ExtraWorkingRequestScreen As screen:
                                                )
                                   )
                             ));
-                            ClearCollect(colMatch,Filter(GetDatesList,Not(Date in 'Holiday Lists'.Date)));
+                            If(
+                                //If dates would result in negative Number, show warning
+                                !IsBlank(EWDR_dp_FromDate.SelectedDate) && !IsBlank(EWDR_dp_ToDate.SelectedDate) && (EWDR_dp_FromDate.SelectedDate > EWDR_dp_ToDate.SelectedDate),
+                                "Please select a end date after the start date",
+                            With({startDate:DateValue(EWDR_dp_ToDate.SelectedDate),
+                                  sequenceDays: Sequence(DateDiff(DateValue(EWDR_dp_FromDate.SelectedDate),
+                                                                  DateValue(EWDR_dp_ToDate.SelectedDate)) + 1)
+                                  },
+                                  ClearCollect(GetEndDatesList, 
+                                               AddColumns(sequenceDays,
+                                                          "Date",
+                                                           DateAdd(startDate, Value - 1, TimeUnit.Days),
+                                                          "Day Num",
+                                                          "Day " & (Value),
+                                                          "Day Name",                              
+                                                          Text(DateAdd(startDate, Value - 1, TimeUnit.Days),
+                                                               "dddd"
+                                                          )
+                                               )
+                                  )
+                            ));
+                            ClearCollect(colStartMatch,Filter(GetStartDatesList,Not(Date in 'Holiday Lists'.Date)));
+                            ClearCollect(colEndMatch,Filter(GetEndDatesList,Not(Date in 'Holiday Lists'.Date)));
                         Size: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -630,14 +671,14 @@ ExtraWorkingRequestScreen As screen:
                             =If(
                                 !IsEWDEdit &&(Month(EWDR_dp_FromDate.SelectedDate) = Month(Today()) || EWDR_dp_FromDate.SelectedDate > Today()) && (Month(EWDR_dp_ToDate.SelectedDate) = Month(Today()) || EWDR_dp_ToDate.SelectedDate > Today()),
                                 If(
-                                    IsEmpty(colMatch),
+                                    IsEmpty(colStartMatch) || IsEmpty(colEndMatch),
                                     DisplayMode.Edit,
                                     If(
                             // Check if weekend is selected
                                         Weekday(
-                                            First(colMatch).Date,
+                                            First(colStartMatch).Date,
                                             StartOfWeek.Monday
-                                        ) > 5,
+                                        ) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                                         If(
                                             StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                                             DisplayMode.Disabled,
@@ -717,12 +758,12 @@ ExtraWorkingRequestScreen As screen:
                         DisplayMode: |-
                             =If(
                                !IsEWDEdit&& (Month(EWDR_dp_FromDate.SelectedDate) = Month(Today()) || EWDR_dp_FromDate.SelectedDate > Today()) && (Month(EWDR_dp_ToDate.SelectedDate) = Month(Today()) || EWDR_dp_ToDate.SelectedDate > Today()),
-                                    If(IsEmpty(colMatch),DisplayMode.Edit,If(
+                                    If(IsEmpty(colStartMatch) || IsEmpty(colEndMatch),DisplayMode.Edit,If(
                             // Check if weekend is selected
                                 Weekday(
-                                    First(colMatch).Date,
+                                    First(colStartMatch).Date,
                                     StartOfWeek.Monday
-                                ) > 5,
+                                ) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                                 If(
                                     StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                                     DisplayMode.Disabled,
@@ -791,12 +832,12 @@ ExtraWorkingRequestScreen As screen:
                         DisplayMode: |-
                             =If(
                               !IsEWDEdit &&  (Month(EWDR_dp_FromDate.SelectedDate) = Month(Today()) || EWDR_dp_FromDate.SelectedDate > Today()) && (Month(EWDR_dp_ToDate.SelectedDate) = Month(Today()) || EWDR_dp_ToDate.SelectedDate > Today()),
-                                    If(IsEmpty(colMatch),DisplayMode.Edit,If(
+                                    If(IsEmpty(colStartMatch) || IsEmpty(colEndMatch),DisplayMode.Edit,If(
                             // Check if weekend is selected
                                 Weekday(
-                                    First(colMatch).Date,
+                                    First(colStartMatch).Date,
                                     StartOfWeek.Monday
-                                ) > 5,
+                                ) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                                 If(
                                     StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                                     DisplayMode.Disabled,
@@ -924,14 +965,14 @@ ExtraWorkingRequestScreen As screen:
                             =If(
                                !IsEWDEdit &&  (Month(EWDR_dp_FromDate.SelectedDate) = Month(Today()) || EWDR_dp_FromDate.SelectedDate > Today()) && (Month(EWDR_dp_ToDate.SelectedDate) = Month(Today()) || EWDR_dp_ToDate.SelectedDate > Today()),
                                 If(
-                                    IsEmpty(colMatch),
+                                    IsEmpty(colStartMatch) || IsEmpty(colEndMatch),
                                     DisplayMode.Edit,
                                     If(
                             // Check if weekend is selected
                                         Weekday(
-                                            First(colMatch).Date,
+                                            First(colStartMatch).Date,
                                             StartOfWeek.Monday
-                                        ) > 5,
+                                        ) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                                         If(
                                             StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                                             DisplayMode.Disabled,
@@ -1042,12 +1083,12 @@ ExtraWorkingRequestScreen As screen:
                         DisplayMode: |-
                             =If(
                                !IsEWDEdit &&  (Month(EWDR_dp_FromDate.SelectedDate) = Month(Today()) || EWDR_dp_FromDate.SelectedDate > Today()) && (Month(EWDR_dp_ToDate.SelectedDate) = Month(Today()) || EWDR_dp_ToDate.SelectedDate > Today()),
-                                    If(IsEmpty(colMatch),DisplayMode.Edit,If(
+                                    If(IsEmpty(colStartMatch) || IsEmpty(colEndMatch),DisplayMode.Edit,If(
                             // Check if weekend is selected
                                 Weekday(
-                                    First(colMatch).Date,
+                                    First(colStartMatch).Date,
                                     StartOfWeek.Monday
-                                ) > 5,
+                                ) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                                 If(
                                     StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                                     DisplayMode.Disabled,
@@ -1177,12 +1218,10 @@ ExtraWorkingRequestScreen As screen:
                             )
                         Text: ="Extra Working not apply on working day."
                         Visible: |-
-                            =If(IsEmpty(colMatch),false,If(
+                            =If(IsEmpty(colStartMatch) || IsEmpty(colEndMatch),false,
+                            If(
                             // Check if weekend is selected
-                                Weekday(
-                                    First(colMatch).Date,
-                                    StartOfWeek.Monday
-                                ) > 5,
+                                Weekday(First(colStartMatch).Date,StartOfWeek.Monday) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                                 If(
                                     StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                                     true,
@@ -1601,12 +1640,12 @@ ExtraWorkingRequestScreen As screen:
                 DisplayMode: |-
                     =If(
                         (Month(EWDR_dp_FromDate.SelectedDate) = Month(Today()) || EWDR_dp_FromDate.SelectedDate > Today()) && (Month(EWDR_dp_ToDate.SelectedDate) = Month(Today()) || EWDR_dp_ToDate.SelectedDate > Today()),
-                            If(IsEmpty(colMatch),DisplayMode.Edit,If(
+                            If(IsEmpty(colStartMatch) || IsEmpty(colEndMatch),DisplayMode.Edit,If(
                     // Check if weekend is selected
                         Weekday(
-                            First(colMatch).Date,
+                            First(colStartMatch).Date,
                             StartOfWeek.Monday
-                        ) > 5,
+                        ) > 5 && Weekday(First(colEndMatch).Date,StartOfWeek.Monday) > 5,
                         If(
                             StartLastSaturday = EWDR_dp_FromDate.SelectedDate || EndLastSaturday = EWDR_dp_ToDate.SelectedDate,
                             DisplayMode.Disabled,
