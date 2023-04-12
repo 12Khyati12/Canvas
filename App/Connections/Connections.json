@@ -1,8 +1,5 @@
 {
   "180c1ae1-cb82-408a-97ce-92f75cd963e3": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Office 365 Users",
@@ -20,9 +17,6 @@
     "id": "180c1ae1-cb82-408a-97ce-92f75cd963e3"
   },
   "62f14051-3194-4a0a-9e2e-caa13653e40d": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Office 365 Outlook",
