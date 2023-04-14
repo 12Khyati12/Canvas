@@ -706,7 +706,7 @@
                 },
                 "region": {
                   "charLength": 55,
-                  "charOffset": 93,
+                  "charOffset": 113,
                   "snippet": {
                     "text": "Text('Expense Request Number'.'Expense Request Number')"
                   }
@@ -746,7 +746,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 149,
+                  "charOffset": 169,
                   "snippet": {
                     "text": "="
                   }
@@ -786,7 +786,7 @@
                 },
                 "region": {
                   "charLength": 55,
-                  "charOffset": 249,
+                  "charOffset": 269,
                   "snippet": {
                     "text": "Text('Expense Request Number'.'Expense Request Number')"
                   }
@@ -826,7 +826,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 305,
+                  "charOffset": 325,
                   "snippet": {
                     "text": "="
                   }
