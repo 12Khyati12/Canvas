@@ -463,7 +463,9 @@
                               10,13
                             )
                         Text: |-
-                            ="Description :" & ThisItem.Description
+                            ="Description :" & ThisItem.Description & "|" & "₹" & 
+                            If(Sum(Filter('Expense Request Lines',Text('Expense Request Number'.'Expense Request Number') = ThisItem.'Expense Request Number'),'Expense Amount')>0, 
+                            Text(Sum(Filter('Expense Request Lines',Text('Expense Request Number'.'Expense Request Number') = ThisItem.'Expense Request Number'),'Expense Amount')," #,###.00")," 0.00")
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

@@ -37,7 +37,7 @@ App As appinfo:
                 icon: EmployeeDetail
             },
             {
-                type: "Expense Report",
+                type: "Expense Management",
                 icon: Expense
             },
             {

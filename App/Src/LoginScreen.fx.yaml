@@ -91,7 +91,7 @@
                             WorkFromHomeScreen,
                             ScreenTransition.Fade
                         ),
-                        HS_RequestGallery.Selected.type = "Expense Report",
+                        HS_RequestGallery.Selected.type = "Expense Management",
                         Navigate(
                             ExpenseManagementScreen,
                             ScreenTransition.Fade

@@ -111,10 +111,7 @@
                            13
                         )
                     Text: |-
-                        =
-                            If(
-                            Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
-                        
+                        =If(Len(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_requested_employee.'Full Name'))>30,
                         Left(Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number'   & " | " & ThisItem.dt_requested_employee.'Full Name'),30),
                         Text(ThisItem.dt_application_transaction_number & " | " & ThisItem.dt_application_request.'Application Request Number' & " | " & ThisItem.dt_requested_employee.'Full Name'))
                     VerticalAlign: =VerticalAlign.Top
