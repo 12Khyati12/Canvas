@@ -518,7 +518,6 @@
                             )
                         Icon: =Icon.ChevronRight
                         OnSelect: =Select(Parent)
-                        Visible: =false
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,

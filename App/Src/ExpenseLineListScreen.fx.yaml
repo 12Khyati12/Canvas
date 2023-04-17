@@ -1,0 +1,82 @@
+"ExpenseLineListScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    ELL_MainContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        ELL_HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            ELL_icon_back As icon.ChevronLeft:
+                Color: =AppColor.PrimaryColor
+                Height: |-
+                    =
+                    If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
+                Icon: =Icon.ChevronLeft
+                OnSelect: =Back()
+                PaddingLeft: =10
+                PaddingRight: =10
+                Width: |-
+                    =
+                    Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+                ZIndex: =1
+
+            ELL_lbl_AppTitle As label:
+                Align: =Align.Center
+                Color: =AppColor.PrimaryColor
+                FillPortions: =7
+                Font: =Font.Georgia
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                Size: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        12,
+                        ScreenSize.Medium,
+                       16,
+                       18
+                    )
+                Text: ="Expense Line"
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        Parent.Width,
+                        Parent.Width/1.2
+                    )
+                ZIndex: =2
+
+        ELL_rect_Divider As rectangle:
+            Height: =1
+            Width: =Parent.Width
+            Y: =88
+            ZIndex: =2
+
+        ELL_DataContainer As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+        ELL_FooterContainer As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+

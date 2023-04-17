@@ -132,6 +132,7 @@
     "AddEditExpenseLine",
     "ExpenseReviewerScreen",
     "ExpenseApproverScreen",
+    "ExpenseLineListScreen",
     "WorkFromHomeScreen",
     "WorkFromHomeRequestScreen",
     "WFHManagerScreen",

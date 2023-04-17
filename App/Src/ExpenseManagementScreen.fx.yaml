@@ -408,7 +408,7 @@
                             =Table(
                                 {Filter: "Draft"},
                                 {Filter: "Submitted"},
-                                {Filter: "Review"},
+                                {Filter: "Reviewed"},
                                 {Filter: "Approved"},
                                 {Filter: "Rejected"}
                             )
@@ -507,7 +507,7 @@
                                                     EMS_dd_View.Selected.Value
                                                 ),
                                                 If(
-                                                    RequestSelect = "Review",
+                                                    RequestSelect = "Reviewed",
                                                     Filter(
                                                         'Expense Requests',
                                                         'Expense Request Status' = [@'Expense Request Status'].'Approved Reviewer',
@@ -701,7 +701,7 @@
                                 )
                             Image: =EditData
                             OnSelect: =Navigate(ExpenseLineScreen,BorderStyle.None);
-                            Visible: =If(RequestSelect = "Approved"|| RequestSelect = "Review",false,true)
+                            Visible: =If(RequestSelect = "Approved"|| RequestSelect = "Reviewed",false,true)
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
@@ -734,7 +734,7 @@
                                 Refresh('Expense Request Lines');
                                 Refresh('Expense Requests');
                                 Notify("Expense Delete",NotificationType.Success);
-                            Visible: =If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Review",false,true)
+                            Visible: =If(RequestSelect = "Approved" || RequestSelect = "Rejected" || RequestSelect = "Reviewed",false,true)
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,
