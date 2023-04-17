@@ -47,7 +47,7 @@
                        16,
                        18
                     )
-                Text: ="Expense Line"
+                Text: ="Expense"
                 Width: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -1009,8 +1009,93 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =75
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =50
+            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =4
+
+            ELL_btn_Declined As button:
+                Fill: =AppColor.DeclineColor
+                HoverFill: =ColorFade(RGBA(255, 0, 0, 1), -20%)
+                OnSelect: |-
+                    =Patch(
+                        'Expense Request Status',
+                        First(
+                            Filter(
+                                'Expense Request Status',
+                                'Expense Request Number' = ELL_lbl_ExpenseNumber.Text
+                            )
+                        ),
+                        { 'Expense Request Status': [@'Expense Request Status'].Rejected}
+                    );
+                    Notify("Expense Rejected",NotificationType.Success);
+                    
+                    ClearCollect(updateExpenseLine, Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = ELL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending));
+                    
+                    UpdateIf(updateExpenseLine,true, 
+                    { 
+                        'Expense Request Line Status': [@'Expense Request Line Status'].Rejected
+                    }
+                    );
+                    
+                    Notify("Expense Rejected",NotificationType.Success);
+                    Refresh('Expense Request Lines');
+                    Refresh('Expense Requests');
+                    Back();
+                Size: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        9,
+                       12
+                    )
+                Text: ="Decline"
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                       Parent.Width/3,
+                       Parent.Width/5
+                    )
+                ZIndex: =1
+
+            ELL_btn_Approved As button:
+                Fill: =AppColor.ApproveColor
+                HoverFill: =ColorFade(RGBA(54, 176, 75, 1), -20%)
+                OnSelect: |
+                    =Patch(
+                        'Application Requests',
+                        First(
+                            Filter(
+                                'Application Requests',
+                                'Application Request Number' = LRS_gallery_FilterRequest.Selected.dt_application_request_number
+                            )
+                        ),
+                        {'Application Request Status': [@'Application Request Status'].Approved}
+                    );
+                    Notify(
+                        "Request Approved",
+                        NotificationType.Success
+                    );
+                    Refresh('Application Requests');
+                    Back();
+                Size: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                        9,
+                       12
+                    )
+                Text: ="Approve"
+                Width: |-
+                    =Switch(
+                        App.ActiveScreen.Size,
+                        ScreenSize.Small,
+                       Parent.Width/3,
+                       Parent.Width/5
+                    )
+                ZIndex: =2
 
