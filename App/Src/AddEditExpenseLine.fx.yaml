@@ -607,7 +607,7 @@
                                13
                             )
                         Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
+                        Width: =Parent.Width - 160
                         Wrap: =false
                         X: =30
                         Y: =10
@@ -668,6 +668,21 @@
                         Wrap: =false
                         Y: =DataCardKey23.Y
                         ZIndex: =4
+
+                    Icon5 As icon.Camera:
+                        Color: =AppColor.PrimaryColor
+                        Height: |-
+                            =Switch(
+                                App.ActiveScreen.Size,
+                                ScreenSize.Small,
+                                Parent.Height/6,
+                                Parent.Height/5
+                            )
+                        Icon: =Icon.Camera
+                        Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+                        X: =DataCardKey23.X + DataCardKey23.Width + 20
+                        Y: =10
+                        ZIndex: =5
 
         AEL_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer

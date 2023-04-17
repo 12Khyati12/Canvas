@@ -18609,6 +18609,36 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon5.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon5.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
         }
       ],
       "tool": {
