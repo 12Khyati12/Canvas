@@ -105,7 +105,13 @@
                             Parent.Height/6,
                             Parent.Height/5
                         )
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     X: =2
                     Y: =0
                     ZIndex: =1
@@ -338,7 +344,13 @@
                         )
                     Required: =false
                     Update: =DataCardValue10.Selected
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     X: =0
                     Y: =0
                     ZIndex: =2
@@ -444,7 +456,13 @@
                     MaxLength: =
                     Required: =false
                     Update: =DataCardValue18.Text
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     X: =1
                     Y: =0
                     ZIndex: =2
