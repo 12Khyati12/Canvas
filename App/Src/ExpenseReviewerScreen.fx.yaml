@@ -22,6 +22,14 @@
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: |-
+            =Switch(
+                App.ActiveScreen.Size,
+                ScreenSize.Small,
+                LayoutOverflow.Scroll,
+                ScreenSize.ExtraLarge,
+                LayoutOverflow.Hide
+            )
         Width: =Parent.Width
         ZIndex: =1
 
@@ -517,7 +525,7 @@
                                Parent.Height/8
                             )
                         Icon: =Icon.ChevronRight
-                        OnSelect: =Navigate(ExpenseLineListScreen)
+                        OnSelect: =Navigate(ExpenseReviewLineLScreen)
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -641,7 +649,7 @@
         ERS_FooterContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =75
+            Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -787,7 +795,7 @@
                         true
                     ); // Reset the checkbox value in Select All set the Reset property ResetCheckbox2
                     
-                    Notify("Expense Approved",NotificationType.Success);
+                    Notify("Expense Reviewed",NotificationType.Success);
                     Set(RequestSelect,"Approved by Reviewer");
                 Size: |-
                     =Switch(

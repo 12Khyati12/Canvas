@@ -603,7 +603,7 @@
                                   10,13
                                 )
                             Text: |-
-                                ="Description :" & ThisItem.Description
+                                ="Title :" & ThisItem.Description
                             Width: |-
                                 =Switch(
                                     App.ActiveScreen.Size,

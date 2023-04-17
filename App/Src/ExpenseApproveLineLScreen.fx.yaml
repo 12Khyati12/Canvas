@@ -1,6 +1,6 @@
-"ExpenseLineListScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"ExpenseApproveLineLScreen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
 
-    ELL_MainContainer As groupContainer.verticalAutoLayoutContainer:
+    EAL_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -8,7 +8,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        ELL_HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+        EAL_HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
@@ -17,7 +17,7 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =1
 
-            ELL_icon_back As icon.ChevronLeft:
+            EAL_icon_back As icon.ChevronLeft:
                 Color: =AppColor.PrimaryColor
                 Height: |-
                     =
@@ -31,7 +31,7 @@
                     Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
                 ZIndex: =1
 
-            ELL_lbl_AppTitle As label:
+            EAL_lbl_AppTitle As label:
                 Align: =Align.Center
                 Color: =AppColor.PrimaryColor
                 FillPortions: =7
@@ -57,13 +57,13 @@
                     )
                 ZIndex: =2
 
-        ELL_rect_Divider As rectangle:
+        EAL_rect_Divider As rectangle:
             Height: =1
             Width: =Parent.Width
             Y: =88
             ZIndex: =2
 
-        ELL_DataContainer As groupContainer.verticalAutoLayoutContainer:
+        EAL_DataContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -71,7 +71,8 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            ELL_ExpenseDetailContainer As groupContainer.horizontalAutoLayoutContainer:
+            EAL_ExpenseDetailContainer As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =AppColor.PrimaryColor
                 Height: =Parent.Height/2
                 LayoutMinHeight: =100
@@ -82,7 +83,7 @@
                 Y: =20
                 ZIndex: =1
 
-                ELL_ExpenseContainer As groupContainer.horizontalAutoLayoutContainer:
+                EAL_ExpenseContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4
@@ -101,7 +102,7 @@
                         )
                     ZIndex: =1
 
-                    ELL_RequestNumberContainer As groupContainer.horizontalAutoLayoutContainer:
+                    EAL_RequestNumberContainer As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
@@ -113,7 +114,7 @@
                         Width: =Parent.Width/2
                         ZIndex: =1
 
-                        ELL_lbl_ExpenseNumber As label:
+                        EAL_lbl_ExpenseNumber As label:
                             Color: =AppColor.PrimaryColor
                             FontWeight: =FontWeight.Bold
                             Height: |-
@@ -135,13 +136,13 @@
                                     10,
                                    13
                                 )
-                            Text: =ERS_gallery_FilterRequest.Selected.'Expense Request Number'
+                            Text: =EAS_gallery_FilterRequest.Selected.'Expense Request Number'
                             Width: =Parent.Width
                             X: =1
                             Y: =12
                             ZIndex: =1
 
-                    ELL_RequesterContainer As groupContainer.horizontalAutoLayoutContainer:
+                    EAL_RequesterContainer As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
@@ -154,132 +155,7 @@
                         Width: =Parent.Width/2
                         ZIndex: =2
 
-                        ELL_lbl_Approver As label:
-                            Color: =AppColor.PrimaryColor
-                            Height: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    Parent.Height,
-                                    Parent.Height
-                                )
-                            OnSelect: =
-                            PaddingBottom: =0
-                            PaddingRight: =10
-                            PaddingTop: =0
-                            Size: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    10,
-                                   13
-                                )
-                            Text: |-
-                                ="Requester : " & ERS_gallery_FilterRequest.Selected.'Expense Approver'.'Full Name'
-                            Width: =Parent.Width
-                            X: =1
-                            Y: =12
-                            ZIndex: =1
-
-                ELL_ExpenseTitleContainer As groupContainer.horizontalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =Parent.Height/4
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =Parent.Height
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    LayoutWrap: =true
-                    Width: =Parent.Width
-                    ZIndex: =2
-
-                    ELL_TitleContainer As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.SetByContainer
-                        FillPortions: =0
-                        Height: =Parent.Height
-                        LayoutAlignItems: =LayoutAlignItems.Center
-                        LayoutDirection: =LayoutDirection.Vertical
-                        LayoutJustifyContent: =LayoutJustifyContent.Center
-                        LayoutMinHeight: =40
-                        LayoutMinWidth: =250
-                        LayoutMode: =LayoutMode.Auto
-                        LayoutWrap: =true
-                        Width: =Parent.Width/2
-                        ZIndex: =1
-
-                        ELL_lbl_Title As label:
-                            AlignInContainer: =AlignInContainer.Start
-                            Color: =AppColor.PrimaryColor
-                            Height: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    Parent.Height,
-                                    Parent.Height
-                                )
-                            OnSelect: =
-                            PaddingBottom: =0
-                            PaddingLeft: =40
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    10,
-                                   13
-                                )
-                            Text: |-
-                                ="Title : " & ERS_gallery_FilterRequest.Selected.Description
-                            Width: =Parent.Width
-                            X: =1
-                            Y: =12
-                            ZIndex: =2
-
-                        ELL_text_Title As label:
-                            BorderColor: =AppColor.PrimaryColor
-                            BorderThickness: =2
-                            Color: =AppColor.PrimaryColor
-                            DisplayMode: =DisplayMode.View
-                            Height: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    Parent.Height/1.9,
-                                    Parent.Height/1.8
-                                )
-                            Size: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    10,
-                                   13
-                                )
-                            Text: =ERS_gallery_FilterRequest.Selected.Description
-                            Visible: =false
-                            Width: |
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    Parent.Width/1.8,
-                                    Parent.Width/2.1
-                                )
-                            ZIndex: =3
-
-                    ELL_ProjectContainer As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.SetByContainer
-                        FillPortions: =0
-                        Height: =Parent.Height
-                        LayoutDirection: =LayoutDirection.Vertical
-                        LayoutJustifyContent: =LayoutJustifyContent.Center
-                        LayoutMinHeight: =40
-                        LayoutMinWidth: =250
-                        LayoutMode: =LayoutMode.Auto
-                        LayoutWrap: =true
-                        Width: =Parent.Width/2
-                        ZIndex: =3
-
-                        ELL_lbl_Project As label:
+                        EAL_lbl_Approver As label:
                             Color: =AppColor.PrimaryColor
                             Height: |-
                                 =Switch(
@@ -301,13 +177,138 @@
                                    13
                                 )
                             Text: |-
-                                ="Project : " & ERS_gallery_FilterRequest.Selected.'Project Name'.'Project Name'
-                            Width: =Parent.Width/2.5
+                                ="Requester : " & EAS_gallery_FilterRequest.Selected.'Expense Approver'.'Full Name'
+                            Width: =Parent.Width
                             X: =1
                             Y: =12
                             ZIndex: =1
 
-                        ELL_dd_Project As dropdown:
+                EAL_ExpenseTitleContainer As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =Parent.Height/4
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =Parent.Height
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    EAL_TitleContainer As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =40
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutWrap: =true
+                        Width: =Parent.Width/2
+                        ZIndex: =1
+
+                        EAL_lbl_Title As label:
+                            Color: =AppColor.PrimaryColor
+                            Height: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    Parent.Height,
+                                    Parent.Height
+                                )
+                            OnSelect: =
+                            PaddingBottom: =0
+                            PaddingLeft: =40
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    10,
+                                   13
+                                )
+                            Text: |-
+                                ="Title : " & EAS_gallery_FilterRequest.Selected.Description
+                            Width: =Parent.Width
+                            X: =1
+                            Y: =12
+                            ZIndex: =2
+
+                        EAL_text_Title As label:
+                            BorderColor: =AppColor.PrimaryColor
+                            BorderThickness: =2
+                            Color: =AppColor.PrimaryColor
+                            DisplayMode: =DisplayMode.View
+                            Height: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    Parent.Height/1.9,
+                                    Parent.Height/1.8
+                                )
+                            Size: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    10,
+                                   13
+                                )
+                            Text: =EAS_gallery_FilterRequest.Selected.Description
+                            Visible: =false
+                            Width: |
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    Parent.Width/1.8,
+                                    Parent.Width/2.1
+                                )
+                            ZIndex: =3
+
+                    EAL_ProjectContainer As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =40
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutWrap: =true
+                        Width: =Parent.Width/2
+                        ZIndex: =3
+
+                        EAL_lbl_Project As label:
+                            Color: =AppColor.PrimaryColor
+                            Height: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    Parent.Height,
+                                    Parent.Height
+                                )
+                            OnSelect: =
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    10,
+                                   13
+                                )
+                            Text: |-
+                                ="Project : " & EAS_gallery_FilterRequest.Selected.'Project Name'.'Project Name'
+                            Width: =Parent.Width
+                            X: =1
+                            Y: =12
+                            ZIndex: =1
+
+                        EAL_dd_Project As dropdown:
                             BorderColor: =RGBA(39, 113, 194, 1)
                             ChevronBackground: =RGBA(39, 113, 194, 1)
                             Color: =RGBA(39, 113, 194, 1)
@@ -344,7 +345,7 @@
                                 )
                             ZIndex: =3
 
-                ELL_ExpenseDateContainer As groupContainer.horizontalAutoLayoutContainer:
+                EAL_ExpenseDateContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4
@@ -362,7 +363,7 @@
                         )
                     ZIndex: =4
 
-                    ELL_FromDateContainer As groupContainer.horizontalAutoLayoutContainer:
+                    EAL_FromDateContainer As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
@@ -376,7 +377,7 @@
                         Width: =Parent.Width/2
                         ZIndex: =1
 
-                        ELL_lbl_FromDate As label:
+                        EAL_lbl_FromDate As label:
                             Color: =AppColor.PrimaryColor
                             Height: |-
                                 =Switch(
@@ -398,16 +399,16 @@
                                    13
                                 )
                             Text: |-
-                                ="From Date : " & Text(DateValue(ERS_gallery_FilterRequest.Selected.'Expense Date'),"dd/mmm/yyyy")
+                                ="From Date : " & Text(DateValue(EAS_gallery_FilterRequest.Selected.'Expense Date'),"dd/mmm/yyyy")
                             Width: =Parent.Width ///2.5
                             X: =1
                             Y: =12
                             ZIndex: =1
 
-                        ELL_dp_FromDate As datepicker:
+                        EAL_dp_FromDate As datepicker:
                             BorderColor: =AppColor.PrimaryColor
                             Color: =AppColor.PrimaryColor
-                            DefaultDate: =ERS_gallery_FilterRequest.Selected.'Expense Date'
+                            DefaultDate: =EAS_gallery_FilterRequest.Selected.'Expense Date'
                             DisplayMode: =DisplayMode.View
                             Format: ="dd/mmm/yyyy"
                             Height: |-
@@ -436,7 +437,7 @@
                                 )
                             ZIndex: =2
 
-                    ELL_ToDateContainer As groupContainer.horizontalAutoLayoutContainer:
+                    EAL_ToDateContainer As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
@@ -449,7 +450,7 @@
                         Width: =Parent.Width/2
                         ZIndex: =2
 
-                        ELL_lbl_EndDate As label:
+                        EAL_lbl_EndDate As label:
                             Color: =AppColor.PrimaryColor
                             Height: |-
                                 =Switch(
@@ -471,16 +472,16 @@
                                    13
                                 )
                             Text: |-
-                                ="End Date : " & Text(DateValue(ERS_gallery_FilterRequest.Selected.'End Date'),"dd/mmm/yyyy")
+                                ="End Date : " & Text(DateValue(EAS_gallery_FilterRequest.Selected.'End Date'),"dd/mmm/yyyy")
                             Width: =Parent.Width
                             X: =1
                             Y: =12
                             ZIndex: =1
 
-                        ELL_dp_EndDate As datepicker:
+                        ERL_dp_EndDate_1 As datepicker:
                             BorderColor: =AppColor.PrimaryColor
                             Color: =AppColor.PrimaryColor
-                            DefaultDate: =ERS_gallery_FilterRequest.Selected.'End Date'
+                            DefaultDate: =EAS_gallery_FilterRequest.Selected.'End Date'
                             DisplayMode: =DisplayMode.View
                             Format: ="dd/mmm/yyyy"
                             Height: |-
@@ -508,7 +509,7 @@
                                 )
                             ZIndex: =2
 
-                ELL_ExpenseStatusContainer As groupContainer.horizontalAutoLayoutContainer:
+                EAL_ExpenseStatusContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4
@@ -526,7 +527,7 @@
                         )
                     ZIndex: =5
 
-                    ELL_CommentContainer As groupContainer.horizontalAutoLayoutContainer:
+                    EAL_CommentContainer As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
@@ -541,7 +542,7 @@
                         Width: =Parent.Width/2
                         ZIndex: =1
 
-                        ELL_lbl_Comment As label:
+                        EAL_lbl_Comment As label:
                             Color: =AppColor.PrimaryColor
                             Height: |-
                                 =Switch(
@@ -568,7 +569,7 @@
                             Y: =12
                             ZIndex: =1
 
-                        ELL_text_Comment As label:
+                        EAL_text_Comment As label:
                             BorderColor: =AppColor.PrimaryColor
                             BorderThickness: =2
                             Color: =AppColor.PrimaryColor
@@ -597,7 +598,7 @@
                                 )
                             ZIndex: =2
 
-                    ELL_StatusContainer As groupContainer.horizontalAutoLayoutContainer:
+                    EAL_StatusContainer As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
@@ -609,9 +610,9 @@
                         Width: =Parent.Width ///2
                         ZIndex: =2
 
-                        ELL_lbl_TotalAmount As label:
+                        EAL_lbl_TotalAmount As label:
                             Color: =RGBA(39, 113, 194, 1)
-                            FontWeight: =FontWeight.Bold
+                            FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             PaddingLeft: =40
                             PaddingRight: =10
@@ -623,11 +624,11 @@
                                    13
                                 )
                             Text: |-
-                                =Text("Total : " ) & Text(Sum(ERS_gallery_FilterRequest.Selected.'Expense Request Lines','Expense Amount'), "₹ ##.00")
+                                =Text("Total : " ) & Text(Sum(EAS_gallery_FilterRequest.Selected.'Expense Request Lines','Expense Amount'), "₹ ##.00")
                             Width: =Parent.Width/2
                             ZIndex: =1
 
-                        ELL_lbl_Status As label:
+                        EAL_lbl_Status As label:
                             Color: =AppColor.ApproveColor
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
@@ -640,11 +641,12 @@
                                    13
                                 )
                             Text: |-
-                                ="Status : " & ERS_gallery_FilterRequest.Selected.'Expense Request Status'
+                                ="Status : " & EAS_gallery_FilterRequest.Selected.'Expense Request Status'
                             Width: =Parent.Width/2
                             ZIndex: =2
 
-            ELL_ExpenseLineContainer As groupContainer.verticalAutoLayoutContainer:
+            EAL_ExpenseLineContainer As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -655,7 +657,7 @@
                 Y: =20
                 ZIndex: =2
 
-                ELL_ELHeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+                EAL_ELHeaderContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     Fill: =AppColor.PrimaryColor
                     FillPortions: =0
@@ -674,7 +676,7 @@
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Label3_21 As label:
+                    Label3_28 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =Color.White
@@ -695,7 +697,7 @@
                         Y: =74
                         ZIndex: =2
 
-                    Label3_23 As label:
+                    Label3_29 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =Color.White
@@ -716,7 +718,7 @@
                         Y: =74
                         ZIndex: =3
 
-                    Label3_24 As label:
+                    Label3_30 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =Color.White
@@ -737,7 +739,7 @@
                         Y: =74
                         ZIndex: =4
 
-                    Label3_25 As label:
+                    Label3_31 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =Color.White
@@ -758,7 +760,7 @@
                         Y: =74
                         ZIndex: =5
 
-                    Label3_26 As label:
+                    Label3_32 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =Color.White
@@ -779,7 +781,7 @@
                         Y: =74
                         ZIndex: =6
 
-                    Label3_27 As label:
+                    Label3_33 As label:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =Color.White
@@ -801,7 +803,7 @@
                         Y: =74
                         ZIndex: =7
 
-                ELL_ELDataContainer As groupContainer.verticalAutoLayoutContainer:
+                EAL_ELDataContainer As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/1.2
@@ -813,13 +815,13 @@
                     Width: =Parent.Width-5
                     ZIndex: =2
 
-                    "ELL_gallery_ExpenseLine As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    "EAL_gallery_ExpenseLine As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                         AlignInContainer: =AlignInContainer.SetByContainer
                         BorderColor: =AppColor.PrimaryColor
                         BorderThickness: =1
                         FillPortions: =0
                         Height: =Parent.Height
-                        Items: =Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = ELL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending)
+                        Items: =Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = EAL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending)
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =Parent.Height/2
                         LayoutMinWidth: =320
@@ -833,7 +835,7 @@
                         Y: =144
                         ZIndex: =1
 
-                        lblInvoiceDate_1 As label:
+                        lblInvoiceDate_2 As label:
                             Align: =Align.Center
                             BorderColor: =AppColor.PrimaryColor
                             BorderThickness: =2
@@ -855,10 +857,10 @@
                                 )
                             Text: =Text(DateValue(ThisItem.'Invoice Date', "en-US"),"dd/mmm/yyyy")
                             Width: =Parent.Width/6
-                            X: =lblInvoiceno_1.X+lblInvoiceno_1.Width
-                            ZIndex: =4
+                            X: =lblInvoiceno_2.X+lblInvoiceno_2.Width
+                            ZIndex: =1
 
-                        lblInvoiceno_1 As label:
+                        lblInvoiceno_2 As label:
                             Align: =Align.Center
                             BorderColor: =AppColor.PrimaryColor
                             BorderThickness: =2
@@ -879,10 +881,10 @@
                                 )
                             Text: =ThisItem.'Invoice Number'
                             Width: =Parent.Width/6
-                            X: =lblDescription_1.X+lblDescription_1.Width
-                            ZIndex: =5
+                            X: =lblDescription_2.X+lblDescription_2.Width
+                            ZIndex: =2
 
-                        lblDescription_1 As label:
+                        lblDescription_2 As label:
                             Align: =Align.Center
                             BorderColor: =AppColor.PrimaryColor
                             BorderThickness: =2
@@ -903,10 +905,10 @@
                                 )
                             Text: =ThisItem.Description
                             Width: =Parent.Width/6
-                            X: =lblCategory_1.X+lblCategory_1.Width
-                            ZIndex: =6
+                            X: =lblCategory_2.X+lblCategory_2.Width
+                            ZIndex: =3
 
-                        lblCategory_1 As label:
+                        lblCategory_2 As label:
                             Align: =Align.Center
                             BorderColor: =AppColor.PrimaryColor
                             BorderThickness: =2
@@ -927,9 +929,9 @@
                                 )
                             Text: =ThisItem.'Expense Type'.'Expense Type (dt_expense_type)'
                             Width: =Parent.Width/6
-                            ZIndex: =14
+                            ZIndex: =4
 
-                        lblAmount_1 As label:
+                        lblAmount_2 As label:
                             Align: =Align.Center
                             BorderColor: =AppColor.PrimaryColor
                             BorderThickness: =2
@@ -951,34 +953,10 @@
                             Text: |-
                                 =Text(ThisItem.'Expense Amount', "₹ ##.00")
                             Width: =Parent.Width/6
-                            X: =lblInvoiceDate_1.X+lblInvoiceDate_1.Width
-                            ZIndex: =15
+                            X: =lblInvoiceDate_2.X+lblInvoiceDate_2.Width
+                            ZIndex: =5
 
-                        lblAttachement_1 As label:
-                            Align: =Align.Center
-                            BorderColor: =AppColor.PrimaryColor
-                            BorderThickness: =2
-                            Color: =AppColor.PrimaryColor
-                            Height: |
-                                =50
-                            OnSelect: =Select(Parent)
-                            PaddingBottom: =0
-                            PaddingLeft: =10
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: |-
-                                =Switch(
-                                    App.ActiveScreen.Size,
-                                    ScreenSize.Small,
-                                    8,
-                                   10
-                                )
-                            Text: =ThisItem.Attachment.FileName
-                            Width: =Parent.Width/6
-                            X: =lblAmount_1.X+lblAmount_1.Width
-                            ZIndex: =16
-
-                        imgEdit_1 As image:
+                        imgEdit_2 As image:
                             Height: =50
                             Image: =EditData
                             OnSelect: |-
@@ -988,10 +966,10 @@
                             PaddingRight: =5
                             Visible: =false
                             Width: =1
-                            X: =lblAttachement_1.X+lblAttachement_1.Width
-                            ZIndex: =17
+                            X: =lblAttachement_2.X+lblAttachement_2.Width
+                            ZIndex: =6
 
-                        imgDelete_1 As image:
+                        imgDelete_2 As image:
                             Height: =50
                             Image: =Delete
                             OnSelect: |-
@@ -1003,37 +981,88 @@
                             PaddingRight: =5
                             Visible: =false
                             Width: =1
-                            ZIndex: =18
+                            ZIndex: =7
 
-        ELL_FooterContainer As groupContainer.horizontalAutoLayoutContainer:
+                        DataCardValue_2 As attachments:
+                            BorderColor: =Parent.BorderColor
+                            Color: =AppColor.PrimaryColor
+                            Default: =ThisItem.Attachment
+                            DisplayMode: =DisplayMode.View
+                            Height: =50
+                            IsInDataCard: =true
+                            Items: =ThisItem.Attachment
+                            MaxAttachments: =1
+                            MaxAttachmentSize: =1
+                            PaddingBottom: =5
+                            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                            PaddingRight: =5
+                            PaddingTop: =5
+                            Size: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    10,
+                                   13
+                                )
+                            Tooltip: =//Parent.DisplayName
+                            Width: =Parent.Width/6
+                            X: =lblAmount_2.X+lblAmount_2.Width
+                            ZIndex: =8
+
+                        lblAttachement_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =AppColor.PrimaryColor
+                            BorderThickness: =2
+                            Color: =AppColor.PrimaryColor
+                            Height: |
+                                =50
+                            OnSelect: =
+                            PaddingBottom: =0
+                            PaddingLeft: =10
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Size: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    8,
+                                   10
+                                )
+                            Text: =
+                            Visible: =false
+                            Width: =Parent.Width/6
+                            X: =lblAmount_2.X+lblAmount_2.Width
+                            ZIndex: =9
+
+        EAL_FooterContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =75
+            Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
+            Visible: =If( ERS_gallery_FilterRequest.Selected.'Expense Request Status' = 'Expense Request Status'.Approved ,false,true)
             ZIndex: =4
 
-            ELL_btn_Declined As button:
+            EAL_btn_Declined As button:
                 Fill: =AppColor.DeclineColor
                 HoverFill: =ColorFade(RGBA(255, 0, 0, 1), -20%)
                 OnSelect: |-
                     =Patch(
-                        'Expense Request Status',
+                        'Expense Requests',
                         First(
                             Filter(
-                                'Expense Request Status',
-                                'Expense Request Number' = ELL_lbl_ExpenseNumber.Text
+                                'Expense Requests',
+                                'Expense Request Number' = EAL_lbl_ExpenseNumber.Text
                             )
                         ),
                         { 'Expense Request Status': [@'Expense Request Status'].Rejected}
                     );
-                    Notify("Expense Rejected",NotificationType.Success);
                     
-                    ClearCollect(updateExpenseLine, Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = ELL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending));
+                    ClearCollect(updateExpenseLine, Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = EAL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending));
                     
                     UpdateIf(updateExpenseLine,true, 
                     { 
@@ -1062,25 +1091,32 @@
                     )
                 ZIndex: =1
 
-            ELL_btn_Approved As button:
+            EAL_btn_Approved As button:
                 Fill: =AppColor.ApproveColor
                 HoverFill: =ColorFade(RGBA(54, 176, 75, 1), -20%)
-                OnSelect: |
+                OnSelect: |-
                     =Patch(
-                        'Application Requests',
+                        'Expense Requests',
                         First(
                             Filter(
-                                'Application Requests',
-                                'Application Request Number' = LRS_gallery_FilterRequest.Selected.dt_application_request_number
+                                'Expense Requests',
+                                'Expense Request Number' = EAL_lbl_ExpenseNumber.Text
                             )
                         ),
-                        {'Application Request Status': [@'Application Request Status'].Approved}
+                        { 'Expense Request Status': [@'Expense Request Status'].'Approved'}
                     );
-                    Notify(
-                        "Request Approved",
-                        NotificationType.Success
+                    
+                    ClearCollect(updateExpenseLine, Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = EAL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending));
+                    
+                    UpdateIf(updateExpenseLine,true, 
+                    { 
+                        'Expense Request Line Status': [@'Expense Request Line Status'].'Approved'
+                    }
                     );
-                    Refresh('Application Requests');
+                    
+                    Notify("Expense Approved",NotificationType.Success);
+                    Refresh('Expense Request Lines');
+                    Refresh('Expense Requests');
                     Back();
                 Size: |-
                     =Switch(

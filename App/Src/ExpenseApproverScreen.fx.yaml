@@ -21,6 +21,14 @@
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: |-
+            =Switch(
+                App.ActiveScreen.Size,
+                ScreenSize.Small,
+                LayoutOverflow.Scroll,
+                ScreenSize.ExtraLarge,
+                LayoutOverflow.Hide
+            )
         Width: =Parent.Width
         ZIndex: =1
 
@@ -459,7 +467,7 @@
                               10,13
                             )
                         Text: |-
-                            ="Description :" & ThisItem.Description& " | " & "Total Amount : " & "₹" & 
+                            =ThisItem.Description& " | " & "Total Amount : " & "₹" & 
                             If(Sum(Filter('Expense Request Lines',Text('Expense Request Number'.'Expense Request Number') = ThisItem.'Expense Request Number'),'Expense Amount')>0, 
                             Text(Sum(Filter('Expense Request Lines',Text('Expense Request Number'.'Expense Request Number') = ThisItem.'Expense Request Number'),'Expense Amount')," #,###.00")," 0.00")
                         Width: |-
@@ -513,8 +521,7 @@
                                Parent.Height/8
                             )
                         Icon: =Icon.ChevronRight
-                        OnSelect: =Select(Parent)
-                        Visible: =false
+                        OnSelect: =Navigate(ExpenseApproveLineLScreen)
                         Width: |-
                             =Switch(
                                 App.ActiveScreen.Size,
@@ -638,7 +645,7 @@
         EAS_FooterContainer As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
-            Height: =75
+            Height: =Parent.Height/10
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
