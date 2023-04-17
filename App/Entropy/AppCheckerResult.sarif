@@ -11566,6 +11566,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Camera1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Camera1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Camera1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],

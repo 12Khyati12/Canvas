@@ -237,7 +237,7 @@
                                 App.ActiveScreen.Size,
                                 ScreenSize.Small,
                                 Parent.Height/3,
-                                Parent.Height/3
+                                Parent.Height/9
                             )
                         IconBackground: =AppColor.PrimaryColor
                         IsEditable: =true
@@ -318,7 +318,7 @@
                                 App.ActiveScreen.Size,
                                 ScreenSize.Small,
                                 Parent.Height/3,
-                                Parent.Height/3
+                                Parent.Height/9
                             )
                         PaddingLeft: =5
                         RadiusBottomLeft: =0
@@ -568,22 +568,10 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: ="Attachment"
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Height/4,
-                            Parent.Height/3.5
-                        )
+                    Height: =490
                     Required: =false
                     Update: =DataCardValue21.Attachments
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     WidthFit: =false
                     X: =2
                     Y: =1
@@ -618,13 +606,7 @@
                         Color: =AppColor.PrimaryColor
                         Default: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         DisplayMode: =Parent.DisplayMode
-                        Height: |-
-                            =Switch(
-                                App.ActiveScreen.Size,
-                                ScreenSize.Small,
-                                Parent.Height/2,
-                                Parent.Height/1.5
-                            )
+                        Height: =125
                         IsInDataCard: =true
                         Items: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         PaddingBottom: =5
@@ -671,18 +653,17 @@
 
                     Icon5 As icon.Camera:
                         Color: =AppColor.PrimaryColor
-                        Height: |-
-                            =Switch(
-                                App.ActiveScreen.Size,
-                                ScreenSize.Small,
-                                Parent.Height/6,
-                                Parent.Height/5
-                            )
+                        Height: =49
                         Icon: =Icon.Camera
                         Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
-                        X: =DataCardKey23.X + DataCardKey23.Width + 20
-                        Y: =10
+                        X: =365
                         ZIndex: =5
+
+                    Camera1 As camera:
+                        Camera: =0
+                        X: =27
+                        Y: =184
+                        ZIndex: =6
 
         AEL_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
