@@ -74,7 +74,7 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            ELS_ExpenseContainer As groupContainer.horizontalAutoLayoutContainer:
+            ELS_ExpenseDetailContainer As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =AppColor.PrimaryColor
                 FillPortions: =0
@@ -86,7 +86,7 @@
                 Width: =Parent.Width
                 ZIndex: =1
 
-                ELS_ExpenseContainer1 As groupContainer.horizontalAutoLayoutContainer:
+                ELS_ExpenseContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4
@@ -106,7 +106,7 @@
                     ZIndex: =1
 
                     ELS_RequestNumberContainer As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Start
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
                         LayoutDirection: =LayoutDirection.Vertical
@@ -187,7 +187,7 @@
                             Y: =12
                             ZIndex: =1
 
-                ELS_ExpenseContainer2 As groupContainer.horizontalAutoLayoutContainer:
+                ELS_ExpenseTitleContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4
@@ -200,7 +200,7 @@
                     ZIndex: =2
 
                     ELS_TitleContainer As groupContainer.horizontalAutoLayoutContainer:
-                        AlignInContainer: =AlignInContainer.Start
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =Parent.Height
                         LayoutAlignItems: =LayoutAlignItems.Center
@@ -344,7 +344,7 @@
                                 )
                             ZIndex: =3
 
-                ELS_ExpenseContainer3 As groupContainer.horizontalAutoLayoutContainer:
+                ELS_ExpenseDateContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4
@@ -502,7 +502,7 @@
                                 )
                             ZIndex: =2
 
-                ELS_ExpenseContainer4 As groupContainer.horizontalAutoLayoutContainer:
+                ELS_ExpenseStatusContainer As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/4

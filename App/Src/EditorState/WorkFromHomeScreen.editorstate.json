@@ -1130,7 +1130,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFH_dd_Login",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3683,7 +3683,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFH_icon_add",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4238,7 +4238,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFH_icon_Next",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4464,7 +4464,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "WFH_img_Edit",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7175,7 +7175,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "WFH_lbl_RequestNumber",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
