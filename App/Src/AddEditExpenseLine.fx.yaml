@@ -190,7 +190,13 @@
                             Parent.Height/6,
                             Parent.Height/3.5
                         )
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     X: =0
                     Y: =1
                     ZIndex: =1
@@ -264,7 +270,13 @@
                             Parent.Height/6,
                             Parent.Height/3.5
                         )
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     X: =1
                     Y: =1
                     ZIndex: =1
@@ -565,7 +577,13 @@
                         )
                     Required: =false
                     Update: =DataCardValue21.Attachments
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     WidthFit: =false
                     X: =2
                     Y: =1
