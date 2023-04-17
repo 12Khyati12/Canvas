@@ -45,6 +45,9 @@ App As appinfo:
                 icon: UserGuide
             }
         );
+        
+        ClearCollect(colAttachments,Defaults('Expense Request Lines').Attachments);
+        
         Set(
             _myProfile,
             Office365Users.MyProfile()

@@ -21,9 +21,7 @@
 
             AEL_icon_Back As icon.ChevronLeft:
                 Color: =AppColor.PrimaryColor
-                Height: |-
-                    =
-                    If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
+                Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
                 Icon: =Icon.ChevronLeft
                 OnSelect: |-
                     =Navigate(ExpenseLineScreen);
@@ -33,9 +31,7 @@
                     );
                 PaddingLeft: =10
                 PaddingRight: =10
-                Width: |-
-                    =
-                    Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+                Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
                 ZIndex: =1
 
             AEL_lbl_AppTitle As label:
@@ -72,7 +68,6 @@
             ZIndex: =2
 
         AEL_DataContainer As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -449,7 +444,7 @@
                     Required: =false
                     Update: =DataCardValue18.Text
                     Width: =455
-                    X: =1
+                    X: =0
                     Y: =0
                     ZIndex: =2
 
@@ -538,9 +533,9 @@
                     BorderColor: =AppColor.PrimaryColor
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="{Attachments}"
-                    Default: =
+                    Default: =colAttachments
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: ="Attachment"
+                    DisplayName: =DataSourceInfo([@'Expense Request Lines'],DataSourceInfo.DisplayName,"{Attachments}")//"Attachment"
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =Switch(
@@ -584,7 +579,7 @@
                     DataCardValue21 As attachments:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Color: =AppColor.PrimaryColor
-                        Default: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        Default: =//If(IsExpenseEdit = false,ELS_gallery_ExpenseLine.Selected.Attachment)
                         DisplayMode: =Parent.DisplayMode
                         Height: |-
                             =Switch(
@@ -594,7 +589,14 @@
                                 Parent.Height/3
                             )
                         IsInDataCard: =true
-                        Items: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        Items: |-
+                            =colAttachments
+                            //If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        MaxAttachments: =1
+                        MaxAttachmentSize: =1
+                        OnAddFile: =ClearCollect(colAttachments,Self.Attachments)
+                        OnRemoveFile: =ClearCollect(colAttachments,Self.Attachments)
+                        OnUndoRemoveFile: =ClearCollect(colAttachments,Self.Attachments)
                         PaddingBottom: =5
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PaddingRight: =5
@@ -636,6 +638,29 @@
                         Wrap: =false
                         Y: =DataCardKey23.Y
                         ZIndex: =4
+
+                    Icon2 As icon.Camera:
+                        Color: =RGBA(39, 113, 194, 1)
+                        Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
+                        Icon: =Icon.Camera
+                        OnSelect: =Set(CameraVisible,If(CameraVisible = true,false,true))
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+                        X: =361
+                        Y: =111
+                        ZIndex: =5
+
+                    Camera2 As camera:
+                        Camera: =0
+                        OnSelect: |-
+                            =UpdateContext({cameraPosition: !cameraPosition});
+                            Collect(colAttachments,{DisplayName:GUID() &".jpg",ID:GUID() &".jpg",Value:Self.Photo});
+                            Reset(DataCardValue21);
+                        Visible: =CameraVisible
+                        X: =40
+                        Y: =384
+                        ZIndex: =6
 
         AEL_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer

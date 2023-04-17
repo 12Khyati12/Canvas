@@ -9706,36 +9706,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "ExpenseLineScreen",
-                "type": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle.TabIndex"
                 }
               ],
@@ -9760,6 +9730,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "ExpenseLineScreen",
+                "type": "ExpenseLineScreen.ELS_MainContainer.ELS_AddNewLineContainer.ELS_lbl_AddLineTitle"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -11566,6 +11566,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Camera2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Camera2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Camera2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._myManager"
                 }
               ],
@@ -12808,66 +12898,6 @@
                 "member": "Default",
                 "module": "AddEditExpenseLine",
                 "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.ExpenseAmountDataCard.DataCardValue18_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.DataCardValue21.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.DataCardValue21.Items",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "AddEditExpenseLine",
-                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.DataCardValue21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.DataCardValue21.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.DataCardValue21.Default",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "AddEditExpenseLine",
-                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.DataCardValue21"
               }
             }
           ],
@@ -18598,6 +18628,66 @@
                 "member": "Visible",
                 "module": "ExpenseApproveLineLScreen",
                 "type": "ExpenseApproveLineLScreen.EAL_MainContainer.EAL_FooterContainer"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.Height"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2.Height",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Height",
+                "module": "AddEditExpenseLine",
+                "type": "AddEditExpenseLine.AEL_MainContainer.AEL_DataContainer.Form3.Attachments_DataCard.Icon2"
               }
             }
           ],
