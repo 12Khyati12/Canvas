@@ -571,7 +571,13 @@
                     Height: =490
                     Required: =false
                     Update: =DataCardValue21.Attachments
-                    Width: =455
+                    Width: |-
+                        =Switch(
+                            App.ActiveScreen.Size,
+                            ScreenSize.Small,
+                            Parent.Width,
+                            Parent.Width/3
+                        )
                     WidthFit: =false
                     X: =2
                     Y: =1
@@ -655,12 +661,15 @@
                         Color: =AppColor.PrimaryColor
                         Height: =49
                         Icon: =Icon.Camera
+                        PaddingBottom: =5
+                        PaddingTop: =5
                         Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
-                        X: =365
+                        X: =DataCardKey23.Width + DataCardKey23.X + 20
                         ZIndex: =5
 
                     Camera1 As camera:
                         Camera: =0
+                        Width: =Parent.Width - 60
                         X: =27
                         Y: =184
                         ZIndex: =6
