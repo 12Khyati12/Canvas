@@ -1103,14 +1103,14 @@
                                 'Expense Request Number' = EAL_lbl_ExpenseNumber.Text
                             )
                         ),
-                        { 'Expense Request Status': [@'Expense Request Status'].'Approved'}
+                        { 'Expense Request Status': [@'Expense Request Status'].Approved}
                     );
                     
                     ClearCollect(updateExpenseLine, Sort(Filter('Expense Request Lines', ('Expense Request Number'.'Expense Request Number') = EAL_lbl_ExpenseNumber.Text),'Created On',SortOrder.Descending));
                     
                     UpdateIf(updateExpenseLine,true, 
                     { 
-                        'Expense Request Line Status': [@'Expense Request Line Status'].'Approved'
+                        'Expense Request Line Status': [@'Expense Request Line Status'].Approved
                     }
                     );
                     

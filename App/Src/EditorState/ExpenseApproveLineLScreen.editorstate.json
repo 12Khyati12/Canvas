@@ -156,7 +156,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardValue_2",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12316,7 +12316,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgDelete_2",
-      "ParentIndex": 2,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12586,7 +12586,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgEdit_2",
-      "ParentIndex": 9,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15473,7 +15473,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblAmount_2",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -15823,7 +15823,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblAttachement_2",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16163,7 +16163,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCategory_2",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16833,7 +16833,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblInvoiceDate_2",
-      "ParentIndex": 5,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17168,7 +17168,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblInvoiceno_2",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1110,7 +1110,7 @@
                     
                     UpdateIf(updateExpenseLine,true, 
                     { 
-                        'Expense Request Line Status': [@'Expense Request Line Status'].'Approved'
+                        'Expense Request Line Status': [@'Expense Request Line Status'].Approved
                     }
                     );
                     

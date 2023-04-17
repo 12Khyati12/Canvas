@@ -793,7 +793,7 @@
                                 First(
                                     Filter(
                                         'Application Requests',
-                                        'Application Request Number' = LRS_gallery_FilterRequest.Selected.dt_application_request_number
+                                        'Application Request Number' = LRS_gallery_FilterRequest.Selected.'Application Request Number'
                                     )
                                 ),
                                 {
@@ -925,7 +925,7 @@
                         colLeaveUpdate,
                         true,// If any tasks selected by checkbox as we have created this collection on Oncheck of Check box//
                         {// Below the bold letter are the SharePoint Column name which we want to update. //
-                    dt_application_request_status: [@'Application Request Status'].Declined}
+                    'Application Request Status': [@'Application Request Status'].Declined}
                     );
                     ClearCollect(
                         coldatatoPatch,// Created a temporary collection //
@@ -1016,7 +1016,7 @@
                         colLeaveUpdate,
                         true,// If any tasks selected by checkbox as we have created this collection on Oncheck of Check box//
                         {// Below the bold letter are the SharePoint Column name which we want to update. //
-                    dt_application_request_status: [@'Application Request Status'].Approved}
+                    'Application Request Status': [@'Application Request Status'].Approved}
                     );
                     ClearCollect(
                         coldatatoPatch,// Created a temporary collection //

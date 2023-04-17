@@ -78,6 +78,8 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: ='Expense Request Lines'
                 DefaultMode: =FormMode.New
+                FillPortions: |
+                    =3
                 Height: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -88,7 +90,7 @@
                 LayoutMinHeight: =250
                 LayoutMinWidth: =400
                 Width: =Parent.Width
-                ZIndex: =1
+                ZIndex: =2
 
                 InvoiceNoDataCard As typedDataCard.blankCard:
                     BorderColor: =AppColor.PrimaryColor
@@ -96,12 +98,12 @@
                     DisplayMode: =DisplayMode.Edit
                     DisplayName: ="Invoice Number"
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: |-
+                    Height: |
                         =Switch(
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/4
+                            Parent.Height/5
                         )
                     Width: =455
                     X: =2
@@ -180,7 +182,7 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/4
+                            Parent.Height/3.5
                         )
                     Width: =455
                     X: =0
@@ -254,7 +256,7 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/4
+                            Parent.Height/3.5
                         )
                     Width: =455
                     X: =1
@@ -327,12 +329,12 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: ="Expense Type"
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: |-
+                    Height: |
                         =Switch(
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/4
+                            Parent.Height/5
                         )
                     Required: =false
                     Update: =DataCardValue10.Selected
@@ -437,13 +439,13 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/4
+                            Parent.Height/5
                         )
                     MaxLength: =
                     Required: =false
                     Update: =DataCardValue18.Text
                     Width: =455
-                    X: =0
+                    X: =1
                     Y: =0
                     ZIndex: =2
 
@@ -532,16 +534,16 @@
                     BorderColor: =AppColor.PrimaryColor
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="{Attachments}"
-                    Default: =colAttachments
+                    Default: =
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: =DataSourceInfo([@'Expense Request Lines'],DataSourceInfo.DisplayName,"{Attachments}")//"Attachment"
+                    DisplayName: ="Attachment"
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: |-
                         =Switch(
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
-                            Parent.Height/6,
-                            Parent.Height/4
+                            Parent.Height/4,
+                            Parent.Height/3.5
                         )
                     Required: =false
                     Update: =DataCardValue21.Attachments
@@ -578,24 +580,17 @@
                     DataCardValue21 As attachments:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Color: =AppColor.PrimaryColor
-                        Default: =//If(IsExpenseEdit = false,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        Default: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         DisplayMode: =Parent.DisplayMode
                         Height: |-
                             =Switch(
                                 App.ActiveScreen.Size,
                                 ScreenSize.Small,
-                                Parent.Height/3,
-                                Parent.Height/3
+                                Parent.Height/2,
+                                Parent.Height/1.5
                             )
                         IsInDataCard: =true
-                        Items: |-
-                            =colAttachments
-                            //If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
-                        MaxAttachments: =1
-                        MaxAttachmentSize: =1
-                        OnAddFile: =ClearCollect(colAttachments,Self.Attachments)
-                        OnRemoveFile: =ClearCollect(colAttachments,Self.Attachments)
-                        OnUndoRemoveFile: =ClearCollect(colAttachments,Self.Attachments)
+                        Items: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         PaddingBottom: =5
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PaddingRight: =5
@@ -637,18 +632,6 @@
                         Wrap: =false
                         Y: =DataCardKey23.Y
                         ZIndex: =4
-
-                    Icon2 As icon.Camera:
-                        Color: =RGBA(39, 113, 194, 1)
-                        Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
-                        Icon: =Icon.Camera
-                        OnSelect: =Set(CameraVisible,If(CameraVisible = true,false,true))
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
-                        X: =361
-                        Y: =111
-                        ZIndex: =5
 
         AEL_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -730,28 +713,4 @@
                        Parent.Width/5
                     )
                 ZIndex: =1
-
-    Camera2 As camera:
-        Camera: =0
-        OnSelect: |-
-            =Collect(colAttachments,{DisplayName:GUID() &".jpg",ID:GUID() &".jpg",Value:Self.Photo});
-            Reset(DataCardValue21);
-        Visible: =CameraVisible
-        X: =30
-        Y: =396
-        ZIndex: =2
-
-    Icon3 As icon.Sync:
-        Color: =RGBA(39, 113, 194, 1)
-        Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
-        Icon: =Icon.Sync
-        OnSelect: |-
-            =UpdateContext({cameraPosition: !cameraPosition})
-        PaddingLeft: =10
-        PaddingRight: =10
-        Visible: =CameraVisible
-        Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
-        X: =200
-        Y: =396
-        ZIndex: =3
 

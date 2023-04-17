@@ -815,7 +815,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EAS_cb_Select",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4732,7 +4732,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EAS_lbl_Amount",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5407,7 +5407,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EAS_lbl_Description",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5732,7 +5732,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EAS_lbl_ExpenseDate",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6048,7 +6048,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "EAS_lbl_ExpenseNumber",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6934,7 +6934,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "EAS_rect_Separator",
-      "ParentIndex": 7,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7118,7 +7118,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EAS_RequestContainer",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7346,7 +7346,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EAS_SelectAllContainer",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

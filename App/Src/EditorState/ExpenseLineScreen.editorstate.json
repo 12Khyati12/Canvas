@@ -16338,7 +16338,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCategory",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16673,7 +16673,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblDescription",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17008,7 +17008,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblInvoiceDate",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17343,7 +17343,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblInvoiceno",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
