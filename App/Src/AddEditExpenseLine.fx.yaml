@@ -749,6 +749,7 @@
             =UpdateContext({cameraPosition: !cameraPosition})
         PaddingLeft: =10
         PaddingRight: =10
+        Visible: =CameraVisible
         Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
         X: =200
         Y: =396
