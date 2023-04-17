@@ -78,7 +78,6 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: ='Expense Request Lines'
                 DefaultMode: =FormMode.New
-                FillPortions: =3
                 Height: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -97,12 +96,12 @@
                     DisplayMode: =DisplayMode.Edit
                     DisplayName: ="Invoice Number"
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: |
+                    Height: |-
                         =Switch(
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/5
+                            Parent.Height/4
                         )
                     Width: =455
                     X: =2
@@ -181,7 +180,7 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/3.5
+                            Parent.Height/4
                         )
                     Width: =455
                     X: =0
@@ -255,7 +254,7 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/3.5
+                            Parent.Height/4
                         )
                     Width: =455
                     X: =1
@@ -328,12 +327,12 @@
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: ="Expense Type"
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: |
+                    Height: |-
                         =Switch(
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/5
+                            Parent.Height/4
                         )
                     Required: =false
                     Update: =DataCardValue10.Selected
@@ -438,7 +437,7 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/5
+                            Parent.Height/4
                         )
                     MaxLength: =
                     Required: =false
@@ -542,7 +541,7 @@
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
                             Parent.Height/6,
-                            Parent.Height/3.5
+                            Parent.Height/4
                         )
                     Required: =false
                     Update: =DataCardValue21.Attachments
@@ -651,17 +650,6 @@
                         Y: =111
                         ZIndex: =5
 
-                    Camera2 As camera:
-                        Camera: =0
-                        OnSelect: |-
-                            =UpdateContext({cameraPosition: !cameraPosition});
-                            Collect(colAttachments,{DisplayName:GUID() &".jpg",ID:GUID() &".jpg",Value:Self.Photo});
-                            Reset(DataCardValue21);
-                        Visible: =CameraVisible
-                        X: =40
-                        Y: =384
-                        ZIndex: =6
-
         AEL_SubmitContainer As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
@@ -742,4 +730,27 @@
                        Parent.Width/5
                     )
                 ZIndex: =1
+
+    Camera2 As camera:
+        Camera: =0
+        OnSelect: |-
+            =Collect(colAttachments,{DisplayName:GUID() &".jpg",ID:GUID() &".jpg",Value:Self.Photo});
+            Reset(DataCardValue21);
+        Visible: =CameraVisible
+        X: =30
+        Y: =396
+        ZIndex: =2
+
+    Icon3 As icon.Sync:
+        Color: =RGBA(39, 113, 194, 1)
+        Height: =If(LeaveApplicationScreen.Size = 1|| LeaveApplicationScreen.Size = 2 ,50,75)
+        Icon: =Icon.Sync
+        OnSelect: |-
+            =UpdateContext({cameraPosition: !cameraPosition})
+        PaddingLeft: =10
+        PaddingRight: =10
+        Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
+        X: =200
+        Y: =396
+        ZIndex: =3
 
