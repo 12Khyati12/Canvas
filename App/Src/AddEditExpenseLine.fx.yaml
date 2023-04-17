@@ -83,8 +83,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DataSource: ='Expense Request Lines'
                 DefaultMode: =FormMode.New
-                FillPortions: |
-                    =3
+                FillPortions: =3
                 Height: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -110,13 +109,7 @@
                             Parent.Height/6,
                             Parent.Height/5
                         )
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     X: =2
                     Y: =0
                     ZIndex: =1
@@ -195,13 +188,7 @@
                             Parent.Height/6,
                             Parent.Height/3.5
                         )
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     X: =0
                     Y: =1
                     ZIndex: =1
@@ -275,13 +262,7 @@
                             Parent.Height/6,
                             Parent.Height/3.5
                         )
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     X: =1
                     Y: =1
                     ZIndex: =1
@@ -361,13 +342,7 @@
                         )
                     Required: =false
                     Update: =DataCardValue10.Selected
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     X: =0
                     Y: =0
                     ZIndex: =2
@@ -473,13 +448,7 @@
                     MaxLength: =
                     Required: =false
                     Update: =DataCardValue18.Text
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     X: =1
                     Y: =0
                     ZIndex: =2
@@ -577,18 +546,12 @@
                         =Switch(
                             App.ActiveScreen.Size,
                             ScreenSize.Small,
-                            Parent.Height/4,
+                            Parent.Height/6,
                             Parent.Height/3.5
                         )
                     Required: =false
                     Update: =DataCardValue21.Attachments
-                    Width: |-
-                        =Switch(
-                            App.ActiveScreen.Size,
-                            ScreenSize.Small,
-                            Parent.Width,
-                            Parent.Width/3
-                        )
+                    Width: =455
                     WidthFit: =false
                     X: =2
                     Y: =1
@@ -627,8 +590,8 @@
                             =Switch(
                                 App.ActiveScreen.Size,
                                 ScreenSize.Small,
-                                Parent.Height/2,
-                                Parent.Height/1.5
+                                Parent.Height/3,
+                                Parent.Height/3
                             )
                         IsInDataCard: =true
                         Items: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
