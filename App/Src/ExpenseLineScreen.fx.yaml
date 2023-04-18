@@ -800,18 +800,19 @@
                         ZIndex: =7
 
                 ELS_ELDataContainer As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =Parent.Height/1.2
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =90
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowX: =LayoutOverflow.Scroll
                     LayoutOverflowY: =LayoutOverflow.Scroll
-                    Width: =Parent.Width-5
+                    Width: =Parent.Width//-5
                     ZIndex: =2
 
                     "ELS_gallery_ExpenseLine As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                        AlignInContainer: =AlignInContainer.Start
                         BorderColor: =AppColor.PrimaryColor
                         BorderThickness: =1
                         FillPortions: =0
