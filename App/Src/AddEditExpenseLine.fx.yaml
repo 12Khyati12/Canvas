@@ -615,7 +615,8 @@
                         Height: =125
                         IsInDataCard: =true
                         Items: |-
-                            =Parent.Default
+                            =colAttachments
+                            //Parent.Default
                              //If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         OnAddFile: |-
                             =ClearCollect(
@@ -688,7 +689,7 @@
                     Camera1 As camera:
                         Camera: =0
                         OnSelect: |-
-                            =Collect(colAttachments,{DisplayName: "Camera_ "& GUID() & ".jpg",Id: "Camera_ "& GUID() & ".jpg",Value:Self.Photo});Reset(DataCardValue21);
+                            =Collect(colAttachments,{DisplayName: "Camera_ "& GUID() & ".jpg",Id: "Camera_ "& GUID() & ".jpg", Name:  "Camera_ "& GUID() & ".jpg" ,Value:Self.Photo});Reset(DataCardValue21);
                         Visible: =CaremaVisible
                         Width: =Parent.Width - 60
                         X: =27

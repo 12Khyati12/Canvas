@@ -6280,7 +6280,7 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Name\":\"FileName\",\"Value\":\"Value\"}",
+          "NameMap": "{\"Value\":\"Value\",\"Name\":\"Name\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
