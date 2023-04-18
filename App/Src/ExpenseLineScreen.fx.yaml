@@ -752,6 +752,7 @@
                                12
                             )
                         Text: ="Invoice Date"
+                        Visible: =false
                         Width: =Parent.Width/7
                         Wrap: =false
                         X: =799
@@ -853,6 +854,7 @@
                                    10
                                 )
                             Text: =Text(DateValue(ThisItem.'Invoice Date', "en-US"),"dd/mmm/yyyy")
+                            Visible: =false
                             Width: =Parent.Width/7
                             X: =lblInvoiceno.X+lblInvoiceno.Width
                             ZIndex: =4
@@ -950,7 +952,7 @@
                             Text: |-
                                 =Text(ThisItem.'Expense Amount', "₹ ##.00")
                             Width: =Parent.Width/7
-                            X: =lblInvoiceDate.X+lblInvoiceDate.Width
+                            X: =lblInvoiceno.X+lblInvoiceno.Width
                             ZIndex: =15
 
                         lblAttachement As label:
