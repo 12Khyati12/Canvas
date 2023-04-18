@@ -104,6 +104,7 @@
     "FileID": "439944be-b81a-4419-9dc0-d4879583da78",
     "Id": "88fcc9c3-18b2-4307-b8f7-f7bae878ad0c",
     "InstrumentationKey": "",
+    "ManualOfflineProfileId": "",
     "Name": "Dynatech Management System UAT",
     "OriginatingVersion": "1.326"
   },

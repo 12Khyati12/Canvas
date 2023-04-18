@@ -1,5 +1,10 @@
 "AddEditExpenseLine As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
-    OnVisible: =NewForm(Form3)
+    OnVisible: |-
+        =NewForm(Form3);
+        If(IsExpenseEdit = true,ClearCollect(GetcolAttachments,{
+            Name : ELS_gallery_ExpenseLine.Selected.Attachment.FileName,
+            Value : ELS_gallery_ExpenseLine.Selected.Attachment.Value
+        }));
 
     AEL_MainContainer As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -564,7 +569,7 @@
                     BorderColor: =AppColor.PrimaryColor
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="{Attachments}"
-                    Default: =colAttachments
+                    Default: =If(IsExpenseEdit = true,GetcolAttachments,colAttachments)
                     DisplayMode: =Parent.DisplayMode
                     DisplayName: =DataSourceInfo([@'Expense Request Lines'],DataSourceInfo.DisplayName,"{Attachments}")
                     Fill: =RGBA(0, 0, 0, 0)
@@ -615,7 +620,7 @@
                         Height: =125
                         IsInDataCard: =true
                         Items: |-
-                            =colAttachments
+                            =If(IsExpenseEdit = true,GetcolAttachments,colAttachments)
                             //Parent.Default
                              //If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         OnAddFile: |-
@@ -623,15 +628,24 @@
                                 colAttachments,
                                 Self.Attachments
                             );
+                            ClearCollect(GetcolAttachments,
+                            Self.Attachments
+                            );
                         OnRemoveFile: |-
                             =ClearCollect(
                                 colAttachments,
                                 Self.Attachments
                             );
+                            ClearCollect(GetcolAttachments,
+                            Self.Attachments
+                            );
                         OnUndoRemoveFile: |-
                             =ClearCollect(
                                 colAttachments,
                                 Self.Attachments
+                            );
+                            ClearCollect(GetcolAttachments,
+                            Self.Attachments
                             );
                         PaddingBottom: =5
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -689,7 +703,9 @@
                     Camera1 As camera:
                         Camera: =0
                         OnSelect: |-
-                            =Collect(colAttachments,{DisplayName: "Camera_ "& GUID() & ".jpg",Id: "Camera_ "& GUID() & ".jpg", Name:  "Camera_ "& GUID() & ".jpg" ,Value:Self.Photo});Reset(DataCardValue21);
+                            =Collect(colAttachments,{DisplayName: "Camera_ "& GUID() & ".jpg",Id: "Camera_ "& GUID() & ".jpg", Name:  "Camera_ "& GUID() & ".jpg" ,Value:Self.Photo});
+                            If(IsExpenseEdit = true,ClearCollect(GetcolAttachments,colAttachments));
+                            Reset(DataCardValue21);
                         Visible: =CaremaVisible
                         Width: =Parent.Width - 60
                         X: =27
