@@ -807,6 +807,7 @@
                     LayoutMinHeight: =90
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowX: =LayoutOverflow.Scroll
                     LayoutOverflowY: =LayoutOverflow.Scroll
                     Width: =Parent.Width-5
                     ZIndex: =2
