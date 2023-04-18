@@ -564,9 +564,9 @@
                     BorderColor: =AppColor.PrimaryColor
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="{Attachments}"
-                    Default: =
+                    Default: =colAttachments
                     DisplayMode: =Parent.DisplayMode
-                    DisplayName: ="Attachment"
+                    DisplayName: =DataSourceInfo([@'Expense Request Lines'],DataSourceInfo.DisplayName,"{Attachments}")
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =490
                     Required: =false
@@ -610,11 +610,28 @@
                     DataCardValue21 As attachments:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Color: =AppColor.PrimaryColor
-                        Default: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        Default: =//If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
                         DisplayMode: =Parent.DisplayMode
                         Height: =125
                         IsInDataCard: =true
-                        Items: =If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        Items: |-
+                            =Parent.Default
+                             //If(IsExpenseEdit = true,ELS_gallery_ExpenseLine.Selected.Attachment)
+                        OnAddFile: |-
+                            =ClearCollect(
+                                colAttachments,
+                                Self.Attachments
+                            );
+                        OnRemoveFile: |-
+                            =ClearCollect(
+                                colAttachments,
+                                Self.Attachments
+                            );
+                        OnUndoRemoveFile: |-
+                            =ClearCollect(
+                                colAttachments,
+                                Self.Attachments
+                            );
                         PaddingBottom: =5
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                         PaddingRight: =5
@@ -661,6 +678,7 @@
                         Color: =AppColor.PrimaryColor
                         Height: =49
                         Icon: =Icon.Camera
+                        OnSelect: =Set(CaremaVisible, If(CaremaVisible = true,false,true))
                         PaddingBottom: =5
                         PaddingTop: =5
                         Width: =Switch(LeaveApplicationScreen.Size ,ScreenSize.Small,45,ScreenSize.Medium,45,60)
@@ -669,6 +687,9 @@
 
                     Camera1 As camera:
                         Camera: =0
+                        OnSelect: |-
+                            =Collect(colAttachments,{DisplayName: "Camera_ "& GUID() & ".jpg",Id: "Camera_ "& GUID() & ".jpg",Value:Self.Photo});Reset(DataCardValue21);
+                        Visible: =CaremaVisible
                         Width: =Parent.Width - 60
                         X: =27
                         Y: =184
