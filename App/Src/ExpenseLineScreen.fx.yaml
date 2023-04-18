@@ -982,6 +982,7 @@
                             OnSelect: |-
                                 =Navigate(AddEditExpenseLine);
                                 Set(IsExpenseEdit,true);
+                                Set(CaremaVisible,false);
                             PaddingLeft: =5
                             PaddingRight: =5
                             Width: =40
@@ -1030,7 +1031,9 @@
                         Parent.Height
                     )
                 Image: =AddNew
-                OnSelect: =Clear(colAttachments);Navigate(AddEditExpenseLine)
+                OnSelect: |-
+                    =Clear(colAttachments);Navigate(AddEditExpenseLine);
+                    Set(CaremaVisible,false);
                 Width: |-
                     =Switch(
                         App.ActiveScreen.Size,
@@ -1048,7 +1051,9 @@
                         Parent.Height,
                         Parent.Height
                     )
-                OnSelect: =Clear(colAttachments);Navigate(AddEditExpenseLine)
+                OnSelect: |-
+                    =Clear(colAttachments);Navigate(AddEditExpenseLine);
+                    Set(CaremaVisible,false);
                 PaddingBottom: =0
                 PaddingLeft: =15
                 PaddingRight: =0
