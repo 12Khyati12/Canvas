@@ -629,7 +629,7 @@
                                 'End Date': CNE_dp_To.SelectedDate,
                                 Description: CNE_text_Title.Text,
                                 'Submitted Date': Today(),
-                                'Project Name': CNE_dd_Project.Selected,
+                                'Project Name': CNE_dd_Project.SelectedText,
                                 'Expense Approver': LookUp(
                                     contact,
                                     'Full Name' = CNE_text_Reporting.Text

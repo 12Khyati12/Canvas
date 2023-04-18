@@ -14955,6 +14955,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseTitleContainer.ELS_ProjectContainer.ELS_dd_Project.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseTitleContainer.ELS_ProjectContainer.ELS_dd_Project.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "ExpenseLineScreen",
+                "type": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseTitleContainer.ELS_ProjectContainer.ELS_dd_Project"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseTitleContainer.ELS_ProjectContainer.ELS_dd_Project.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseTitleContainer.ELS_ProjectContainer.ELS_dd_Project.Default",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "ExpenseLineScreen",
+                "type": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseTitleContainer.ELS_ProjectContainer.ELS_dd_Project"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ExpenseLineScreen.ELS_MainContainer.ELS_DataContainer.ELS_ExpenseDetailContainer.ELS_ExpenseDateContainer.ELS_FromDateContainer.ELS_dp_FromDate.DefaultDate"
                 }
               ],
