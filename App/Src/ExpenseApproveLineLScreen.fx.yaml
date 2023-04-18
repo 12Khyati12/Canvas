@@ -126,7 +126,13 @@
                                 )
                             OnSelect: =
                             PaddingBottom: =0
-                            PaddingLeft: =40
+                            PaddingLeft: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    20,
+                                   40
+                                )
                             PaddingRight: =0
                             PaddingTop: =0
                             Size: |-
@@ -220,7 +226,13 @@
                                 )
                             OnSelect: =
                             PaddingBottom: =0
-                            PaddingLeft: =40
+                            PaddingLeft: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    20,
+                                   40
+                                )
                             PaddingRight: =0
                             PaddingTop: =0
                             Size: |-
@@ -388,7 +400,13 @@
                                 )
                             OnSelect: =
                             PaddingBottom: =0
-                            PaddingLeft: =40
+                            PaddingLeft: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    20,
+                                   40
+                                )
                             PaddingRight: =0
                             PaddingTop: =0
                             Size: |-
@@ -614,7 +632,13 @@
                             Color: =RGBA(39, 113, 194, 1)
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
-                            PaddingLeft: =40
+                            PaddingLeft: |-
+                                =Switch(
+                                    App.ActiveScreen.Size,
+                                    ScreenSize.Small,
+                                    20,
+                                   40
+                                )
                             PaddingRight: =10
                             Size: |-
                                 =Switch(
